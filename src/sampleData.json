@@ -1,0 +1,304 @@
+{
+  "clones": {
+    "systeminfo": {
+      "_attributes": {
+        "system": "JHotDraw7.6",
+        "granularity": "functions",
+        "threshold": "30%",
+        "minlines": "5",
+        "maxlines": "500"
+      }
+    },
+    "classinfo": {
+      "_attributes": {
+        "npcs": "6991",
+        "nclones": "847",
+        "nfragments": "1355",
+        "npairs": "1767",
+        "nclasses": "508"
+      }
+    },
+    "runinfo": {
+      "_attributes": {
+        "ncompares": "1651178",
+        "cputime": "132"
+      }
+    },
+    "class": [
+      {
+        "_attributes": {
+          "id": "1",
+          "nlines": "126",
+          "nfragments": "2"
+        },
+        "source": [
+          {
+            "_attributes": {
+              "file": "./JHotDraw7.6/Source/jhotdraw7/src/main/java/org/jhotdraw/draw/liner/ElbowLiner.java",
+              "startline": "48",
+              "endline": "183",
+              "pcid": "3039"
+            }
+          },
+          {
+            "_attributes": {
+              "file": "./JHotDraw7.6/Source/jhotdraw7/src/main/java/org/jhotdraw/draw/liner/CurvedLiner.java",
+              "startline": "49",
+              "endline": "188",
+              "pcid": "3032"
+            }
+          }
+        ]
+      },
+      {
+        "_attributes": {
+          "id": "2",
+          "nlines": "104",
+          "nfragments": "2"
+        },
+        "source": [
+          {
+            "_attributes": {
+              "file": "./JHotDraw7.6/Source/jhotdraw7/src/main/java/org/jhotdraw/samples/odg/io/ODGInputFormat.java",
+              "startline": "1301",
+              "endline": "1416",
+              "pcid": "5353"
+            }
+          },
+          {
+            "_attributes": {
+              "file": "./JHotDraw7.6/Source/jhotdraw7/src/main/java/org/jhotdraw/samples/svg/io/SVGInputFormat.java",
+              "startline": "3277",
+              "endline": "3390",
+              "pcid": "6221"
+            }
+          }
+        ]
+      },
+      {
+        "_attributes": {
+          "id": "3",
+          "nlines": "88",
+          "nfragments": "2"
+        },
+        "source": [
+          {
+            "_attributes": {
+              "file": "./JHotDraw7.6/Source/jhotdraw7/src/main/java/org/jhotdraw/samples/svg/figures/SVGPathFigure.java",
+              "startline": "350",
+              "endline": "455",
+              "pcid": "5716"
+            }
+          },
+          {
+            "_attributes": {
+              "file": "./JHotDraw7.6/Source/jhotdraw7/src/main/java/org/jhotdraw/samples/odg/figures/ODGPathFigure.java",
+              "startline": "329",
+              "endline": "427",
+              "pcid": "5208"
+            }
+          }
+        ]
+      },
+      {
+        "_attributes": {
+          "id": "4",
+          "nlines": "82",
+          "nfragments": "2"
+        },
+        "source": [
+          {
+            "_attributes": {
+              "file": "./JHotDraw7.6/Source/jhotdraw7/src/main/java/org/jhotdraw/draw/TextAreaFigure.java",
+              "startline": "149",
+              "endline": "279",
+              "pcid": "3231"
+            }
+          },
+          {
+            "_attributes": {
+              "file": "./JHotDraw7.6/Source/jhotdraw7/src/main/java/org/jhotdraw/samples/svg/figures/SVGTextAreaFigure.java",
+              "startline": "188",
+              "endline": "301",
+              "pcid": "5786"
+            }
+          }
+        ]
+      },
+      {
+        "_attributes": {
+          "id": "5",
+          "nlines": "69",
+          "nfragments": "3"
+        },
+        "source": [
+          {
+            "_attributes": {
+              "file": "./JHotDraw7.6/Source/jhotdraw7/src/main/java/org/jhotdraw/app/MDIApplication.java",
+              "startline": "414",
+              "endline": "488",
+              "pcid": "668"
+            }
+          },
+          {
+            "_attributes": {
+              "file": "./JHotDraw7.6/Source/jhotdraw7/src/main/java/org/jhotdraw/app/OSXApplication.java",
+              "startline": "362",
+              "endline": "436",
+              "pcid": "724"
+            }
+          },
+          {
+            "_attributes": {
+              "file": "./JHotDraw7.6/Source/jhotdraw7/src/main/java/org/jhotdraw/app/SDIApplication.java",
+              "startline": "316",
+              "endline": "389",
+              "pcid": "766"
+            }
+          }
+        ]
+      },
+      {
+        "_attributes": {
+          "id": "6",
+          "nlines": "66",
+          "nfragments": "2"
+        },
+        "source": [
+          {
+            "_attributes": {
+              "file": "./JHotDraw7.6/Source/jhotdraw7/src/main/java/org/jhotdraw/samples/pert/PertApplet.java",
+              "startline": "58",
+              "endline": "148",
+              "pcid": "5510"
+            }
+          },
+          {
+            "_attributes": {
+              "file": "./JHotDraw7.6/Source/jhotdraw7/src/main/java/org/jhotdraw/samples/net/NetApplet.java",
+              "startline": "62",
+              "endline": "151",
+              "pcid": "5075"
+            }
+          }
+        ]
+      },
+      {
+        "_attributes": {
+          "id": "7",
+          "nlines": "66",
+          "nfragments": "2"
+        },
+        "source": [
+          {
+            "_attributes": {
+              "file": "./JHotDraw7.6/Source/jhotdraw7/src/main/java/org/jhotdraw/text/ColorFormatter.java",
+              "startline": "377",
+              "endline": "448",
+              "pcid": "6593"
+            }
+          },
+          {
+            "_attributes": {
+              "file": "./JHotDraw7.6/Source/jhotdraw7/src/main/java/org/jhotdraw/text/ColorToolTipTextFormatter.java",
+              "startline": "38",
+              "endline": "111",
+              "pcid": "6597"
+            }
+          }
+        ]
+      },
+      {
+        "_attributes": {
+          "id": "8",
+          "nlines": "59",
+          "nfragments": "4"
+        },
+        "source": [
+          {
+            "_attributes": {
+              "file": "./JHotDraw7.6/Source/jhotdraw7/src/main/java/org/jhotdraw/samples/pert/PertPanel.java",
+              "startline": "43",
+              "endline": "109",
+              "pcid": "5538"
+            }
+          },
+          {
+            "_attributes": {
+              "file": "./JHotDraw7.6/Source/jhotdraw7/src/main/java/org/jhotdraw/samples/net/NetPanel.java",
+              "startline": "42",
+              "endline": "108",
+              "pcid": "5103"
+            }
+          },
+          {
+            "_attributes": {
+              "file": "./JHotDraw7.6/Source/jhotdraw7/src/main/java/org/jhotdraw/samples/draw/DrawingPanel.java",
+              "startline": "50",
+              "endline": "116",
+              "pcid": "4903"
+            }
+          },
+          {
+            "_attributes": {
+              "file": "./JHotDraw7.6/Source/jhotdraw7/src/main/java/org/jhotdraw/samples/odg/ODGDrawingPanel.java",
+              "startline": "44",
+              "endline": "111",
+              "pcid": "5408"
+            }
+          }
+        ]
+      },
+      {
+        "_attributes": {
+          "id": "9",
+          "nlines": "59",
+          "nfragments": "2"
+        },
+        "source": [
+          {
+            "_attributes": {
+              "file": "./JHotDraw7.6/Source/jhotdraw7/src/main/java/org/jhotdraw/samples/svg/io/SVGOutputFormat.java",
+              "startline": "112",
+              "endline": "172",
+              "pcid": "6231"
+            }
+          },
+          {
+            "_attributes": {
+              "file": "./JHotDraw7.6/Source/jhotdraw7/src/main/java/org/jhotdraw/samples/svg/io/ImageMapOutputFormat.java",
+              "startline": "183",
+              "endline": "226",
+              "pcid": "6144"
+            }
+          }
+        ]
+      },
+      {
+        "_attributes": {
+          "id": "10",
+          "nlines": "59",
+          "nfragments": "2"
+        },
+        "source": [
+          {
+            "_attributes": {
+              "file": "./JHotDraw7.6/Source/jhotdraw7/src/main/java/org/jhotdraw/samples/svg/io/SVGInputFormat.java",
+              "startline": "2468",
+              "endline": "2664",
+              "pcid": "6210"
+            }
+          },
+          {
+            "_attributes": {
+              "file": "./JHotDraw7.6/Source/jhotdraw7/src/main/java/org/jhotdraw/samples/svg/io/SVGInputFormat.java",
+              "startline": "2053",
+              "endline": "2249",
+              "pcid": "6208"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}
