@@ -3,7 +3,7 @@ import axios from 'axios';
 import processGcadOutput from './processGcadOutput';
 
 // Loading the synteny collinearity file
-axios.get('assets/files/gcad_wget_output.txt').then(function (response) {
+axios.get('assets/files/gcad_argo_uml_output.txt').then(function (response) {
 
     let processedCloneData = processGcadOutput(response);
     console.log(processedCloneData);
