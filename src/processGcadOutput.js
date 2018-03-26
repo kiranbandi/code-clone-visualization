@@ -1,9 +1,15 @@
+import _ from 'lodash'
+
+// Unique version list - Global to this module
+var uniqueVersionList = []
 
 export default function (cloneResponse) {
-    
+
     let responseArray = cloneResponse.data.split("\n"),
-        sourceName = responseArray[0].split("\\").slice(-1).join(),
-        sourceCloneInfo = responseArray.slice(1, 5).join('\n');
+        projectName = responseArray[0].split("\\").slice(-1).join(),
+        genealogyInfo = responseArray.slice(1, 5).join('\n'),
+        versionCount = Number(genealogyInfo.split('\n')[0].slice(20));
+
 
     // Genealogy of every clone set is represented in a single line that starts with "[Version" so we look for every line that starts with that 
     // and then process that line and the next 7 lines following it as a bunch because they contain info regarding this clone set
@@ -26,7 +32,10 @@ export default function (cloneResponse) {
         // increase count by 1 , also taken into count  when we need to skip 8 lines , icremented 7 times inside if block and once outside
         lineIndex += 1;
     }
-    return genealogyList;
+    // preprocess datalist for d3
+    genealogyList = preProcessData(genealogyList)
+
+    return { genealogyList, projectName, genealogyInfo, versionCount, uniqueVersionList };
 }
 
 function splitAndParseCloneSet(cloneSetString) {
@@ -40,6 +49,7 @@ function splitAndParseCloneSet(cloneSetString) {
     let cloneSetStringSplit = cloneSetString.split('\t'),
         loopIndex = 0,
         changePairList = [];
+
     // ignored clone sets that have change type split or dissappeared  - TEMPORARY FIX !!
     if (cloneSetString.indexOf('split') > -1 || cloneSetString.indexOf('disappeared') > -1) {
         return [];
@@ -59,14 +69,20 @@ function splitAndParseCloneSet(cloneSetString) {
         // and for classId we split using space the second part after splitting with comma 
         // and then pick the number from the resulting list 
 
+        let sourceVersion = source[0].split(':')[1].split(' ').join(''),
+            targetVersion = target[0].split(':')[1].split(' ').join('');
+
+        // Add source and target version to list of versions to keep track of all unique versions that have occured so far
+        uniqueVersionList = _.union(uniqueVersionList, [sourceVersion, targetVersion]);
+
         changePairList.push({
             'source': {
-                'version': source[0].split(':')[1].split(' ').join(''),
+                'version': sourceVersion,
                 'cloneType': source[1].slice(-6),
                 'classId': Number(source[1].split(" ").slice(-2, -1).join(''))
             },
             'target': {
-                'version': target[0].split(':')[1].split(' ').join(''),
+                'version': targetVersion,
                 'cloneType': target[1].slice(-6),
                 'classId': Number(target[1].split(" ").slice(-2, -1).join(''))
             },
@@ -75,4 +91,26 @@ function splitAndParseCloneSet(cloneSetString) {
         loopIndex += 2
     }
     return changePairList;
+}
+
+// once we have gone through all the data we have the list of all unique version names that can appear 
+// so we then use that to preprocess the genealogy set for d3 to make it easier for us to draw elements
+
+function preProcessData(genealogyList) {
+
+    // Create an empty list with version names and placeholder for clone types
+    let cloneVersionList = uniqueVersionList.map((versionName) => { return { 'version_id': versionName, 'cloneType': '' } })
+
+    let c = genealogyList.map((value,index)=>{
+
+        
+
+
+
+    })
+
+
+
+
+    return genealogyList
 }
