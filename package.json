@@ -1,7 +1,7 @@
 {
   "name": "code-clone-visulaization",
   "version": "1.0.0",
-  "description": "A web based alternate for code clone visualization that works on the output of NiCad Clone Detector",
+  "description": "A web based alternative to visualize genealogy of code clones that works on the output of GCAD and NiCad",
   "main": "src/app.js",
   "scripts": {
     "start": "webpack-dev-server --config ./build-config/webpack.config.js --watch-poll",
