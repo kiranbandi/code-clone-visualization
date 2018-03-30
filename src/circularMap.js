@@ -5,11 +5,11 @@ import _ from 'lodash';
 export default function (cloneData) {
 
     let { genealogyList, projectName, genealogyInfo, versionCount, uniqueVersionList } = cloneData;
-    
-    let paddingHeightPerGroup = 0.5,
-        marginPadding = 250,
-        height = (genealogyList.length * paddingHeightPerGroup) + 750,
-        width = document.body.clientWidth - marginPadding,
+
+    let paddingHeightPerGroup = 0.25,
+        marginRatio = 4,
+        width = document.body.clientWidth - (document.body.clientWidth / 4),
+        height = width,
         radius = width / 2,
         markerSize = 5000 / genealogyList.length;
 
