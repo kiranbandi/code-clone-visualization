@@ -35,7 +35,7 @@ export default function (cloneResponse) {
     // preprocess datalist for d3
     genealogyList = preProcessData(genealogyList)
 
-    console.log(uniqueChangeType)
+    // console.log(uniqueChangeType)
 
     return { genealogyList, projectName, genealogyInfo, versionCount, uniqueVersionList };
 }
@@ -54,7 +54,7 @@ function splitAndParseCloneSet(cloneSetString) {
 
     // ignored clone sets that have change type split or dissappeared  - TEMPORARY FIX !!
     if (cloneSetString.indexOf('split') > -1 || cloneSetString.indexOf('disappeared') > -1) {
-        console.log(cloneSetString)
+        // console.log(cloneSetString)
         return [];
     }
     // Since we move through the list in sets of three we go forward only if the first segment has the string version in it 
