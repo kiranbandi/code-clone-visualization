@@ -7,7 +7,7 @@
 }
 
 #root .mainContainer {
-  margin: 10px auto;
+  margin: 40px auto;
   display: block;
   background: #e4cccc;
 }
@@ -18,4 +18,19 @@
   text-transform: uppercase;
   display: inline-block;
   color: #4e89bd;
+}
+
+#root line.changeLine, #root line.changeLineDouble {
+  stroke-width: 3
+}
+
+.cloneMarker {
+  stroke-width: 3
+}
+
+text.cloneMarkerText {
+  font-weight: bold;
+  font-size: 15px;
+  font-family: sans-serif;
+  color: #4d4b63
 }

@@ -2,6 +2,7 @@ import _ from 'lodash'
 
 // Unique version list - Global to this module
 var uniqueVersionList = []
+var uniqueChangeType = []
 
 export default function (cloneResponse) {
 
@@ -9,7 +10,6 @@ export default function (cloneResponse) {
         projectName = responseArray[0].split("\\").slice(-1).join(),
         genealogyInfo = responseArray.slice(1, 5).join('\n'),
         versionCount = Number(genealogyInfo.split('\n')[0].slice(20));
-
 
     // Genealogy of every clone set is represented in a single line that starts with "[Version" so we look for every line that starts with that 
     // and then process that line and the next 7 lines following it as a bunch because they contain info regarding this clone set
@@ -35,6 +35,8 @@ export default function (cloneResponse) {
     // preprocess datalist for d3
     genealogyList = preProcessData(genealogyList)
 
+    console.log(uniqueChangeType)
+
     return { genealogyList, projectName, genealogyInfo, versionCount, uniqueVersionList };
 }
 
@@ -52,6 +54,7 @@ function splitAndParseCloneSet(cloneSetString) {
 
     // ignored clone sets that have change type split or dissappeared  - TEMPORARY FIX !!
     if (cloneSetString.indexOf('split') > -1 || cloneSetString.indexOf('disappeared') > -1) {
+        console.log(cloneSetString)
         return [];
     }
     // Since we move through the list in sets of three we go forward only if the first segment has the string version in it 
@@ -74,6 +77,9 @@ function splitAndParseCloneSet(cloneSetString) {
 
         // Add source and target version to list of versions to keep track of all unique versions that have occured so far
         uniqueVersionList = _.union(uniqueVersionList, [sourceVersion, targetVersion]);
+
+        uniqueChangeType = _.union(uniqueChangeType, [cloneSetStringSplit[loopIndex + 1]]);
+
 
         changePairList.push({
             'source': {
@@ -99,18 +105,16 @@ function splitAndParseCloneSet(cloneSetString) {
 function preProcessData(genealogyList) {
 
     // Create an empty list with version names and placeholder for clone types
-    let cloneVersionList = uniqueVersionList.map((versionName) => { return { 'version_id': versionName, 'cloneType': '' } })
+    let cloneVersionList = {};
 
-    let c = genealogyList.map((value,index)=>{
+    genealogyList.map((genealogy) => {
+        uniqueVersionList.map((versionName) => { cloneVersionList[versionName] = '' })
+        genealogy.set.map((set) => {
+            cloneVersionList[set.source.version] = set.source.cloneType
+            cloneVersionList[set.target.version] = set.target.cloneType
+        })
+        genealogy.serialList = Object.keys(cloneVersionList).map((key) => { return { 'version': key, 'cloneType': cloneVersionList[key] } })
+    });
 
-        
-
-
-
-    })
-
-
-
-
-    return genealogyList
+    return genealogyList;
 }
