@@ -36,13 +36,6 @@ export default function (cloneData) {
         .append('g')
         .attr('transform', (d, i) => "translate(0," + paddingHeightPerGroup * i + ")")
 
-    let d3Symbols = {
-        'Type-1': symbolCircle,
-        'Type-2': symbolSquare,
-        'Type-3': symbolTriangle,
-        'Type-4': symbolStar
-    }
-
     genealogySetGroup.selectAll('.changeLine').data((d) => d.set)
         .enter()
         .append('line')
@@ -83,9 +76,8 @@ export default function (cloneData) {
         .enter()
         .append('path')
         .attr("class", 'cloneMarker ')
-        .attr("d", symbol().size(350).type((d, i) => d3Symbols[d.cloneType] || symbolCircle))
-        .attr("stroke", (d, i) => { return d3Symbols[d.cloneType] ? '#4d4b63' : '#e4cccc' })
-        .style("fill", (d, i) => { return d3Symbols[d.cloneType] ? 'white' : '#e4cccc' })
+        .attr("d", symbol().size(375).type((d, i) => symbolCircle))
+        .style("fill", (d, i) => { return d.cloneType.length > 1 ? '#4d4b63' : '#e4cccc' })
         .attr("transform", function (d, i) {
             return "translate(" + (((width / versionCount) * i) + (width / (versionCount * 2))) + "," + paddingHeightPerGroup + ")";
         })

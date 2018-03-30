@@ -32,5 +32,5 @@ text.cloneMarkerText {
   font-weight: bold;
   font-size: 15px;
   font-family: sans-serif;
-  color: #4d4b63
+  fill: white;
 }
