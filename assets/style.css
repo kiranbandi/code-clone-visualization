@@ -34,3 +34,11 @@ text.cloneMarkerText {
   font-family: sans-serif;
   fill: white;
 }
+
+/* ///////////////////////////// Style for Circular Map //////////////////////////////// */
+
+#root .circularMainContainer {
+  margin: 40px auto;
+  display: block;
+  background: #e4cccc;
+}
