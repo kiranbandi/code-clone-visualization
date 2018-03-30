@@ -1,0 +1,36 @@
+#loaderText {
+  font-family: sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 40px;
+  color: #4e89bd;
+}
+
+#root .mainContainer {
+  margin: 40px auto;
+  display: block;
+  background: #e4cccc;
+}
+
+#root .mainContainer h2 {
+  font-family: sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  display: inline-block;
+  color: #4e89bd;
+}
+
+#root line.changeLine, #root line.changeLineDouble {
+  stroke-width: 3
+}
+
+.cloneMarker {
+  stroke-width: 3
+}
+
+text.cloneMarkerText {
+  font-weight: bold;
+  font-size: 15px;
+  font-family: sans-serif;
+  fill: white;
+}
