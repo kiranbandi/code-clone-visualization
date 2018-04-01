@@ -9,7 +9,9 @@ import circularMap from './circularMap';
 // Temporary params fix to test mutltiple input files 
 let fileParamMapper = {
     'argo': 'gcad_argo_uml_output.txt',
-    'wget': 'gcad_wget_output.txt'
+    'wget': 'gcad_wget_output.txt',
+    'argo2': 'gcad_argo_2_uml_output.txt',
+    'wget2': 'gcad_wget_2_output.txt'
 }
 const getParams = query => {
     if (!query) {
