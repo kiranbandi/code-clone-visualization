@@ -12,8 +12,6 @@ export default function (cloneData) {
 
     let { genealogyList, projectName, genealogyInfo, versionCount, uniqueVersionList } = cloneData;
 
-    genealogyList = genealogyList.slice(0,20)
-
     let paddingHeightPerGroup = 40;
     let marginPadding = 80;
     let height = (genealogyList.length * paddingHeightPerGroup) + 100;
