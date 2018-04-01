@@ -2,6 +2,25 @@ import * as d3 from 'd3';
 import { symbol, symbolCircle, symbolSquare, symbolTriangle, symbolStar } from "d3-shape";
 import _ from 'lodash';
 
+// 
+// rgb(158, 202, 225)
+// rgb(253, 174, 107)
+// rgb(161, 217, 155)
+// rgb(188, 189, 220)
+// rgb(189, 189, 189)
+
+// rgb(173, 73, 74)
+// rgb(214, 97, 107)
+
+
+let blueColor = 'rgb(107, 174, 214)',
+    redColor = 'rgb(173, 73, 74)',
+    greenColor = 'rgb(116, 196, 118)',
+    purpleColor = 'rgb(158, 154, 200)',
+    grayColor = 'rgb(150, 150, 150)';
+
+
+
 export default function (cloneData) {
 
     let { genealogyList, projectName, genealogyInfo, versionCount, uniqueVersionList } = cloneData;
@@ -23,6 +42,8 @@ export default function (cloneData) {
         .attr('class', 'circularRootSVG')
         .attr('height', height)
         .attr('width', width)
+        //so it looks like the first element starts from the top
+        .attr('transform', 'rotate(-90)')
 
     let genealogySetGroup = circularRootSVG.selectAll('g')
         .data(genealogyList)
@@ -37,7 +58,7 @@ export default function (cloneData) {
         .append('line')
         .style('stroke', (d, i) => {
             return d.changeType.indexOf('no_change') > -1 ?
-                'green' : d.changeType.indexOf('inconsistent_change') > -1 ? 'red' : 'blue';
+                greenColor : d.changeType.indexOf('inconsistent_change') > -1 ? redColor : blueColor;
         }).attr("class", 'changeLineDouble')
         .attr('x1', 0)
         .attr('y1', 4)
@@ -54,7 +75,7 @@ export default function (cloneData) {
         .append('line')
         .style('stroke', (d, i) => {
             return d.changeType.indexOf('no_change') > -1 ?
-                'green' : d.changeType.indexOf('inconsistent_change') > -1 ? 'red' : 'blue';
+                greenColor : d.changeType.indexOf('inconsistent_change') > -1 ? redColor : blueColor;
         })
         .style('stroke-dasharray', (d, i) => d.changeType.indexOf('deleted') > -1 ? '10' : '0')
         .attr("class", 'changeLine')
@@ -72,10 +93,26 @@ export default function (cloneData) {
         .append('path')
         .attr("class", 'cloneMarker ')
         .attr("d", symbol().size(markerSize).type((d, i) => symbolCircle))
-        .style("fill", (d, i) => { return d.cloneType.length > 1 ? '#4d4b63' : '#e4cccc' })
+        .style("fill", (d, i) => { return d.cloneType.length > 1 ? grayColor : '#e4cccc' })
         .attr("transform", function (d, i) {
             return "translate(" + (((radius / (versionCount)) * i) + (radius / (versionCount * 2))) + "," + paddingHeightPerGroup + ")";
         })
+
+    circularRootSVG.append("rect")
+        .attr("fill", "none")
+        .attr("pointer-events", "all")
+        .attr("width", width)
+        .attr("height", height)
+        .call(d3.zoom()
+            .scaleExtent([1, 1.5])
+            .on("zoom", zoom));
+
+    function zoom() {
+        circularRootSVG.attr("transform", d3.event.transform);
+    }
+
+
+
 
 
 }

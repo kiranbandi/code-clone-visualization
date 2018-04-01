@@ -2,6 +2,14 @@ import * as d3 from 'd3';
 import { symbol, symbolCircle, symbolSquare, symbolTriangle, symbolStar } from "d3-shape";
 import _ from 'lodash';
 
+
+let blueColor = 'rgb(107, 174, 214)',
+    redColor = 'rgb(173, 73, 74)',
+    greenColor = 'rgb(116, 196, 118)',
+    purpleColor = 'rgb(158, 154, 200)',
+    grayColor = 'rgb(99, 99, 99)';
+
+
 export default function (cloneData) {
 
     let { genealogyList, projectName, genealogyInfo, versionCount, uniqueVersionList } = cloneData;
@@ -41,7 +49,7 @@ export default function (cloneData) {
         .append('line')
         .style('stroke', (d, i) => {
             return d.changeType.indexOf('no_change') > -1 ?
-                'green' : d.changeType.indexOf('inconsistent_change') > -1 ? 'red' : 'blue';
+                greenColor : d.changeType.indexOf('inconsistent_change') > -1 ? redColor : blueColor;
         })
         .style('stroke-dasharray', (d, i) => d.changeType.indexOf('deleted') > -1 ? '10' : '0')
         .attr("class", 'changeLine')
@@ -60,7 +68,7 @@ export default function (cloneData) {
         .append('line')
         .style('stroke', (d, i) => {
             return d.changeType.indexOf('no_change') > -1 ?
-                'green' : d.changeType.indexOf('inconsistent_change') > -1 ? 'red' : 'blue';
+                greenColor : d.changeType.indexOf('inconsistent_change') > -1 ? redColor : blueColor;
         }).attr("class", 'changeLineDouble')
         .attr('x1', 0)
         .attr('y1', 4)
@@ -77,7 +85,7 @@ export default function (cloneData) {
         .append('path')
         .attr("class", 'cloneMarker ')
         .attr("d", symbol().size(375).type((d, i) => symbolCircle))
-        .style("fill", (d, i) => { return d.cloneType.length > 1 ? '#4d4b63' : '#e4cccc' })
+        .style("fill", (d, i) => { return d.cloneType.length > 1 ? grayColor : '#e4cccc' })
         .attr("transform", function (d, i) {
             return "translate(" + (((width / versionCount) * i) + (width / (versionCount * 2))) + "," + paddingHeightPerGroup + ")";
         })

@@ -6,7 +6,6 @@ import processGcadOutput from './processGcadOutput';
 import cloneMap from './cloneMap';
 import circularMap from './circularMap';
 
-
 // Temporary params fix to test mutltiple input files 
 let fileParamMapper = {
     'argo': 'gcad_argo_uml_output.txt',
@@ -25,7 +24,6 @@ const getParams = query => {
         }, {});
 };
 
-
 axios.get('assets/files/' + fileParamMapper[getParams(window.location.search).source]).then(function (response) {
 
     let cloneData = processGcadOutput(response);
@@ -39,6 +37,7 @@ axios.get('assets/files/' + fileParamMapper[getParams(window.location.search).so
 
 
 // Need to draw circular markers , could be useful to determine levels when there arent many clones at every level
+//  updated colormap with d3 colorwheel 
 
 
 
