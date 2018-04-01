@@ -2,22 +2,25 @@ import * as d3 from 'd3';
 import { symbol, symbolCircle, symbolSquare, symbolTriangle, symbolStar } from "d3-shape";
 import _ from 'lodash';
 
-
 let blueColor = 'rgb(107, 174, 214)',
     redColor = 'rgb(173, 73, 74)',
     greenColor = 'rgb(116, 196, 118)',
     purpleColor = 'rgb(158, 154, 200)',
     grayColor = 'rgb(99, 99, 99)';
 
-
 export default function (cloneData) {
 
     let { genealogyList, projectName, genealogyInfo, versionCount, uniqueVersionList } = cloneData;
+
+    genealogyList = genealogyList.slice(0,20)
 
     let paddingHeightPerGroup = 40;
     let marginPadding = 80;
     let height = (genealogyList.length * paddingHeightPerGroup) + 100;
     let width = document.body.clientWidth - marginPadding;
+
+    // if a map exists remove it , could probably handle this better in a future version 
+    d3.selectAll('mainContainer').remove()
 
     let mainContainer = d3.select('#root').append('div')
     mainContainer.attr('class', 'mainContainer')
@@ -43,6 +46,9 @@ export default function (cloneData) {
         .enter()
         .append('g')
         .attr('transform', (d, i) => "translate(0," + paddingHeightPerGroup * i + ")")
+        .on('mouseover',function(){
+                debugger;
+        })
 
     genealogySetGroup.selectAll('.changeLine').data((d) => d.set)
         .enter()
@@ -85,7 +91,7 @@ export default function (cloneData) {
         .append('path')
         .attr("class", 'cloneMarker ')
         .attr("d", symbol().size(375).type((d, i) => symbolCircle))
-        .style("fill", (d, i) => { return d.cloneType.length > 1 ? grayColor : '#e4cccc' })
+        .style("fill", (d, i) => { return d.cloneType.length > 1 ? grayColor : 'white' })
         .attr("transform", function (d, i) {
             return "translate(" + (((width / versionCount) * i) + (width / (versionCount * 2))) + "," + paddingHeightPerGroup + ")";
         })

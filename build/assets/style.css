@@ -9,7 +9,6 @@
 #root .mainContainer {
   margin: 40px auto;
   display: block;
-  background: #e4cccc;
 }
 
 #root .mainContainer h2 {
@@ -40,5 +39,4 @@ text.cloneMarkerText {
 #root .circularMainContainer {
   margin: 40px auto;
   display: block;
-  background: #e4cccc;
 }

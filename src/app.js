@@ -37,7 +37,6 @@ axios.get('assets/files/' + fileParamMapper[getParams(window.location.search).so
 
 
 // Need to draw circular markers , could be useful to determine levels when there arent many clones at every level
-//  updated colormap with d3 colorwheel 
 
 
 
