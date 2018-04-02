@@ -39,17 +39,17 @@ export default function (cloneData) {
         .attr('height', height)
         .attr('width', width + 20)
 
-    let response = new Array(genealogyList.length);
+    let response = new Array(classIds.length);
 
-    for(let i=0; i<genealogyList.length; i++){
+    for(let i=0; i<classIds.length; i++){
         for(let j=0; j<versionCount; j++){
             response[i] = new Array(j).fill(0);
         }
     }
 
-    // classIds = classIds.sort(function (a,b) {
-    //     return a.id - b.id;
-    // });
+    classIds = classIds.sort(function (a,b) {
+        return a.id - b.id;
+    });
 
     let newVersionList = uniqueVersionList.slice(1,uniqueVersionList.length);
 
@@ -60,40 +60,21 @@ export default function (cloneData) {
             //     return el.id;
             // }).indexOf(e.source.classId);
 
-            // console.log(index,i);
 
-            if (i < versionCount) {
-                // response[index].push({
-                //     nodeType:"target",
-                //     classId:e.target.classId,
-                //     cloneType:e.target.cloneType,
-                //     changeType:e.changeType
-                // });
-                let y =  newVersionList.indexOf(e.target.version);
-
-                response[index][y] = {
-                    nodeType:"target",
-                    classId:e.target.classId,
-                    cloneType:e.target.cloneType,
-                    changeType:e.changeType
-                };
-            }
-
-            // let xT = classIds.map(function(el) {
-            //     return el.id;
-            // }).indexOf(e.target.classId);
+            let xT = classIds.map(function(el) {
+                return el.id;
+            }).indexOf(e.target.classId);
 
             // let yS = uniqueVersionList.indexOf(e.source.version);
 
-            // let yT = uniqueVersionList.indexOf(e.target.version);
+            let yT = newVersionList.indexOf(e.target.version);
 
-
-            // response[xT][yT] = {
-            //     nodeType:"target",
-            //     classId:e.target.classId,
-            //     cloneType:e.target.cloneType,
-            //     changeType:e.changeType
-            // };
+            response[xT][yT] = {
+                nodeType:"target",
+                classId:e.target.classId,
+                cloneType:e.target.cloneType,
+                changeType:e.changeType
+            };
 
             // response[xS][yS] = {
             //     nodeType:"source",
@@ -179,7 +160,6 @@ export default function (cloneData) {
             // console.log(d, i);
             // console.log(d.changeType === "inconsistent_change added");
             if (i && d) {
-                // console.log(d,i,"yo");
                 if (d.nodeType === "source") {
                     // console.log(d.classId,d.changeType, "source");
                     if (d.classId === undefined) {
@@ -215,6 +195,25 @@ export default function (cloneData) {
             }
         })
 
+        // cell.append('rect')
+        //     .attr("width", x.bandwidth())
+        //     .attr("height", y.bandwidth())
+        //     .attr('stroke','black')
+        //     .attr('stroke-width','1')
+        //     .style('fill', function(d) {
+        //         if (d) {
+        //             if (d.changeType.indexOf("same") > -1) {
+        //                 return 'url(#emptyHatch)';
+        //             } else if (d.changeType.indexOf("added") > -1) {
+        //                 return 'url(#diagonalHatch)';
+        //             } else if (d.changeType.indexOf("deleted") > -1) {
+        //                 return 'url(#deletedHatch)';
+        //             }
+        //
+        //         } else {
+        //             return 'url(#emptyHatch)'
+        //         }
+        //     })
 
         .on("mouseover", function(d){
             let msg = "<b>ClassId: </b>" + d.classId + "<br>";
@@ -249,7 +248,13 @@ export default function (cloneData) {
 
     contentContainer
         .attr("transform-origin","top left")
+        // .attr("transform","")
+        // .attr("transform","translate(-"+2*width+",0)")
+        // .attr("transform","rotate(-90) scale(1,"+((contentContainer._parents[0].clientWidth-marginPadding)/height)+")")
         .attr("transform","rotate(-90) translate(-"+width/4+",0) scale(1,"+((contentContainer._parents[0].clientWidth-marginPadding)/height)+")")
+
+    // console.log(contentContainer._groups[0][0].clientHeight)
+    // console.log(contentContainer._parents[0].clientHeight)
 
     matrixMainContainer
         .attr("height", "" + contentContainer._parents[0].clientHeight)
