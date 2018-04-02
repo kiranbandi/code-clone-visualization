@@ -30,9 +30,8 @@ const getParams = query => {
 axios.get('assets/files/' + fileParamMapper[getParams(window.location.search).source]).then(function (response) {
 
     let cloneData = processGcadOutput(response);
-    circularMap(cloneData);
-    cloneMap(cloneData);
     matrix(cloneData);
+    circularMap(cloneData);
 
 }).catch(function (error) {
     console.log(error)

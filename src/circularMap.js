@@ -2,7 +2,6 @@ import * as d3 from 'd3';
 import { symbol, symbolCircle, symbolSquare, symbolTriangle, symbolStar } from "d3-shape";
 import _ from 'lodash';
 
-
 // old blue color rgb(107, 174, 214)
 let blueColor = 'rgb(49, 152, 214)',
     redColor = 'rgb(167, 54, 56)',
@@ -49,25 +48,6 @@ export default function (cloneData) {
         .attr('transform', (d, i) => "translate(" + radius + "," + width / 2 + ") rotate(" + (360 * i) / genealogyList.length + ")")
 
     // code for normal line connectors
-    // To Get the second line we simply redo the same line code except the stroke dash is offset to be invisible and the y cordinates are shifted
-    // This is a Temporary Workaround 
-    genealogySetGroup.selectAll('.changeLineDouble').data((d) => d.set)
-        .enter()
-        .append('line')
-        .style('stroke', (d, i) => {
-            return d.changeType.indexOf('no_change') > -1 ?
-                greenColor : d.changeType.indexOf('inconsistent_change') > -1 ? redColor : blueColor;
-        }).attr("class", 'changeLineDouble')
-        .attr('x1', 0)
-        .attr('y1', 4)
-        .attr('x1', radius / versionCount)
-        .attr('y2', 4)
-        .attr("transform", function (d, i) {
-            return "translate(" + (((radius / versionCount) * _.indexOf(uniqueVersionList, d.source.version)) + (radius / (versionCount * 2))) + "," + paddingHeightPerGroup + ")";
-        })
-        .style('stroke-dasharray', (d, i) => d.changeType.indexOf('added') > -1 ? '0' : ('0' + "," + radius / versionCount))
-
-    // code for double line connectors
     genealogySetGroup.selectAll('.changeLine').data((d) => d.set)
         .enter()
         .append('line')
@@ -75,12 +55,11 @@ export default function (cloneData) {
             return d.changeType.indexOf('no_change') > -1 ?
                 greenColor : d.changeType.indexOf('inconsistent_change') > -1 ? redColor : blueColor;
         })
-        .style('stroke-dasharray', (d, i) => d.changeType.indexOf('deleted') > -1 ? '10' : '0')
         .attr("class", 'changeLine')
         .attr('x1', 0)
-        .attr('y1', (d) => d.changeType.indexOf('added') > -1 ? '-4' : '0')
+        .attr('y1', '0')
         .attr('x1', radius / versionCount)
-        .attr('y2', (d) => d.changeType.indexOf('added') > -1 ? '-4' : '0')
+        .attr('y2', '0')
         .attr("transform", function (d, i) {
             return "translate(" + (((radius / versionCount) * _.indexOf(uniqueVersionList, d.source.version)) + (radius / (versionCount * 2))) + "," + paddingHeightPerGroup + ")";
         })
@@ -102,9 +81,14 @@ export default function (cloneData) {
         .append('path')
         .attr("class", 'cloneMarker ')
         .attr("d", symbol().size(markerSize).type((d, i) => symbolCircle))
-        .style("fill", (d, i) => { return d.cloneType.length > 1 ? grayColor : 'white' })
+        .style("fill", grayColor)
         .attr("transform", function (d, i) {
-            return "translate(" + (((radius / (versionCount)) * i) + (radius / (versionCount * 2))) + "," + paddingHeightPerGroup + ")";
+            if (d.cloneType.length > 1) {
+                return "translate(" + (((radius / (versionCount)) * i) + (radius / (versionCount * 2))) + "," + paddingHeightPerGroup + ")";
+            }
+            else {
+                this.remove();
+            }
         })
 
 }

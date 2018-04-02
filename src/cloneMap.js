@@ -44,8 +44,8 @@ export default function (cloneData) {
         .enter()
         .append('g')
         .attr('transform', (d, i) => "translate(0," + paddingHeightPerGroup * i + ")")
-        .on('mouseover',function(){
-                debugger;
+        .on('mouseover', function () {
+            debugger;
         })
 
     genealogySetGroup.selectAll('.changeLine').data((d) => d.set)
@@ -89,7 +89,12 @@ export default function (cloneData) {
         .append('path')
         .attr("class", 'cloneMarker ')
         .attr("d", symbol().size(375).type((d, i) => symbolCircle))
-        .style("fill", (d, i) => { return d.cloneType.length > 1 ? grayColor : 'white' })
+        .style("fill", (d, i) => {
+            if (d.cloneType.length > 1) {
+                return grayColor;
+            }
+            else this.remove();
+        })
         .attr("transform", function (d, i) {
             return "translate(" + (((width / versionCount) * i) + (width / (versionCount * 2))) + "," + paddingHeightPerGroup + ")";
         })

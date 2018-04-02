@@ -14,8 +14,8 @@ export default function (cloneData) {
 
     let paddingHeightPerGroup = 60;
     let marginPadding = 80;
-    let height = (genealogyList.length * paddingHeightPerGroup) + 100;
     let width = document.body.clientWidth - marginPadding;
+    let height = (genealogyList.length * paddingHeightPerGroup) + 100;
 
     // if a map exists remove it , could probably handle this better in a future version 
     d3.selectAll('matrixMainContainer').remove()
@@ -41,8 +41,8 @@ export default function (cloneData) {
 
     let response = new Array(genealogyList.length);
 
-    for(let i=0; i<genealogyList.length; i++){
-        for(let j=0; j<versionCount; j++){
+    for (let i = 0; i < genealogyList.length; i++) {
+        for (let j = 0; j < versionCount; j++) {
             response[i] = new Array(j).fill(0);
         }
     }
@@ -51,10 +51,10 @@ export default function (cloneData) {
     //     return a.id - b.id;
     // });
 
-    let newVersionList = uniqueVersionList.slice(1,uniqueVersionList.length);
+    let newVersionList = uniqueVersionList.slice(1, uniqueVersionList.length);
 
-    genealogyList.forEach(function (item,index) {
-        item.set.forEach(function (e,i) {
+    genealogyList.forEach(function (item, index) {
+        item.set.forEach(function (e, i) {
 
             // let xS = classIds.map(function(el) {
             //     return el.id;
@@ -69,13 +69,13 @@ export default function (cloneData) {
                 //     cloneType:e.target.cloneType,
                 //     changeType:e.changeType
                 // });
-                let y =  newVersionList.indexOf(e.target.version);
+                let y = newVersionList.indexOf(e.target.version);
 
                 response[index][y] = {
-                    nodeType:"target",
-                    classId:e.target.classId,
-                    cloneType:e.target.cloneType,
-                    changeType:e.changeType
+                    nodeType: "target",
+                    classId: e.target.classId,
+                    cloneType: e.target.cloneType,
+                    changeType: e.changeType
                 };
             }
 
@@ -115,7 +115,7 @@ export default function (cloneData) {
 
     let x = d3.scaleBand()
         .domain(d3.range(versionCount))
-        .rangeRound([0, width/4]);
+        .rangeRound([0, width / 4]);
 
     let y = d3.scaleBand()
         .domain(d3.range(classIds.length))
@@ -125,7 +125,14 @@ export default function (cloneData) {
         .data(response)
         .enter().append("g")
         .attr("class", "row")
-        .attr("transform", function(d, i) { return "translate(20," + y(i) + ")"; });
+        .attr("transform", function (d, i) {
+            if (y(i) == undefined) {
+                this.remove();
+            }
+            else {
+                return "translate(20," + y(i) + ")";
+            }
+        });
 
     // contentContainer.append("defs")
     //     .append('pattern')
@@ -165,17 +172,17 @@ export default function (cloneData) {
 
 
     let cell = row.selectAll(".cell")
-        .data(function(d) { return d; })
+        .data(function (d) { return d; })
         .enter().append("g")
         .attr("class", "cell")
-        .attr("transform", function(d, i) { return "translate(" + x(i) + ", 0)"; });
+        .attr("transform", function (d, i) { return "translate(" + x(i) + ", 0)"; });
 
     cell.append('rect')
         .attr("width", x.bandwidth())
         .attr("height", y.bandwidth())
         .style("stroke", "black")
         .style("stroke-width", "0.5px")
-        .style("fill", function(d, i) {
+        .style("fill", function (d, i) {
             // console.log(d, i);
             // console.log(d.changeType === "inconsistent_change added");
             if (i && d) {
@@ -216,15 +223,15 @@ export default function (cloneData) {
         })
 
 
-        .on("mouseover", function(d){
+        .on("mouseover", function (d) {
             let msg = "<b>ClassId: </b>" + d.classId + "<br>";
             msg += "<b>ChangeType: </b>" + d.changeType + "<br>";
             msg += "<b>CloneType: </b>" + d.cloneType;
             tooltip.html(msg);
             return tooltip.style("visibility", "visible");
         })
-        .on("mousemove", function(){return tooltip.style("top", (event.pageY-10)+"px").style("left",(event.pageX+10)+"px");})
-        .on("mouseout", function(){return tooltip.style("visibility", "hidden");})
+        .on("mousemove", function () { return tooltip.style("top", (event.pageY - 10) + "px").style("left", (event.pageX + 10) + "px"); })
+        .on("mouseout", function () { return tooltip.style("visibility", "hidden"); })
 
 
     // let labels = contentContainer.append('g')
@@ -248,8 +255,8 @@ export default function (cloneData) {
     //     .attr("transform","rotate(-90) translate(-"+width/2+",0)")
 
     contentContainer
-        .attr("transform-origin","top left")
-        .attr("transform","rotate(-90) translate(-"+width/4+",0) scale(1,"+((contentContainer._parents[0].clientWidth-marginPadding)/height)+")")
+        .attr("transform-origin", "top left")
+        .attr("transform", "rotate(-90) translate(-" + width / 4 + ",0) scale(1," + ((contentContainer._parents[0].clientWidth - marginPadding) / height) + ")")
 
     matrixMainContainer
         .attr("height", "" + contentContainer._parents[0].clientHeight)
