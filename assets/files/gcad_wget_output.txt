@@ -1,4 +1,4 @@
-System Path : C:\Users\Kiran Venkat\workspace-old\sampleTest\wget_versions
+System Path : C:\Users\Kiran Venkat\workspace-old\sampleTest\wget
 Number of Versions : 5
 gCad Mode : STRICT
 Renaming : BLIND

@@ -1,4 +1,4 @@
-System Path : K:\VMShare\wget-update
+System Path : K:\VMShare\wget
 Number of Versions : 10
 gCad Mode : STRICT
 Renaming : BLIND
