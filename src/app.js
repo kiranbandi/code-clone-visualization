@@ -5,6 +5,7 @@ import _ from 'lodash';
 import processGcadOutput from './processGcadOutput';
 import cloneMap from './cloneMap';
 import circularMap from './circularMap';
+import matrix from './matrix';
 
 // Temporary params fix to test mutltiple input files 
 let fileParamMapper = {
@@ -31,6 +32,7 @@ axios.get('assets/files/' + fileParamMapper[getParams(window.location.search).so
     let cloneData = processGcadOutput(response);
     circularMap(cloneData);
     cloneMap(cloneData);
+    matrix(cloneData);
 
 }).catch(function (error) {
     console.log(error)

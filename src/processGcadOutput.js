@@ -14,12 +14,21 @@ export default function (cloneResponse) {
     // Genealogy of every clone set is represented in a single line that starts with "[Version" so we look for every line that starts with that 
     // and then process that line and the next 7 lines following it as a bunch because they contain info regarding this clone set
     let lineIndex = 0,
+        classIds = [],
         genealogyList = [];
     while (lineIndex < responseArray.length) {
         if (responseArray[lineIndex].indexOf('[Version') > -1) {
             let cloneClass = responseArray[lineIndex],
                 parsedSet = splitAndParseCloneSet(responseArray[lineIndex]);
             if (parsedSet.length > 0) {
+                parsedSet.forEach(function(item){
+                    if (!checkExist(classIds,item.source.classId)){
+                        classIds.push({"id":item.source.classId});
+                    }
+                    if (!checkExist(classIds,item.target.classId)){
+                        classIds.push({"id":item.target.classId});
+                    }
+                });
                 genealogyList.push({
                     'set': parsedSet,
                     // Following 8 lines contain the information regarding that clone set genealogy so we store that and skip those lines
@@ -37,7 +46,14 @@ export default function (cloneResponse) {
 
     // console.log(uniqueChangeType)
 
-    return { genealogyList, projectName, genealogyInfo, versionCount, uniqueVersionList };
+    return { genealogyList, projectName, genealogyInfo, versionCount, uniqueVersionList, classIds };
+}
+
+function checkExist(arr, value) {
+    let found = arr.some(function (e) {
+        return (e.id === value);
+    });
+    return found;
 }
 
 function splitAndParseCloneSet(cloneSetString) {
