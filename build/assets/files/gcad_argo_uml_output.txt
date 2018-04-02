@@ -1,4 +1,4 @@
-System Path : K:\VMShare\ArgoUML-update
+System Path : K:\VMShare\ArgoUML
 Number of Versions : 5
 gCad Mode : STRICT
 Renaming : BLIND

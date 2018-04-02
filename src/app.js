@@ -30,16 +30,19 @@ const getParams = query => {
 axios.get('assets/files/' + fileParamMapper[getParams(window.location.search).source]).then(function (response) {
 
     let cloneData = processGcadOutput(response);
-    matrix(cloneData);
+
+    //  intital heading code setup 
+    d3.select('#root').append('h3').attr('class', 'projectName').text('Project Name : ' + cloneData.projectName);
+    cloneData.genealogyInfo.split('\n').map((content) => d3.select('#root').append('h3').attr('class', 'genealogyInfo').text(content))
+
     circularMap(cloneData);
+    matrix(cloneData);
 
 }).catch(function (error) {
     console.log(error)
     console.log("There was an error in loading the clone genealogy file");
 })
 
-
-// Need to draw circular markers , could be useful to determine levels when there arent many clones at every level
 
 
 

@@ -6,13 +6,19 @@
   color: #4e89bd;
 }
 
+.projectName, .genealogyInfo {
+  font-family: sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  color: #4e89bd;
+}
+
 #root .mainContainer .matrixMainContainer {
   margin: 40px auto;
   display: block;
 }
 
-#root .mainContainer h2,
-#root .matrixMainContainer h2 {
+#root .mainContainer h2, #root .matrixMainContainer h2 {
   font-family: sans-serif;
   text-align: center;
   text-transform: uppercase;
