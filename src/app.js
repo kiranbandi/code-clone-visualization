@@ -49,7 +49,15 @@ axios.get('assets/files/' + fileParamMapper[getParams(window.location.search).so
             .each(function (legend) {
                 let legendBox = d3.select(this).append('div')
                     .attr('class', 'globalLegendBox')
-                    .style('width', 100 / legends.length + '%')
+                    .style('width', () => {
+                        if (document.body.clientWidth < 500) {
+                            return '100%';
+                        }
+                        else {
+                            return ((100 / legends.length) + '%')
+                        }
+
+                    })
 
                 legendBox.append('div')
                     .attr('class', 'globalLegend')
@@ -58,7 +66,7 @@ axios.get('assets/files/' + fileParamMapper[getParams(window.location.search).so
                 legendBox.append('span')
                     .attr('class', 'globalLegendText')
                     .text((d) => d[1]);
-                    
+
 
             })
 
