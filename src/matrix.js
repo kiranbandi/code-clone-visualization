@@ -82,7 +82,7 @@ export default function (cloneData) {
     cell.append('rect')
         .attr("width", y.bandwidth())
         .attr("height", x.bandwidth())
-        .style("stroke", "black")
+        .style("stroke", grayColor)
         .style("stroke-width", "0.5px")
         .style("fill", function (d, i) {
             if (i && d) {
@@ -129,7 +129,6 @@ export default function (cloneData) {
         })
         .on("mousemove", function () { return tooltip.style("top", (event.pageY - 10) + "px").style("left", (event.pageX + 10) + "px"); })
         .on("mouseout", function () { return tooltip.style("visibility", "hidden"); })
-
 
 }
 

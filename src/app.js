@@ -6,6 +6,7 @@ import processGcadOutput from './processGcadOutput';
 import cloneMap from './cloneMap';
 import circularMap from './circularMap';
 import matrix from './matrix';
+import { blueColor, redColor, greenColor, grayColor } from './colors';
 
 // Temporary params fix to test mutltiple input files 
 let fileParamMapper = {
@@ -31,15 +32,38 @@ axios.get('assets/files/' + fileParamMapper[getParams(window.location.search).so
 
     let cloneData = processGcadOutput(response);
 
-    //  intital heading code setup 
+    //  intial information regarding the project  , its version count and the gcad paramters
     d3.select('#root').append('div').attr('class', 'SubHeadingTitleContainer')
     d3.select('.SubHeadingTitleContainer').append('h3').attr('class', 'SubHeadingTitle').text('Project Name : ' + cloneData.projectName);
     cloneData.genealogyInfo.split('\n').map((content) => d3.select('.SubHeadingTitleContainer').append('h3').attr('class', 'SubHeadingTitle').text(content))
 
-    d3.select('#root').append('h3').attr('class', 'SubHeadingTitle plotTitle').text('Radial Plot - Representation of Change Pattern in Clones');
-    circularMap(cloneData);
+    // code for clone change type legend
+    let legends = [[greenColor, 'no change'], [blueColor, 'consistent change'], [redColor, 'inconsistent change']],
+        globalLegends = d3.select('#root').append('div')
+            .attr('class', 'legendContainer')
+            .selectAll('.globalLegend')
+            .data(legends)
+            .enter()
+            .each(function (legend) {
+                let legendBox = d3.select(this).append('div')
+                    .attr('class', 'globalLegendBox')
+                    .style('width', 100 / legends.length + '%')
 
-    d3.select('#root').append('h3').attr('class', 'SubHeadingTitle plotTitle').text('Scatter Plot - Representation of Change Pattern in Clones');
+                legendBox.append('div')
+                    .attr('class', 'globalLegend')
+                    .style("background", (d) => d[0]);
+
+                legendBox.append('span')
+                    .attr('class', 'globalLegendText')
+                    .text((d) => d[1]);
+
+            })
+
+    // calling circular map 
+    d3.select('#root').append('h3').attr('class', 'SubHeadingTitle plotTitle').text('Circos Plot - Representation of Change Patterns in Clones');
+    circularMap(cloneData);
+    // calling linear map 
+    d3.select('#root').append('h3').attr('class', 'SubHeadingTitle plotTitle').text('Scatter Plot - Representation of Change Patterns in Clones');
     matrix(cloneData);
 
 }).catch(function (error) {

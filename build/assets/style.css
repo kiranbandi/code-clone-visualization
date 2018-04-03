@@ -61,3 +61,30 @@ text.cloneMarkerText {
   margin: 0px auto;
   display: block;
 }
+
+.legendContainer {
+  margin: 40px 12.5%;
+  padding: 0.5%;
+  border: 3px solid #cec2c2;
+}
+
+.globalLegendBox {
+  display: inline-block;
+  text-align: center;
+}
+
+.globalLegend {
+  display: inline-block;
+  height: 20px;
+  width: 50px;
+}
+
+.globalLegendText {
+  font-family: sans-serif;
+  text-transform: uppercase;
+  color: #4e89bd;
+  font-size: 18px;
+  font-weight: bold;
+  vertical-align: top;
+  padding-left: 10px;
+}

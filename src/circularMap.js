@@ -7,18 +7,17 @@ export default function (cloneData) {
 
     let { genealogyList, projectName, genealogyInfo, versionCount, uniqueVersionList } = cloneData,
         { clientWidth } = document.body,
-        squareRange = clientWidth < window.innerHeight ? clientWidth : window.innerHeight;
-
-    let width = squareRange - (squareRange / 5),
+        squareRange = clientWidth < window.innerHeight ? clientWidth : window.innerHeight,
+        width = 0.75 * squareRange,
         radius = width / 2;
 
     // if a map exists remove it , could probably handle this better in a future version 
     d3.selectAll('mainContainer').remove()
     let circularMainContainer = d3.select('#root').append('div');
-
     circularMainContainer.attr('class', 'circularMainContainer')
         .style("width", width + 'px');
 
+    // 
     let circularRootSVG = circularMainContainer.append('svg')
         .attr('class', 'circularRootSVG')
         .attr('height', width)
@@ -59,6 +58,8 @@ export default function (cloneData) {
                     return d.changeType.indexOf('no_change') > -1 ? greenColor : d.changeType.indexOf('inconsistent_change') > -1 ? redColor : blueColor;
                 })
         })
+
+
 }
 
 
