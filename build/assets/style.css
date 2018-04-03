@@ -96,3 +96,7 @@ text.cloneMarkerText {
 .mainContainer {
   margin: 0px auto;
 }
+
+.arcContainer {
+  cursor: pointer;
+}

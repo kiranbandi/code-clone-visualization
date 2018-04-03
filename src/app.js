@@ -58,6 +58,7 @@ axios.get('assets/files/' + fileParamMapper[getParams(window.location.search).so
                 legendBox.append('span')
                     .attr('class', 'globalLegendText')
                     .text((d) => d[1]);
+                    
 
             })
 
@@ -65,7 +66,6 @@ axios.get('assets/files/' + fileParamMapper[getParams(window.location.search).so
     d3.select('#root').append('h3').attr('class', 'SubHeadingTitle plotTitle').text('Circos Plot - Representation of Change Patterns in Clones');
     circularMap(cloneData);
     // calling clone map for first element - first set as default 
-    d3.select('#root').append('h3').attr('class', 'SubHeadingTitle plotTitle historyTitle').text('Clone Change History');
     cloneDataCopy.genealogyList = cloneDataCopy.genealogyList.slice(0, 1);
     cloneMap(cloneDataCopy);
     // calling linear map 

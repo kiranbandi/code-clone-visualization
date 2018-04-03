@@ -7,17 +7,26 @@ export default function (cloneData) {
 
     let { genealogyList, versionCount, uniqueVersionList } = cloneData,
         paddingHeightPerGroup = 20,
-        height = (genealogyList.length * paddingHeightPerGroup) + 100,
+        height = (genealogyList.length * paddingHeightPerGroup) + 200,
         squareRange = document.body.clientWidth,
         width = squareRange - (squareRange / 10);
 
-    // if a map exists remove it , could probably handle this better in a future version 
-    d3.selectAll('.mainContainer').remove();
+    let mainContainer = d3.select('.mainContainer');
 
-    let mainContainer = d3.select('#root').append('div')
-    mainContainer.attr('class', 'mainContainer')
-        .style("width", width + 'px')
-        .style("height", height + 'px');
+    if (mainContainer.node()) {
+        mainContainer.attr('class', 'mainContainer')
+            .style("width", width + 'px')
+            .style("height", height + 'px')
+            .selectAll('*').remove();
+    }
+    else {
+        mainContainer = d3.select('#root').append('div')
+        mainContainer.attr('class', 'mainContainer')
+            .style("width", width + 'px')
+            .style("height", height + 'px');
+    }
+
+    mainContainer.append('h3').attr('class', 'SubHeadingTitle plotTitle historyTitle').text('Clone Change History');
 
     let versionNameContainer = mainContainer.append('div')
         .attr('class', 'versionNameContainer')
@@ -27,7 +36,7 @@ export default function (cloneData) {
         .append('h2')
         .style("width", width / versionCount + 'px')
         .text((d) => d)
-        .style('font-size', (width / versionCount) * 0.15 + 'px')
+        .style('font-size', (d) => ((width / versionCount) * 0.15 > 20 ? 20 : (width / versionCount) * 0.15) + 'px');
 
     let contentContainer = mainContainer.append('svg')
         .attr('class', 'contentContainer')
