@@ -6,11 +6,20 @@
   color: #4e89bd;
 }
 
-.projectName, .genealogyInfo {
+.SubHeadingTitleContainer {
+  margin-bottom: 40px;
+}
+
+.SubHeadingTitle {
   font-family: sans-serif;
   text-align: center;
   text-transform: uppercase;
   color: #4e89bd;
+}
+
+.plotTitle {
+  margin: 15px auto;
+  color: #b94444;
 }
 
 #root .mainContainer .matrixMainContainer {
@@ -49,6 +58,6 @@ text.cloneMarkerText {
 /* ///////////////////////////// Style for Circular Map //////////////////////////////// */
 
 #root .circularMainContainer, #root .circularMainContainer, #root .matrixMainContainer {
-  margin: 40px auto;
+  margin: 0px auto;
   display: block;
 }

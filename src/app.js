@@ -32,10 +32,14 @@ axios.get('assets/files/' + fileParamMapper[getParams(window.location.search).so
     let cloneData = processGcadOutput(response);
 
     //  intital heading code setup 
-    d3.select('#root').append('h3').attr('class', 'projectName').text('Project Name : ' + cloneData.projectName);
-    cloneData.genealogyInfo.split('\n').map((content) => d3.select('#root').append('h3').attr('class', 'genealogyInfo').text(content))
+    d3.select('#root').append('div').attr('class', 'SubHeadingTitleContainer')
+    d3.select('.SubHeadingTitleContainer').append('h3').attr('class', 'SubHeadingTitle').text('Project Name : ' + cloneData.projectName);
+    cloneData.genealogyInfo.split('\n').map((content) => d3.select('.SubHeadingTitleContainer').append('h3').attr('class', 'SubHeadingTitle').text(content))
 
+    d3.select('#root').append('h3').attr('class', 'SubHeadingTitle plotTitle').text('Radial Plot - Representation of Change Pattern in Clones');
     circularMap(cloneData);
+
+    d3.select('#root').append('h3').attr('class', 'SubHeadingTitle plotTitle').text('Scatter Plot - Representation of Change Pattern in Clones');
     matrix(cloneData);
 
 }).catch(function (error) {

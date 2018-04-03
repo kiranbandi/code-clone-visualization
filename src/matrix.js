@@ -3,20 +3,19 @@ import { symbol, symbolCircle, symbolSquare, symbolTriangle, symbolStar } from "
 import _ from 'lodash';
 import { blueColor, redColor, greenColor, grayColor } from './colors';
 
-
 export default function (cloneData) {
 
-    let { genealogyList, projectName, genealogyInfo, versionCount, uniqueVersionList, classIds } = cloneData;
+    let { genealogyList, projectName, genealogyInfo, versionCount, uniqueVersionList } = cloneData,
+        squareRange = document.body.clientWidth;
 
-    let paddingHeightPerGroup = 60;
-    let marginPadding = 80;
-    let width = document.body.clientWidth - marginPadding;
-    let height = (genealogyList.length * paddingHeightPerGroup) + 100;
+    let width = squareRange - (squareRange / 10),
+        height = width / 5;
 
     // if a map exists remove it , could probably handle this better in a future version 
     d3.selectAll('matrixMainContainer').remove()
 
     let matrixMainContainer = d3.select('#root').append('div')
+
     matrixMainContainer.attr('class', 'matrixMainContainer')
         .style("width", width + 'px')
         .style("height", height + 'px');
@@ -24,7 +23,7 @@ export default function (cloneData) {
     let contentContainer = matrixMainContainer.append('svg')
         .attr('class', 'contentContainer')
         .attr('height', height)
-        .attr('width', width + 20)
+        .attr('width', width)
 
     let response = new Array(genealogyList.length);
 
@@ -34,13 +33,10 @@ export default function (cloneData) {
         }
     }
 
-
-
     let newVersionList = uniqueVersionList.slice(1, uniqueVersionList.length);
 
     genealogyList.forEach(function (item, index) {
         item.set.forEach(function (e, i) {
-
             if (i < versionCount) {
                 let y = newVersionList.indexOf(e.target.version);
                 response[index][y] = {
@@ -50,7 +46,6 @@ export default function (cloneData) {
                     changeType: e.changeType
                 };
             }
-
         });
     });
 
@@ -64,43 +59,34 @@ export default function (cloneData) {
 
     let x = d3.scaleBand()
         .domain(d3.range(versionCount))
-        .rangeRound([0, width / 4]);
+        .rangeRound([0, height]);
 
     let y = d3.scaleBand()
-        .domain(d3.range(classIds.length))
-        .rangeRound([0, height]);
+        .domain(d3.range(genealogyList.length))
+        .range([0, width]);
 
     let row = contentContainer.selectAll(".row")
         .data(response)
         .enter().append("g")
         .attr("class", "row")
         .attr("transform", function (d, i) {
-            if (y(i) == undefined) {
-                this.remove();
-            }
-            else {
-                return "translate(20," + y(i) + ")";
-            }
+            return "translate(" + y(i) + ",10)";
         });
 
     let cell = row.selectAll(".cell")
         .data(function (d) { return d; })
         .enter().append("g")
         .attr("class", "cell")
-        .attr("transform", function (d, i) { return "translate(" + x(i) + ", 0)"; });
+        .attr("transform", function (d, i) { return "translate(0," + x(i) + ")"; });
 
     cell.append('rect')
-        .attr("width", x.bandwidth())
-        .attr("height", y.bandwidth())
+        .attr("width", y.bandwidth())
+        .attr("height", x.bandwidth())
         .style("stroke", "black")
         .style("stroke-width", "0.5px")
         .style("fill", function (d, i) {
-            // console.log(d, i);
-            // console.log(d.changeType === "inconsistent_change added");
             if (i && d) {
-                // console.log(d,i,"yo");
                 if (d.nodeType === "source") {
-                    // console.log(d.classId,d.changeType, "source");
                     if (d.classId === undefined) {
                         return "white";
                     } else {
@@ -108,7 +94,6 @@ export default function (cloneData) {
                     }
                 }
                 if (d.nodeType === "target") {
-                    // console.log(d.classId, d.changeType, "target");
                     if (d.changeType === undefined) {
                         return "white";
                     } else if (d.changeType.indexOf("no_change") > -1) {
@@ -133,7 +118,6 @@ export default function (cloneData) {
                 }
             }
         })
-
         .on("mouseover", function (d) {
             if (d.classId && d.changeType && d.cloneType) {
                 let msg = "<b>ClassId: </b>" + d.classId + "<br>";
@@ -145,13 +129,6 @@ export default function (cloneData) {
         })
         .on("mousemove", function () { return tooltip.style("top", (event.pageY - 10) + "px").style("left", (event.pageX + 10) + "px"); })
         .on("mouseout", function () { return tooltip.style("visibility", "hidden"); })
-
-    contentContainer
-        .attr("transform-origin", "top left")
-        .attr("transform", "rotate(-90) translate(-" + width / 4 + ",0) scale(1," + ((contentContainer._parents[0].clientWidth - marginPadding) / height) + ")")
-
-    matrixMainContainer
-        .attr("height", "" + contentContainer._parents[0].clientHeight)
 
 
 }

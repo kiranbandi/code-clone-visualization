@@ -9,19 +9,15 @@ export default function (cloneData) {
         { clientWidth } = document.body,
         squareRange = clientWidth < window.innerHeight ? clientWidth : window.innerHeight;
 
-    let paddingHeightPerGroup = 0.25,
-        marginRatio = 4,
-        width = squareRange - (squareRange / 5),
+    let width = squareRange - (squareRange / 5),
         radius = width / 2;
 
     // if a map exists remove it , could probably handle this better in a future version 
     d3.selectAll('mainContainer').remove()
-
     let circularMainContainer = d3.select('#root').append('div');
 
     circularMainContainer.attr('class', 'circularMainContainer')
-        .style("width", width + 'px')
-        .style("height", width + 'px');
+        .style("width", width + 'px');
 
     let circularRootSVG = circularMainContainer.append('svg')
         .attr('class', 'circularRootSVG')
