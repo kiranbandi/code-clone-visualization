@@ -48,7 +48,7 @@ text.cloneMarkerText {
 
 /* ///////////////////////////// Style for Circular Map //////////////////////////////// */
 
-#root .circularMainContainer {
+#root .circularMainContainer, #root .circularMainContainer, #root .matrixMainContainer {
   margin: 40px auto;
   display: block;
 }

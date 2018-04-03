@@ -1,12 +1,7 @@
 import * as d3 from 'd3';
 import { symbol, symbolCircle, symbolSquare, symbolTriangle, symbolStar } from "d3-shape";
 import _ from 'lodash';
-
-let blueColor = 'rgb(107, 174, 214)',
-    redColor = 'rgb(173, 73, 74)',
-    greenColor = 'rgb(116, 196, 118)',
-    purpleColor = 'rgb(158, 154, 200)',
-    grayColor = 'rgb(99, 99, 99)';
+import { blueColor, redColor, greenColor, grayColor } from './colors';
 
 export default function (cloneData) {
 
