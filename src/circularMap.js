@@ -2,6 +2,7 @@ import * as d3 from 'd3';
 import { symbol, symbolCircle, symbolSquare, symbolTriangle, symbolStar } from "d3-shape";
 import _ from 'lodash';
 import { blueColor, redColor, greenColor } from './colors';
+import cloneMap from './cloneMap';
 
 export default function (cloneData) {
 
@@ -11,13 +12,11 @@ export default function (cloneData) {
         width = 0.75 * squareRange,
         radius = width / 2;
 
-    // if a map exists remove it , could probably handle this better in a future version 
-    d3.selectAll('mainContainer').remove()
     let circularMainContainer = d3.select('#root').append('div');
     circularMainContainer.attr('class', 'circularMainContainer')
-        .style("width", width + 'px');
+        .style("width", width + 'px').selectAll("*").remove();
 
-    // 
+
     let circularRootSVG = circularMainContainer.append('svg')
         .attr('class', 'circularRootSVG')
         .attr('height', width)
@@ -28,6 +27,14 @@ export default function (cloneData) {
         arcMin = (radius / versionCount) * 0.5,
         arcPadding = (radius / versionCount) * 0.25,
         arcAnglePadding = 0.05 * (360 / genealogyList.length);
+
+    let tooltip = d3.select("body")
+        .append("div")
+        .attr("class", "tooltip-circularMap")
+        .style("position", "absolute")
+        .style("z-index", "10")
+        .style("visibility", "hidden")
+        .text("");
 
     circularRootSVG.append('g')
         .attr('class', 'centeredGraphic')
@@ -58,6 +65,17 @@ export default function (cloneData) {
                     return d.changeType.indexOf('no_change') > -1 ? greenColor : d.changeType.indexOf('inconsistent_change') > -1 ? redColor : blueColor;
                 })
         })
+        .on("mouseover", function (d) {
+            tooltip.html(d.info.replace(/\n/g, '<br />'));
+            return tooltip.style("visibility", "visible");
+        })
+        .on("click", function (d) {
+            d3.select('.historyTitle').remove();
+            d3.select('#root').append('h3').attr('class', 'SubHeadingTitle plotTitle historyTitle').text('Clone Change History');
+            cloneMap({ 'genealogyList': [d], versionCount, uniqueVersionList });
+        })
+        .on("mousemove", function () { return tooltip.style("top", (event.pageY - 10) + "px").style("left", (event.pageX + 10) + "px"); })
+        .on("mouseout", function () { return tooltip.style("visibility", "hidden"); })
 
 
 }

@@ -3,10 +3,11 @@ import { symbol, symbolCircle, symbolSquare, symbolTriangle, symbolStar } from "
 import axios from 'axios';
 import _ from 'lodash';
 import processGcadOutput from './processGcadOutput';
-import cloneMap from './cloneMap';
 import circularMap from './circularMap';
 import matrix from './matrix';
+import cloneMap from './cloneMap';
 import { blueColor, redColor, greenColor, grayColor } from './colors';
+
 
 // Temporary params fix to test mutltiple input files 
 let fileParamMapper = {
@@ -30,7 +31,8 @@ const getParams = query => {
 
 axios.get('assets/files/' + fileParamMapper[getParams(window.location.search).source]).then(function (response) {
 
-    let cloneData = processGcadOutput(response);
+    let cloneData = processGcadOutput(response),
+        cloneDataCopy = _.clone(cloneData);
 
     //  intial information regarding the project  , its version count and the gcad paramters
     d3.select('#root').append('div').attr('class', 'SubHeadingTitleContainer')
@@ -62,6 +64,10 @@ axios.get('assets/files/' + fileParamMapper[getParams(window.location.search).so
     // calling circular map 
     d3.select('#root').append('h3').attr('class', 'SubHeadingTitle plotTitle').text('Circos Plot - Representation of Change Patterns in Clones');
     circularMap(cloneData);
+    // calling clone map for first element - first set as default 
+    d3.select('#root').append('h3').attr('class', 'SubHeadingTitle plotTitle historyTitle').text('Clone Change History');
+    cloneDataCopy.genealogyList = cloneDataCopy.genealogyList.slice(0, 1);
+    cloneMap(cloneDataCopy);
     // calling linear map 
     d3.select('#root').append('h3').attr('class', 'SubHeadingTitle plotTitle').text('Scatter Plot - Representation of Change Patterns in Clones');
     matrix(cloneData);

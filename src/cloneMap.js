@@ -5,15 +5,14 @@ import { blueColor, redColor, greenColor, grayColor } from './colors';
 
 export default function (cloneData) {
 
-    let { genealogyList, projectName, genealogyInfo, versionCount, uniqueVersionList } = cloneData;
-
-    let paddingHeightPerGroup = 40;
-    let marginPadding = 80;
-    let height = (genealogyList.length * paddingHeightPerGroup) + 100;
-    let width = document.body.clientWidth - marginPadding;
+    let { genealogyList, versionCount, uniqueVersionList } = cloneData,
+        paddingHeightPerGroup = 20,
+        height = (genealogyList.length * paddingHeightPerGroup) + 100,
+        squareRange = document.body.clientWidth,
+        width = squareRange - (squareRange / 10);
 
     // if a map exists remove it , could probably handle this better in a future version 
-    d3.selectAll('mainContainer').remove()
+    d3.selectAll('.mainContainer').remove();
 
     let mainContainer = d3.select('#root').append('div')
     mainContainer.attr('class', 'mainContainer')
@@ -28,6 +27,7 @@ export default function (cloneData) {
         .append('h2')
         .style("width", width / versionCount + 'px')
         .text((d) => d)
+        .style('font-size', (width / versionCount) * 0.15 + 'px')
 
     let contentContainer = mainContainer.append('svg')
         .attr('class', 'contentContainer')
@@ -38,10 +38,7 @@ export default function (cloneData) {
         .data(genealogyList)
         .enter()
         .append('g')
-        .attr('transform', (d, i) => "translate(0," + paddingHeightPerGroup * i + ")")
-        .on('mouseover', function () {
-            debugger;
-        })
+        .attr('transform', (d, i) => "translate(0," + paddingHeightPerGroup * i + ")");
 
     genealogySetGroup.selectAll('.changeLine').data((d) => d.set)
         .enter()
@@ -84,12 +81,7 @@ export default function (cloneData) {
         .append('path')
         .attr("class", 'cloneMarker ')
         .attr("d", symbol().size(375).type((d, i) => symbolCircle))
-        .style("fill", (d, i) => {
-            if (d.cloneType.length > 1) {
-                return grayColor;
-            }
-            else this.remove();
-        })
+        .style("fill", (d, i) => (d.cloneType.length > 1) ? grayColor : 'white')
         .attr("transform", function (d, i) {
             return "translate(" + (((width / versionCount) * i) + (width / (versionCount * 2))) + "," + paddingHeightPerGroup + ")";
         })
@@ -104,6 +96,8 @@ export default function (cloneData) {
         .attr("transform", function (d, i) {
             return "translate(" + (((width / versionCount) * i) + (width / (versionCount * 2)) - 4) + "," + (paddingHeightPerGroup + 5) + ")";
         });
+
+
 
 }
 

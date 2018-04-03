@@ -50,9 +50,13 @@ text.cloneMarkerText {
   fill: white;
 }
 
-.tooltip {
-  background-color: white;
-  padding: 20px;
+.tooltip, .tooltip-circularMap {
+  background-color: #dcd5d5;
+  padding: 10px;
+  font-family: sans-serif;
+  text-transform: capitalize;
+  font-size: 12px;
+  font-weight: bold;
 }
 
 /* ///////////////////////////// Style for Circular Map //////////////////////////////// */
@@ -87,4 +91,8 @@ text.cloneMarkerText {
   font-weight: bold;
   vertical-align: top;
   padding-left: 10px;
+}
+
+.mainContainer {
+  margin: 0px auto;
 }
