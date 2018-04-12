@@ -11,7 +11,7 @@ export default function (cloneData) {
     let width = squareRange - (squareRange / 10),
         height = width / 5;
 
-    // if a map exists remove it , could probably handle this better in a future version 
+    // if a map exists remove it , could probably handle this better in a future version
     d3.selectAll('matrixMainContainer').remove()
 
     let matrixMainContainer = d3.select('#root').append('div')
@@ -39,11 +39,16 @@ export default function (cloneData) {
         item.set.forEach(function (e, i) {
             if (i < versionCount) {
                 let y = newVersionList.indexOf(e.target.version);
+                let info = item.info.split("\n");
                 response[index][y] = {
                     nodeType: "target",
                     classId: e.target.classId,
                     cloneType: e.target.cloneType,
-                    changeType: e.changeType
+                    changeType: e.changeType,
+                    lifeStatus: info[0],
+                    duration: info[1],
+                    frags: info[6].split(":")[1]
+
                 };
             }
         });
@@ -120,9 +125,13 @@ export default function (cloneData) {
         })
         .on("mouseover", function (d) {
             if (d.classId && d.changeType && d.cloneType) {
-                let msg = "<b>ClassId: </b>" + d.classId + "<br>";
-                msg += "<b>ChangeType: </b>" + d.changeType + "<br>";
-                msg += "<b>CloneType: </b>" + d.cloneType;
+                let msg = "<b>ClassId : </b>" + d.classId + "<br>";
+                msg += "<b>ChangeType : </b>" + d.changeType + "<br>";
+                msg += "<b>CloneType : </b>" + d.cloneType + "<br>";
+                msg += "<b></b>" + d.lifeStatus + "<br>";
+                msg += "<b></b>" + d.duration + "<br>";
+                msg += "<b>Fragments Change Pattern :</b>" + ((d.frags != undefined) ? d.frags.toLowerCase() : " Deleted") + "<br>";
+
                 tooltip.html(msg);
                 return tooltip.style("visibility", "visible");
             }
@@ -131,4 +140,3 @@ export default function (cloneData) {
         .on("mouseout", function () { return tooltip.style("visibility", "hidden"); })
 
 }
-
