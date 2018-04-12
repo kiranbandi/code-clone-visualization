@@ -136,7 +136,29 @@ export default function (cloneData) {
                 return tooltip.style("visibility", "visible");
             }
         })
-        .on("mousemove", function () { return tooltip.style("top", (event.pageY - 10) + "px").style("left", (event.pageX + 10) + "px"); })
+        .on("mousemove", function () {
+            let t_info = tooltip._groups[0][0].getBoundingClientRect();
+            let m_info = contentContainer._groups[0][0].getBoundingClientRect();
+
+            let t_x1 = event.pageX + 0;
+            let t_y1 = event.pageY - 0;
+            // comparing tooltip's lower right x value with that of matrix's
+            // m_x1 : m_left + window.scrollX; (window scroll used for proper position)
+            // m_y1 : m_top + window.scrollY;
+            // m_x2 : m_x1 + m_width
+            // m_y2 : m_y1 + m_height
+            // t_x2 : t_x1 + t_width
+            // t_y2 : t_y1 + t_height
+            //checking x coordinates of tooltip going beyond matrix boundary
+            if (t_x1 + t_info.width > m_info.left + window.scrollX + m_info.width) {
+              t_x1 -= t_info.width;
+            }
+            //ckecking y coordinates
+            if (t_y1 + t_info.height > m_info.top + window.scrollY + m_info.height) {
+              t_y1 -= t_info.height;
+            }
+            return tooltip.style("top", (t_y1) + "px").style("left", (t_x1) + "px");
+         })
         .on("mouseout", function () { return tooltip.style("visibility", "hidden"); })
 
 }
