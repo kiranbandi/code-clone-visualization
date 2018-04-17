@@ -85,7 +85,7 @@ export default function (cloneData) {
         })
         .on("mouseover", function (d) {
 
-            // create a higlight arc to indicate graphic being hovered upon 
+            // create a higlight arc to indicate graphic being hovered upon
             let arcIndex = parseInt(d3.select(this).attr('class').split('-')[1]);
             d3.select(this)
                 .append('path')
@@ -107,10 +107,10 @@ export default function (cloneData) {
         })
         .on("click", function (d) {
 
-            // remove previously highlighted arc 
+            // remove previously highlighted arc
             d3.select('.selected-index-arc').remove();
 
-            // create a higlight arc to indicate graphic being hovered upon 
+            // create a higlight arc to indicate graphic being hovered upon
             let clickedArcIndex = parseInt(d3.select(this).attr('class').split('-')[1]);
             d3.select(this)
                 .append('path')
@@ -129,16 +129,23 @@ export default function (cloneData) {
 
             cloneMap({ 'genealogyList': [d], versionCount, uniqueVersionList });
         })
-        .on("mousemove", function () { return tooltip.style("top", (event.pageY - 10) + "px").style("left", (event.pageX + 10) + "px"); })
+        .on("mousemove", function () {
+          let c_info = circularRootSVG._groups[0][0].getBoundingClientRect();
+          let c_tooltip_info = tooltip._groups[0][0].getBoundingClientRect();
+          let t_y1 = event.pageY;
+          let t_x1 = event.pageX;
+
+          //adjust circular tooltip
+          if (t_x1 >= c_info.width/2 + c_info.left) {
+            t_x1 -=  c_tooltip_info.width;
+          }
+          if(t_y1 >= c_info.height) {
+            t_y1 -= c_tooltip_info.height;
+          }
+          return tooltip.style("top", (t_y1) + "px").style("left", (t_x1) + "px");
+        })
         .on("mouseout", function () {
             d3.selectAll('path.changeArc-pointer').remove();
             return tooltip.style("visibility", "hidden");
         })
 }
-
-
-
-
-
-
-
