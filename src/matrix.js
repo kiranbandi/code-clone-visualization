@@ -39,16 +39,13 @@ export default function (cloneData) {
         item.set.forEach(function (e, i) {
             if (i < versionCount) {
                 let y = newVersionList.indexOf(e.target.version);
-                let info = item.info.split("\n");
+                // let info = item.info.split("\n");
                 response[index][y] = {
                     nodeType: "target",
                     classId: e.target.classId,
                     cloneType: e.target.cloneType,
                     changeType: e.changeType,
-                    lifeStatus: info[0],
-                    duration: info[1],
-                    frags: info[6].split(":")[1]
-
+                    tooltipInfo: item.info
                 };
             }
         });
@@ -125,18 +122,11 @@ export default function (cloneData) {
         })
         .on("mouseover", function (d) {
             if (d.classId && d.changeType && d.cloneType) {
-                let msg = "<b>ClassId : </b>" + d.classId + "<br>";
-                msg += "<b>ChangeType : </b>" + d.changeType + "<br>";
-                msg += "<b>CloneType : </b>" + d.cloneType + "<br>";
-                msg += "<b></b>" + d.lifeStatus + "<br>";
-                msg += "<b></b>" + d.duration + "<br>";
-                msg += "<b>Fragments Change Pattern :</b>" + ((d.frags != undefined) ? d.frags.toLowerCase() : " Deleted") + "<br>";
-
-                tooltip.html(msg);
-                return tooltip.style("visibility", "visible");
-            }
-        })
-        .on("mousemove", function () {
+                 tooltip.html(d.tooltipInfo.replace(/\n/g, '<br />'));
+                 return tooltip.style("visibility", "visible");
+             }
+         })
+         .on("mousemove", function () {
             let t_info = tooltip._groups[0][0].getBoundingClientRect();
             let m_info = contentContainer._groups[0][0].getBoundingClientRect();
 
@@ -153,7 +143,7 @@ export default function (cloneData) {
             if (t_x1 + t_info.width > m_info.left + window.scrollX + m_info.width) {
               t_x1 -= t_info.width;
             }
-            //ckecking y coordinates
+            //checking y coordinates
             if (t_y1 + t_info.height > m_info.top + window.scrollY + m_info.height) {
               t_y1 -= t_info.height;
             }
