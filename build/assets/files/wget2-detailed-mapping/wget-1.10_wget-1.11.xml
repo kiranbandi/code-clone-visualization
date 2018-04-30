@@ -1,0 +1,38 @@
+<genealogies version1="wget-1.10" version2="wget-1.11">
+<genealogy gid="1 clone_group="no_change" fragment="same">
+<class id="1" nlines="10" nfragments="2">
+<source file="versions/wget-1.10/src/ftp.c.ifdefed" startline="1916" endline="1928" pcid="176"></source>
+<source file="versions/wget-1.10/src/retr.c.ifdefed" startline="914" endline="926" pcid="316"></source>
+</class>
+<class id="1" nlines="10" nfragments="2">
+<source file="versions/wget-1.11/src/ftp.c.ifdefed" startline="1900" endline="1912" pcid="223"></source>
+<source file="versions/wget-1.11/src/retr.c.ifdefed" startline="933" endline="945" pcid="383"></source>
+</class>
+</genealogy>
+<genealogy gid="2 clone_group="inconsistent_change" fragment="deleted">
+<class id="2" nlines="24" nfragments="6">
+<source file="versions/wget-1.10/src/ftp-basic.c.ifdefed" startline="833" endline="865" pcid="372"></source>
+<source file="versions/wget-1.10/src/ftp-basic.c.ifdefed" startline="972" endline="1005" pcid="376"></source>
+<source file="versions/wget-1.10/src/ftp-basic.c.ifdefed" startline="905" endline="932" pcid="374"></source>
+<source file="versions/wget-1.10/src/ftp-basic.c.ifdefed" startline="1062" endline="1101" pcid="378"></source>
+<source file="versions/wget-1.10/src/ftp-basic.c.ifdefed" startline="869" endline="902" pcid="373"></source>
+<source file="versions/wget-1.10/src/ftp-basic.c.ifdefed" startline="935" endline="968" pcid="375"></source>
+</class>
+<class id="2" nlines="24" nfragments="4">
+<source file="versions/wget-1.11/src/ftp-basic.c.ifdefed" startline="821" endline="853" pcid="438"></source>
+<source file="versions/wget-1.11/src/ftp-basic.c.ifdefed" startline="923" endline="956" pcid="441"></source>
+<source file="versions/wget-1.11/src/ftp-basic.c.ifdefed" startline="857" endline="890" pcid="439"></source>
+<source file="versions/wget-1.11/src/ftp-basic.c.ifdefed" startline="893" endline="920" pcid="440"></source>
+</class>
+</genealogy>
+<genealogy gid="3 clone_group="consistent_change" fragment="same">
+<class id="3" nlines="10" nfragments="2">
+<source file="versions/wget-1.10/src/connect.c.ifdefed" startline="891" endline="902" pcid="403"></source>
+<source file="versions/wget-1.10/src/connect.c.ifdefed" startline="916" endline="927" pcid="404"></source>
+</class>
+<class id="3" nlines="10" nfragments="2">
+<source file="versions/wget-1.11/src/connect.c.ifdefed" startline="839" endline="850" pcid="471"></source>
+<source file="versions/wget-1.11/src/connect.c.ifdefed" startline="864" endline="875" pcid="472"></source>
+</class>
+</genealogy>
+</genealogies>

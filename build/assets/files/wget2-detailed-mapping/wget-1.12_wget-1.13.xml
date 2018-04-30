@@ -1,0 +1,110 @@
+<genealogies version1="wget-1.12" version2="wget-1.13">
+<genealogy gid="0 clone_group="disappeared_inconsistently" fragment="">
+<class id="1" nlines="20" nfragments="2">
+<source file="versions/wget-1.12/lib/strcasecmp.c.ifdefed" startline="34" endline="64" pcid="4"></source>
+<source file="versions/wget-1.12/lib/strncasecmp.c.ifdefed" startline="34" endline="64" pcid="75"></source>
+</class>
+</genealogy>
+<genealogy gid="2 clone_group="no_change" fragment="same">
+<class id="2" nlines="64" nfragments="2">
+<source file="versions/wget-1.12/lib/c-ctype.c.ifdefed" startline="34" endline="67" pcid="61"></source>
+<source file="versions/wget-1.12/lib/c-ctype.c.ifdefed" startline="69" endline="96" pcid="62"></source>
+</class>
+<class id="4" nlines="64" nfragments="2">
+<source file="versions/wget-1.13/lib/c-ctype.c.ifdefed" startline="35" endline="68" pcid="116"></source>
+<source file="versions/wget-1.13/lib/c-ctype.c.ifdefed" startline="70" endline="97" pcid="117"></source>
+</class>
+</genealogy>
+<genealogy gid="3 clone_group="no_change" fragment="same">
+<class id="3" nlines="102" nfragments="3">
+<source file="versions/wget-1.12/lib/c-ctype.c.ifdefed" startline="104" endline="136" pcid="64"></source>
+<source file="versions/wget-1.12/lib/c-ctype.c.ifdefed" startline="209" endline="241" pcid="68"></source>
+<source file="versions/wget-1.12/lib/c-ctype.c.ifdefed" startline="175" endline="207" pcid="67"></source>
+</class>
+<class id="5" nlines="102" nfragments="3">
+<source file="versions/wget-1.13/lib/c-ctype.c.ifdefed" startline="105" endline="137" pcid="119"></source>
+<source file="versions/wget-1.13/lib/c-ctype.c.ifdefed" startline="176" endline="208" pcid="122"></source>
+<source file="versions/wget-1.13/lib/c-ctype.c.ifdefed" startline="210" endline="242" pcid="123"></source>
+</class>
+</genealogy>
+<genealogy gid="4 clone_group="no_change" fragment="same">
+<class id="4" nlines="11" nfragments="2">
+<source file="versions/wget-1.12/src/iri.c.ifdefed" startline="328" endline="342" pcid="212"></source>
+<source file="versions/wget-1.12/src/iri.c.ifdefed" startline="345" endline="359" pcid="213"></source>
+</class>
+<class id="7" nlines="11" nfragments="2">
+<source file="versions/wget-1.13/src/iri.c.ifdefed" startline="336" endline="350" pcid="325"></source>
+<source file="versions/wget-1.13/src/iri.c.ifdefed" startline="353" endline="367" pcid="326"></source>
+</class>
+</genealogy>
+<genealogy gid="5 clone_group="no_change" fragment="same">
+<class id="5" nlines="10" nfragments="2">
+<source file="versions/wget-1.12/src/ftp.c.ifdefed" startline="2237" endline="2249" pcid="323"></source>
+<source file="versions/wget-1.12/src/retr.c.ifdefed" startline="1065" endline="1077" pcid="485"></source>
+</class>
+<class id="8" nlines="10" nfragments="2">
+<source file="versions/wget-1.13/src/ftp.c.ifdefed" startline="2284" endline="2296" pcid="437"></source>
+<source file="versions/wget-1.13/src/retr.c.ifdefed" startline="1112" endline="1124" pcid="602"></source>
+</class>
+</genealogy>
+<genealogy gid="6 clone_group="no_change" fragment="same">
+<class id="6" nlines="14" nfragments="2">
+<source file="versions/wget-1.12/src/css.c.ifdefed" startline="5701" endline="5730" pcid="535"></source>
+<source file="versions/wget-1.12/src/css.c.ifdefed" startline="5850" endline="5874" pcid="541"></source>
+</class>
+<class id="9" nlines="14" nfragments="2">
+<source file="versions/wget-1.13/src/css.c.ifdefed" startline="5663" endline="5692" pcid="652"></source>
+<source file="versions/wget-1.13/src/css.c.ifdefed" startline="5812" endline="5836" pcid="658"></source>
+</class>
+</genealogy>
+<genealogy gid="7 clone_group="no_change" fragment="same">
+<class id="7" nlines="24" nfragments="4">
+<source file="versions/wget-1.12/src/ftp-basic.c.ifdefed" startline="821" endline="853" pcid="577"></source>
+<source file="versions/wget-1.12/src/ftp-basic.c.ifdefed" startline="857" endline="890" pcid="578"></source>
+<source file="versions/wget-1.12/src/ftp-basic.c.ifdefed" startline="923" endline="956" pcid="580"></source>
+<source file="versions/wget-1.12/src/ftp-basic.c.ifdefed" startline="893" endline="920" pcid="579"></source>
+</class>
+<class id="10" nlines="24" nfragments="4">
+<source file="versions/wget-1.13/src/ftp-basic.c.ifdefed" startline="817" endline="849" pcid="694"></source>
+<source file="versions/wget-1.13/src/ftp-basic.c.ifdefed" startline="889" endline="916" pcid="696"></source>
+<source file="versions/wget-1.13/src/ftp-basic.c.ifdefed" startline="853" endline="886" pcid="695"></source>
+<source file="versions/wget-1.13/src/ftp-basic.c.ifdefed" startline="919" endline="952" pcid="697"></source>
+</class>
+</genealogy>
+<genealogy gid="8 clone_group="no_change" fragment="same">
+<class id="8" nlines="10" nfragments="2">
+<source file="versions/wget-1.12/src/connect.c.ifdefed" startline="865" endline="876" pcid="610"></source>
+<source file="versions/wget-1.12/src/connect.c.ifdefed" startline="890" endline="901" pcid="611"></source>
+</class>
+<class id="11" nlines="10" nfragments="2">
+<source file="versions/wget-1.13/src/connect.c.ifdefed" startline="869" endline="880" pcid="727"></source>
+<source file="versions/wget-1.13/src/connect.c.ifdefed" startline="894" endline="905" pcid="728"></source>
+</class>
+</genealogy>
+<genealogy gid="0" clone_type="1" clone_group="appeared" fragment="n/a">
+<class id="1" nlines="15" nfragments="3">
+<source file="versions/wget-1.13/lib/spawn_faction_addopen.c.ifdefed" startline="33" endline="63" pcid="5"></source>
+<source file="versions/wget-1.13/lib/spawn_faction_adddup2.c.ifdefed" startline="33" endline="60" pcid="7"></source>
+<source file="versions/wget-1.13/lib/spawn_faction_addclose.c.ifdefed" startline="33" endline="59" pcid="59"></source>
+</class>
+</genealogy>
+<genealogy gid="0" clone_type="1" clone_group="appeared" fragment="n/a">
+<class id="2" nlines="10" nfragments="2">
+<source file="versions/wget-1.13/lib/sigprocmask.c.ifdefed" startline="109" endline="127" pcid="68"></source>
+<source file="versions/wget-1.13/lib/sigprocmask.c.ifdefed" startline="129" endline="147" pcid="69"></source>
+</class>
+</genealogy>
+<genealogy gid="0" clone_type="1" clone_group="appeared" fragment="n/a">
+<class id="3" nlines="39" nfragments="3">
+<source file="versions/wget-1.13/lib/strchrnul.c.ifdefed" startline="23" endline="142" pcid="92"></source>
+<source file="versions/wget-1.13/lib/rawmemchr.c.ifdefed" startline="23" endline="136" pcid="113"></source>
+<source file="versions/wget-1.13/lib/memchr.c.ifdefed" startline="58" endline="169" pcid="140"></source>
+</class>
+</genealogy>
+<genealogy gid="0" clone_type="1" clone_group="appeared" fragment="n/a">
+<class id="6" nlines="10" nfragments="2">
+<source file="versions/wget-1.13/lib/fd-safer-flag.c.ifdefed" startline="39" endline="52" pcid="130"></source>
+<source file="versions/wget-1.13/lib/fd-safer.c.ifdefed" startline="36" endline="49" pcid="142"></source>
+</class>
+</genealogy>
+</genealogies>
