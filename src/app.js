@@ -14,6 +14,9 @@ import { blueColor, redColor, greenColor, grayColor } from './colors';
 let fileParamMapper = {
     'argo': { "root": 'gcad_argo_uml_output.txt' },
     'wget': { "root": 'gcad_wget_output.txt' },
+    'pmd': { "root": 'gcad_pmd_output.txt' },
+    'pmd2': { "root": 'gcad_pmd_2_output.txt' },
+    'pmd3': { "root": 'gcad_pmd_3_output.txt' },
     'argo2': { "root": 'gcad_argo_2_uml_output.txt', "link": "argo2-detailed-mapping" },
     'wget2': { "root": 'gcad_wget_2_output.txt', "link": "wget2-detailed-mapping" }
 }
