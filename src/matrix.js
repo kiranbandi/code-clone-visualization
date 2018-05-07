@@ -2,19 +2,23 @@ import * as d3 from 'd3';
 import { symbol, symbolCircle, symbolSquare, symbolTriangle, symbolStar } from "d3-shape";
 import _ from 'lodash';
 import { blueColor, redColor, greenColor, grayColor } from './colors';
+import legend from './legend';
 
-export default function (cloneData) {
+export default function(cloneData) {
 
     let { genealogyList, projectName, genealogyInfo, versionCount, uniqueVersionList } = cloneData,
-        squareRange = document.body.clientWidth;
+    squareRange = document.body.clientWidth;
 
     let width = squareRange - (squareRange / 10),
         height = width / 5;
 
+    // add the legend at the top before rendering the actual plot 
+    legend('#scatter-root');
+
     // if a map exists remove it , could probably handle this better in a future version
     d3.selectAll('matrixMainContainer').remove()
 
-    let matrixMainContainer = d3.select('#root').append('div')
+    let matrixMainContainer = d3.select('#scatter-root').append('div')
 
     matrixMainContainer.attr('class', 'matrixMainContainer')
         .style("width", width + 'px')
@@ -35,8 +39,8 @@ export default function (cloneData) {
 
     let newVersionList = uniqueVersionList.slice(1, uniqueVersionList.length);
 
-    genealogyList.forEach(function (item, index) {
-        item.set.forEach(function (e, i) {
+    genealogyList.forEach(function(item, index) {
+        item.set.forEach(function(e, i) {
             if (i < versionCount) {
                 let y = newVersionList.indexOf(e.target.version);
                 // let info = item.info.split("\n");
@@ -71,22 +75,22 @@ export default function (cloneData) {
         .data(response)
         .enter().append("g")
         .attr("class", "row")
-        .attr("transform", function (d, i) {
+        .attr("transform", function(d, i) {
             return "translate(" + y(i) + ",10)";
         });
 
     let cell = row.selectAll(".cell")
-        .data(function (d) { return d; })
+        .data(function(d) { return d; })
         .enter().append("g")
         .attr("class", "cell")
-        .attr("transform", function (d, i) { return "translate(0," + x(i) + ")"; });
+        .attr("transform", function(d, i) { return "translate(0," + x(i) + ")"; });
 
     cell.append('rect')
         .attr("width", y.bandwidth())
         .attr("height", x.bandwidth())
         .style("stroke", grayColor)
         .style("stroke-width", "0.5px")
-        .style("fill", function (d, i) {
+        .style("fill", function(d, i) {
             if (i && d) {
                 if (d.nodeType === "source") {
                     if (d.classId === undefined) {
@@ -120,35 +124,29 @@ export default function (cloneData) {
                 }
             }
         })
-        .on("mouseover", function (d) {
+        .on("mouseover", function(d) {
             if (d.classId && d.changeType && d.cloneType) {
-                 tooltip.html(d.tooltipInfo.replace(/\n/g, '<br />'));
+                tooltip.html(d.tooltipInfo.replace(/\n/g, '<br />'));
 
-                 let t_info = tooltip._groups[0][0].getBoundingClientRect();
-                 let m_info = contentContainer._groups[0][0].getBoundingClientRect();
+                let t_info = tooltip._groups[0][0].getBoundingClientRect();
+                let m_info = contentContainer._groups[0][0].getBoundingClientRect();
 
-                 let t_x1 = event.pageX + 0;
-                 let t_y1 = event.pageY - 0;
-                 // comparing tooltip's lower right x value with that of matrix's
-                 // m_x1 : m_left + window.scrollX; (window scroll used for proper position)
-                 // m_y1 : m_top + window.scrollY;
-                 // m_x2 : m_x1 + m_width
-                 // m_y2 : m_y1 + m_height
-                 // t_x2 : t_x1 + t_width
-                 // t_y2 : t_y1 + t_height
-                 //checking x coordinates of tooltip going beyond matrix boundary
-                 if (t_x1 + t_info.width > m_info.left + window.scrollX + m_info.width) {
-                   t_x1 -= t_info.width;
-                 }
-                 //checking y coordinates
-                 if (t_y1 + t_info.height > m_info.top + window.scrollY + m_info.height) {
-                   t_y1 -= t_info.height;
-                 }
-                 tooltip.style("top", (t_y1) + "px").style("left", (t_x1) + "px");
+                let t_x1 = event.pageX + 0;
+                let t_y1 = event.pageY - 0;
 
-                 return tooltip.style("visibility", "visible");
-             }
-         })
-        .on("mouseout", function () { return tooltip.style("visibility", "hidden"); })
+                //checking x coordinates of tooltip going beyond matrix boundary
+                if (t_x1 + t_info.width > m_info.left + window.scrollX + m_info.width) {
+                    t_x1 -= t_info.width;
+                }
+                //checking y coordinates
+                if (t_y1 + t_info.height > m_info.top + window.scrollY + m_info.height) {
+                    t_y1 -= t_info.height;
+                }
+                tooltip.style("top", (t_y1) + "px").style("left", (t_x1) + "px");
+
+                return tooltip.style("visibility", "visible");
+            }
+        })
+        .on("mouseout", function() { return tooltip.style("visibility", "hidden"); })
 
 }

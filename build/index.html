@@ -14,8 +14,24 @@
 </head>
 
 <body>
-    <h2 id='loaderText'>gCAD - Code Clone Genealogy Visualisation</h2>
-    <div id='root'></div>
+    <h2 id='loaderText'>COGVIS - Code Clone Genealogy Visualisation</h2>
+    <div id='container'>
+        <div id='project-description'></div>
+        <div id='tab-switch-container'>
+            <button class='button' id='button-description'>Description</button>
+            <button class='button' id='button-circos-root'>Circular Style Plot</button>
+            <button class='button' id='button-scatter-root'>Scatter Plot</button>
+        </div>
+        <div id='root'>
+            <div id='description'></div>
+            <div id='circos-root' class='hide'>
+                <h3 class='SubHeadingTitle plotTitle'>Circos Plot - Representation of Change Patterns in Clones</h3>
+            </div>
+            <div id='scatter-root' class='hide'>
+                <h3 class='SubHeadingTitle plotTitle'>Scatter Plot - Representation of Change Patterns in Clones</h3>
+            </div>
+        </div>
+    </div>
     <script src="assets/bundle.js"></script>
 </body>
 

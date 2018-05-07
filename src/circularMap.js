@@ -3,19 +3,22 @@ import { symbol, symbolCircle, symbolSquare, symbolTriangle, symbolStar } from "
 import _ from 'lodash';
 import { blueColor, redColor, greenColor, purpleColor } from './colors';
 import cloneMap from './cloneMap';
+import legend from './legend';
 
-export default function (cloneData) {
+export default function(cloneData) {
 
-    let { genealogyList, projectName, genealogyInfo, versionCount, uniqueVersionList } = cloneData,
-        { clientWidth } = document.body,
+    let { genealogyList, projectName, genealogyInfo, versionCount, uniqueVersionList } = cloneData, { clientWidth } = document.body,
         squareRange = clientWidth < window.innerHeight ? clientWidth : window.innerHeight,
-        width = 0.75 * squareRange,
+        width = squareRange,
         radius = width / 2;
 
-    let circularMainContainer = d3.select('#root').append('div');
+    // add the legend at the top before rendering the actual plot 
+    legend('#circos-root');
+
+
+    let circularMainContainer = d3.select('#circos-root').append('div');
     circularMainContainer.attr('class', 'circularMainContainer')
         .style("width", width + 'px').selectAll("*").remove();
-
 
     let circularRootSVG = circularMainContainer.append('svg')
         .attr('class', 'circularRootSVG')
@@ -45,7 +48,7 @@ export default function (cloneData) {
         .enter()
         .append('g')
         .attr('class', 'arcContainer')
-        .each(function (data, index) {
+        .each(function(data, index) {
             d3.select(this)
                 .attr('class', 'arcIndex-' + index)
                 .selectAll('.changeArc')
@@ -54,10 +57,10 @@ export default function (cloneData) {
                 .append('path')
                 .attr('class', '.changeArc')
                 .attr("d", d3.arc()
-                    .innerRadius(function (d, i) {
+                    .innerRadius(function(d, i) {
                         return arcMin + (((radius / versionCountUpdate) * _.indexOf(uniqueVersionList, d.source.version)) + (radius / (versionCountUpdate * 2)));
                     })
-                    .outerRadius(function (d, i) {
+                    .outerRadius(function(d, i) {
                         return arcMin + (((radius / versionCountUpdate) * _.indexOf(uniqueVersionList, d.source.version)) + (radius / (versionCountUpdate * 2))) + (radius / versionCountUpdate) - arcPadding;
                     })
                     .startAngle(index * (360 / genealogyList.length) * (PI / 180))
@@ -71,10 +74,10 @@ export default function (cloneData) {
                     .append('path')
                     .attr('class', 'selected-index-arc')
                     .attr("d", d3.arc()
-                        .innerRadius(function (d, i) {
+                        .innerRadius(function(d, i) {
                             return arcMin + radius - (radius / (2.0 * versionCount));
                         })
-                        .outerRadius(function (d, i) {
+                        .outerRadius(function(d, i) {
                             return arcMin + radius - (radius / (1.25 * versionCount));
                         })
                         .startAngle(index * (360 / genealogyList.length) * (PI / 180))
@@ -83,23 +86,22 @@ export default function (cloneData) {
             }
 
         })
-        .on("mouseover", function (d) {
+        .on("mouseover", function(d) {
 
             // create Tooltip 
             let c_info = circularRootSVG._groups[0][0].getBoundingClientRect();
             let c_tooltip_info = tooltip._groups[0][0].getBoundingClientRect();
             let t_y1 = event.pageY;
             let t_x1 = event.pageX;
-  
+
             //adjust circular tooltip
-            if (t_x1 >= c_info.width/2 + c_info.left) {
-              t_x1 -=  c_tooltip_info.width;
+            if (t_x1 >= c_info.width / 2 + c_info.left) {
+                t_x1 -= c_tooltip_info.width;
             }
-            if(t_y1 >= c_info.height) {
-              t_y1 -= c_tooltip_info.height;
+            if (t_y1 >= c_info.height) {
+                t_y1 -= c_tooltip_info.height;
             }
             tooltip.style("top", (t_y1) + "px").style("left", (t_x1) + "px");
-
 
             // create a higlight arc to indicate graphic being hovered upon
             let arcIndex = parseInt(d3.select(this).attr('class').split('-')[1]);
@@ -107,21 +109,21 @@ export default function (cloneData) {
                 .append('path')
                 .attr('class', 'changeArc-pointer')
                 .attr("d", d3.arc()
-                    .innerRadius(function (d, i) {
+                    .innerRadius(function(d, i) {
                         return arcMin + radius - (radius / (2.0 * versionCount));
                     })
-                    .outerRadius(function (d, i) {
+                    .outerRadius(function(d, i) {
                         return arcMin + radius - (radius / (1.25 * versionCount));
                     })
                     .startAngle(arcIndex * (360 / genealogyList.length) * (PI / 180))
                     .endAngle((((arcIndex + 1) * (360 / genealogyList.length) - arcAnglePadding) * (PI / 180))))
                 .attr('fill', 'red')
-            // Adding tooltip on hover
+                // Adding tooltip on hover
             tooltip.html(d.info.replace(/\n/g, '<br />'));
             return tooltip.style("visibility", "visible");
 
         })
-        .on("click", function (d) {
+        .on("click", function(d) {
 
             // remove previously highlighted arc
             d3.select('.selected-index-arc').remove();
@@ -132,10 +134,10 @@ export default function (cloneData) {
                 .append('path')
                 .attr('class', 'selected-index-arc')
                 .attr("d", d3.arc()
-                    .innerRadius(function (d, i) {
+                    .innerRadius(function(d, i) {
                         return arcMin + radius - (radius / (2.0 * versionCount));
                     })
-                    .outerRadius(function (d, i) {
+                    .outerRadius(function(d, i) {
                         return arcMin + radius - (radius / (1.25 * versionCount));
                     })
                     .startAngle(clickedArcIndex * (360 / genealogyList.length) * (PI / 180))
@@ -145,7 +147,7 @@ export default function (cloneData) {
 
             cloneMap({ 'genealogyList': [d], versionCount, uniqueVersionList });
         })
-        .on("mouseout", function () {
+        .on("mouseout", function() {
             d3.selectAll('path.changeArc-pointer').remove();
             return tooltip.style("visibility", "hidden");
         })
