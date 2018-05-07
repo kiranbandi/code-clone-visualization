@@ -1,0 +1,1202 @@
+<genealogies version1="pmd-pmd_releases-5.1.2" version2="pmd-pmd_releases-5.1.3">
+<genealogy gid="1" clone_group="no_change" fragment="same">
+<class id="1" nlines="10" nfragments="2">
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/main/java/net/sourceforge/pmd/cpd/GUI.java" startline="534" endline="542" pcid="437"></source>
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/main/java/net/sourceforge/pmd/lang/java/rule/basic/AvoidBranchingStatementAsLastInLoopRule.java" startline="85" endline="93" pcid="2431"></source>
+</class>
+<class id="1" nlines="10" nfragments="2">
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/main/java/net/sourceforge/pmd/cpd/GUI.java" startline="534" endline="542" pcid="437"></source>
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/main/java/net/sourceforge/pmd/lang/java/rule/basic/AvoidBranchingStatementAsLastInLoopRule.java" startline="85" endline="93" pcid="2438"></source>
+</class>
+</genealogy>
+<genealogy gid="2" clone_group="no_change" fragment="same">
+<class id="2" nlines="13" nfragments="3">
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/main/java/net/sourceforge/pmd/dcd/graph/ClassNode.java" startline="53" endline="65" pcid="659"></source>
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/main/java/net/sourceforge/pmd/dcd/graph/ClassNode.java" startline="82" endline="95" pcid="661"></source>
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/main/java/net/sourceforge/pmd/dcd/graph/ClassNode.java" startline="67" endline="80" pcid="660"></source>
+</class>
+<class id="2" nlines="13" nfragments="3">
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/main/java/net/sourceforge/pmd/dcd/graph/ClassNode.java" startline="53" endline="65" pcid="660"></source>
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/main/java/net/sourceforge/pmd/dcd/graph/ClassNode.java" startline="67" endline="80" pcid="661"></source>
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/main/java/net/sourceforge/pmd/dcd/graph/ClassNode.java" startline="82" endline="95" pcid="662"></source>
+</class>
+</genealogy>
+<genealogy gid="3" clone_group="no_change" fragment="same">
+<class id="3" nlines="16" nfragments="2">
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/main/java/net/sourceforge/pmd/dcd/graph/ConstructorNode.java" startline="60" endline="78" pcid="675"></source>
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/main/java/net/sourceforge/pmd/dcd/graph/MethodNode.java" startline="39" endline="57" pcid="699"></source>
+</class>
+<class id="3" nlines="16" nfragments="2">
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/main/java/net/sourceforge/pmd/dcd/graph/ConstructorNode.java" startline="60" endline="78" pcid="676"></source>
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/main/java/net/sourceforge/pmd/dcd/graph/MethodNode.java" startline="39" endline="57" pcid="700"></source>
+</class>
+</genealogy>
+<genealogy gid="4" clone_group="no_change" fragment="same">
+<class id="4" nlines="13" nfragments="2">
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/main/java/net/sourceforge/pmd/dcd/graph/UsageGraphBuilder.java" startline="247" endline="259" pcid="749"></source>
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/main/java/net/sourceforge/pmd/dcd/graph/UsageGraphBuilder.java" startline="354" endline="366" pcid="761"></source>
+</class>
+<class id="4" nlines="13" nfragments="2">
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/main/java/net/sourceforge/pmd/dcd/graph/UsageGraphBuilder.java" startline="247" endline="259" pcid="750"></source>
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/main/java/net/sourceforge/pmd/dcd/graph/UsageGraphBuilder.java" startline="354" endline="366" pcid="762"></source>
+</class>
+</genealogy>
+<genealogy gid="5" clone_group="no_change" fragment="same">
+<class id="5" nlines="13" nfragments="3">
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/main/java/net/sourceforge/pmd/lang/ast/xpath/DocumentNavigator.java" startline="131" endline="143" pcid="897"></source>
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/main/java/net/sourceforge/pmd/lang/ast/xpath/DocumentNavigator.java" startline="192" endline="204" pcid="904"></source>
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/main/java/net/sourceforge/pmd/lang/ast/xpath/DocumentNavigator.java" startline="171" endline="183" pcid="901"></source>
+</class>
+<class id="5" nlines="13" nfragments="3">
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/main/java/net/sourceforge/pmd/lang/ast/xpath/DocumentNavigator.java" startline="131" endline="143" pcid="899"></source>
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/main/java/net/sourceforge/pmd/lang/ast/xpath/DocumentNavigator.java" startline="171" endline="183" pcid="903"></source>
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/main/java/net/sourceforge/pmd/lang/ast/xpath/DocumentNavigator.java" startline="192" endline="204" pcid="906"></source>
+</class>
+</genealogy>
+<genealogy gid="6" clone_group="no_change" fragment="same">
+<class id="6" nlines="34" nfragments="2">
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/main/java/net/sourceforge/pmd/lang/ast/xpath/DocumentNavigator.java" startline="213" endline="246" pcid="907"></source>
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/main/java/net/sourceforge/pmd/lang/ast/xpath/DocumentNavigator.java" startline="255" endline="288" pcid="910"></source>
+</class>
+<class id="6" nlines="34" nfragments="2">
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/main/java/net/sourceforge/pmd/lang/ast/xpath/DocumentNavigator.java" startline="213" endline="246" pcid="909"></source>
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/main/java/net/sourceforge/pmd/lang/ast/xpath/DocumentNavigator.java" startline="255" endline="288" pcid="912"></source>
+</class>
+</genealogy>
+<genealogy gid="7" clone_group="no_change" fragment="same">
+<class id="7" nlines="14" nfragments="2">
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/main/java/net/sourceforge/pmd/lang/ast/xpath/DocumentNavigator.java" startline="216" endline="227" pcid="908"></source>
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/main/java/net/sourceforge/pmd/lang/ast/xpath/DocumentNavigator.java" startline="230" endline="244" pcid="909"></source>
+</class>
+<class id="7" nlines="14" nfragments="2">
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/main/java/net/sourceforge/pmd/lang/ast/xpath/DocumentNavigator.java" startline="216" endline="227" pcid="910"></source>
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/main/java/net/sourceforge/pmd/lang/ast/xpath/DocumentNavigator.java" startline="230" endline="244" pcid="911"></source>
+</class>
+</genealogy>
+<genealogy gid="8" clone_group="no_change" fragment="same">
+<class id="8" nlines="14" nfragments="2">
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/main/java/net/sourceforge/pmd/lang/ast/xpath/DocumentNavigator.java" startline="258" endline="269" pcid="911"></source>
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/main/java/net/sourceforge/pmd/lang/ast/xpath/DocumentNavigator.java" startline="272" endline="286" pcid="912"></source>
+</class>
+<class id="8" nlines="14" nfragments="2">
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/main/java/net/sourceforge/pmd/lang/ast/xpath/DocumentNavigator.java" startline="258" endline="269" pcid="913"></source>
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/main/java/net/sourceforge/pmd/lang/ast/xpath/DocumentNavigator.java" startline="272" endline="286" pcid="914"></source>
+</class>
+</genealogy>
+<genealogy gid="9" clone_group="no_change" fragment="same">
+<class id="9" nlines="10" nfragments="2">
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/main/java/net/sourceforge/pmd/lang/ast/xpath/NodeIterator.java" startline="43" endline="52" pcid="918"></source>
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/main/java/net/sourceforge/pmd/lang/ast/xpath/NodeIterator.java" startline="64" endline="73" pcid="920"></source>
+</class>
+<class id="9" nlines="10" nfragments="2">
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/main/java/net/sourceforge/pmd/lang/ast/xpath/NodeIterator.java" startline="43" endline="52" pcid="920"></source>
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/main/java/net/sourceforge/pmd/lang/ast/xpath/NodeIterator.java" startline="64" endline="73" pcid="922"></source>
+</class>
+</genealogy>
+<genealogy gid="10" clone_group="no_change" fragment="same">
+<class id="10" nlines="10" nfragments="3">
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/main/java/net/sourceforge/pmd/lang/dfa/Linker.java" startline="255" endline="264" pcid="1030"></source>
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/main/java/net/sourceforge/pmd/lang/dfa/Linker.java" startline="354" endline="368" pcid="1033"></source>
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/main/java/net/sourceforge/pmd/lang/dfa/Linker.java" startline="399" endline="410" pcid="1035"></source>
+</class>
+<class id="10" nlines="10" nfragments="3">
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/main/java/net/sourceforge/pmd/lang/dfa/Linker.java" startline="255" endline="264" pcid="1032"></source>
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/main/java/net/sourceforge/pmd/lang/dfa/Linker.java" startline="354" endline="368" pcid="1035"></source>
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/main/java/net/sourceforge/pmd/lang/dfa/Linker.java" startline="399" endline="410" pcid="1037"></source>
+</class>
+</genealogy>
+<genealogy gid="11" clone_group="no_change" fragment="same">
+<class id="11" nlines="17" nfragments="2">
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/main/java/net/sourceforge/pmd/lang/dfa/pathfinder/DAAPathFinder.java" startline="246" endline="264" pcid="1068"></source>
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/main/java/net/sourceforge/pmd/lang/dfa/pathfinder/DAAPathFinder.java" startline="266" endline="283" pcid="1069"></source>
+</class>
+<class id="11" nlines="17" nfragments="2">
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/main/java/net/sourceforge/pmd/lang/dfa/pathfinder/DAAPathFinder.java" startline="246" endline="264" pcid="1070"></source>
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/main/java/net/sourceforge/pmd/lang/dfa/pathfinder/DAAPathFinder.java" startline="266" endline="283" pcid="1071"></source>
+</class>
+</genealogy>
+<genealogy gid="12" clone_group="no_change" fragment="same">
+<class id="12" nlines="10" nfragments="5">
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/main/java/net/sourceforge/pmd/lang/ecmascript/ast/DumpFacade.java" startline="19" endline="28" pcid="1389"></source>
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/main/java/net/sourceforge/pmd/lang/xml/ast/DumpFacade.java" startline="21" endline="30" pcid="5161"></source>
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/main/java/net/sourceforge/pmd/lang/plsql/ast/DumpFacade.java" startline="17" endline="26" pcid="3805"></source>
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/main/java/net/sourceforge/pmd/lang/java/ast/DumpFacade.java" startline="17" endline="26" pcid="2113"></source>
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/main/java/net/sourceforge/pmd/lang/jsp/ast/DumpFacade.java" startline="19" endline="28" pcid="3560"></source>
+</class>
+<class id="12" nlines="10" nfragments="5">
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/main/java/net/sourceforge/pmd/lang/ecmascript/ast/DumpFacade.java" startline="19" endline="28" pcid="1391"></source>
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/main/java/net/sourceforge/pmd/lang/java/ast/DumpFacade.java" startline="17" endline="26" pcid="2119"></source>
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/main/java/net/sourceforge/pmd/lang/xml/ast/DumpFacade.java" startline="21" endline="30" pcid="5187"></source>
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/main/java/net/sourceforge/pmd/lang/plsql/ast/DumpFacade.java" startline="17" endline="26" pcid="3831"></source>
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/main/java/net/sourceforge/pmd/lang/jsp/ast/DumpFacade.java" startline="19" endline="28" pcid="3586"></source>
+</class>
+</genealogy>
+<genealogy gid="13" clone_group="no_change" fragment="same">
+<class id="13" nlines="12" nfragments="2">
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/main/java/net/sourceforge/pmd/lang/ecmascript/ast/DumpFacade.java" startline="30" endline="40" pcid="1390"></source>
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/main/java/net/sourceforge/pmd/lang/xml/ast/DumpFacade.java" startline="32" endline="42" pcid="5162"></source>
+</class>
+<class id="13" nlines="12" nfragments="2">
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/main/java/net/sourceforge/pmd/lang/ecmascript/ast/DumpFacade.java" startline="30" endline="40" pcid="1392"></source>
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/main/java/net/sourceforge/pmd/lang/xml/ast/DumpFacade.java" startline="32" endline="42" pcid="5188"></source>
+</class>
+</genealogy>
+<genealogy gid="14" clone_group="no_change" fragment="same">
+<class id="14" nlines="10" nfragments="3">
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/main/java/net/sourceforge/pmd/lang/ecmascript/EcmascriptParserOptions.java" startline="113" endline="125" pcid="1484"></source>
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/main/java/net/sourceforge/pmd/lang/ParserOptions.java" startline="24" endline="33" pcid="3696"></source>
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/main/java/net/sourceforge/pmd/lang/xml/XmlParserOptions.java" startline="174" endline="188" pcid="5258"></source>
+</class>
+<class id="14" nlines="10" nfragments="3">
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/main/java/net/sourceforge/pmd/lang/ecmascript/EcmascriptParserOptions.java" startline="113" endline="125" pcid="1486"></source>
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/main/java/net/sourceforge/pmd/lang/xml/XmlParserOptions.java" startline="174" endline="188" pcid="5284"></source>
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/main/java/net/sourceforge/pmd/lang/ParserOptions.java" startline="24" endline="33" pcid="3722"></source>
+</class>
+</genealogy>
+<genealogy gid="15" clone_group="no_change" fragment="same">
+<class id="15" nlines="15" nfragments="2">
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/main/java/net/sourceforge/pmd/lang/ecmascript/rule/EcmascriptRuleChainVisitor.java" startline="20" endline="34" pcid="1541"></source>
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/main/java/net/sourceforge/pmd/lang/xml/rule/XmlRuleChainVisitor.java" startline="18" endline="32" pcid="5216"></source>
+</class>
+<class id="15" nlines="15" nfragments="2">
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/main/java/net/sourceforge/pmd/lang/ecmascript/rule/EcmascriptRuleChainVisitor.java" startline="20" endline="34" pcid="1543"></source>
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/main/java/net/sourceforge/pmd/lang/xml/rule/XmlRuleChainVisitor.java" startline="18" endline="32" pcid="5242"></source>
+</class>
+</genealogy>
+<genealogy gid="16" clone_group="no_change" fragment="same">
+<class id="16" nlines="12" nfragments="3">
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/main/java/net/sourceforge/pmd/lang/java/AbstractJavaHandler.java" startline="44" endline="55" pcid="1549"></source>
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/main/java/net/sourceforge/pmd/lang/xml/XmlHandler.java" startline="29" endline="41" pcid="5223"></source>
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/main/java/net/sourceforge/pmd/lang/plsql/PLSQLHandler.java" startline="87" endline="99" pcid="4008"></source>
+</class>
+<class id="16" nlines="12" nfragments="3">
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/main/java/net/sourceforge/pmd/lang/java/AbstractJavaHandler.java" startline="44" endline="55" pcid="1551"></source>
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/main/java/net/sourceforge/pmd/lang/xml/XmlHandler.java" startline="29" endline="41" pcid="5249"></source>
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/main/java/net/sourceforge/pmd/lang/plsql/PLSQLHandler.java" startline="87" endline="99" pcid="4034"></source>
+</class>
+</genealogy>
+<genealogy gid="17" clone_group="no_change" fragment="same">
+<class id="17" nlines="10" nfragments="4">
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/main/java/net/sourceforge/pmd/lang/java/ast/AbstractJavaNode.java" startline="31" endline="40" pcid="1606"></source>
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/main/java/net/sourceforge/pmd/lang/vm/ast/AbstractVmNode.java" startline="88" endline="98" pcid="4867"></source>
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/main/java/net/sourceforge/pmd/lang/plsql/ast/AbstractPLSQLNode.java" startline="32" endline="41" pcid="3701"></source>
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/main/java/net/sourceforge/pmd/lang/jsp/ast/AbstractJspNode.java" startline="28" endline="37" pcid="3455"></source>
+</class>
+<class id="17" nlines="10" nfragments="4">
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/main/java/net/sourceforge/pmd/lang/java/ast/AbstractJavaNode.java" startline="31" endline="40" pcid="1610"></source>
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/main/java/net/sourceforge/pmd/lang/jsp/ast/AbstractJspNode.java" startline="28" endline="37" pcid="3481"></source>
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/main/java/net/sourceforge/pmd/lang/vm/ast/AbstractVmNode.java" startline="88" endline="98" pcid="4893"></source>
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/main/java/net/sourceforge/pmd/lang/plsql/ast/AbstractPLSQLNode.java" startline="32" endline="41" pcid="3727"></source>
+</class>
+</genealogy>
+<genealogy gid="18" clone_group="no_change" fragment="same">
+<class id="18" nlines="12" nfragments="4">
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/main/java/net/sourceforge/pmd/lang/java/ast/ASTClassOrInterfaceBodyDeclaration.java" startline="25" endline="35" pcid="1696"></source>
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/main/java/net/sourceforge/pmd/lang/java/ast/ASTLocalVariableDeclaration.java" startline="28" endline="38" pcid="1876"></source>
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/main/java/net/sourceforge/pmd/lang/java/ast/ASTFormalParameter.java" startline="35" endline="45" pcid="1807"></source>
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/main/java/net/sourceforge/pmd/lang/java/ast/ASTTypeDeclaration.java" startline="20" endline="30" pcid="2062"></source>
+</class>
+<class id="18" nlines="12" nfragments="4">
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/main/java/net/sourceforge/pmd/lang/java/ast/ASTClassOrInterfaceBodyDeclaration.java" startline="25" endline="35" pcid="1700"></source>
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/main/java/net/sourceforge/pmd/lang/java/ast/ASTFormalParameter.java" startline="35" endline="45" pcid="1811"></source>
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/main/java/net/sourceforge/pmd/lang/java/ast/ASTLocalVariableDeclaration.java" startline="28" endline="38" pcid="1882"></source>
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/main/java/net/sourceforge/pmd/lang/java/ast/ASTTypeDeclaration.java" startline="20" endline="30" pcid="2068"></source>
+</class>
+</genealogy>
+<genealogy gid="19" clone_group="no_change" fragment="same">
+<class id="19" nlines="12" nfragments="2">
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/main/java/net/sourceforge/pmd/lang/java/ast/ASTVariableDeclaratorId.java" startline="80" endline="93" pcid="2090"></source>
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/main/java/net/sourceforge/pmd/lang/plsql/ast/ASTVariableOrConstantDeclaratorId.java" startline="71" endline="81" pcid="3803"></source>
+</class>
+<class id="20" nlines="12" nfragments="2">
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/main/java/net/sourceforge/pmd/lang/java/ast/ASTVariableDeclaratorId.java" startline="80" endline="93" pcid="2096"></source>
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/main/java/net/sourceforge/pmd/lang/plsql/ast/ASTVariableOrConstantDeclaratorId.java" startline="71" endline="81" pcid="3829"></source>
+</class>
+</genealogy>
+<genealogy gid="20" clone_group="no_change" fragment="same">
+<class id="20" nlines="24" nfragments="2">
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/main/java/net/sourceforge/pmd/lang/java/dfa/StatementAndBraceFinder.java" startline="55" endline="79" pcid="2247"></source>
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/main/java/net/sourceforge/pmd/lang/plsql/dfa/StatementAndBraceFinder.java" startline="66" endline="106" pcid="3961"></source>
+</class>
+<class id="21" nlines="24" nfragments="2">
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/main/java/net/sourceforge/pmd/lang/java/dfa/StatementAndBraceFinder.java" startline="55" endline="79" pcid="2253"></source>
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/main/java/net/sourceforge/pmd/lang/plsql/dfa/StatementAndBraceFinder.java" startline="66" endline="106" pcid="3987"></source>
+</class>
+</genealogy>
+<genealogy gid="21" clone_group="no_change" fragment="same">
+<class id="21" nlines="10" nfragments="17">
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/main/java/net/sourceforge/pmd/lang/java/dfa/StatementAndBraceFinder.java" startline="133" endline="143" pcid="2251"></source>
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/main/java/net/sourceforge/pmd/lang/java/dfa/StatementAndBraceFinder.java" startline="210" endline="219" pcid="2255"></source>
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/main/java/net/sourceforge/pmd/lang/plsql/dfa/StatementAndBraceFinder.java" startline="369" endline="380" pcid="3974"></source>
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/main/java/net/sourceforge/pmd/lang/plsql/dfa/StatementAndBraceFinder.java" startline="516" endline="527" pcid="3979"></source>
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/main/java/net/sourceforge/pmd/lang/java/dfa/StatementAndBraceFinder.java" startline="152" endline="162" pcid="2253"></source>
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/main/java/net/sourceforge/pmd/lang/plsql/dfa/StatementAndBraceFinder.java" startline="411" endline="429" pcid="3976"></source>
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/main/java/net/sourceforge/pmd/lang/java/dfa/StatementAndBraceFinder.java" startline="237" endline="246" pcid="2257"></source>
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/main/java/net/sourceforge/pmd/lang/java/dfa/StatementAndBraceFinder.java" startline="271" endline="280" pcid="2260"></source>
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/main/java/net/sourceforge/pmd/lang/java/dfa/StatementAndBraceFinder.java" startline="260" endline="269" pcid="2259"></source>
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/main/java/net/sourceforge/pmd/lang/plsql/dfa/StatementAndBraceFinder.java" startline="594" endline="603" pcid="3984"></source>
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/main/java/net/sourceforge/pmd/lang/java/dfa/StatementAndBraceFinder.java" startline="249" endline="258" pcid="2258"></source>
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/main/java/net/sourceforge/pmd/lang/plsql/dfa/StatementAndBraceFinder.java" startline="536" endline="545" pcid="3980"></source>
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/main/java/net/sourceforge/pmd/lang/plsql/dfa/StatementAndBraceFinder.java" startline="572" endline="581" pcid="3982"></source>
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/main/java/net/sourceforge/pmd/lang/plsql/dfa/StatementAndBraceFinder.java" startline="554" endline="563" pcid="3981"></source>
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/main/java/net/sourceforge/pmd/lang/plsql/dfa/StatementAndBraceFinder.java" startline="583" endline="592" pcid="3983"></source>
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/main/java/net/sourceforge/pmd/lang/plsql/dfa/StatementAndBraceFinder.java" startline="120" endline="129" pcid="3963"></source>
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/main/java/net/sourceforge/pmd/lang/plsql/dfa/StatementAndBraceFinder.java" startline="109" endline="118" pcid="3962"></source>
+</class>
+<class id="22" nlines="10" nfragments="17">
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/main/java/net/sourceforge/pmd/lang/java/dfa/StatementAndBraceFinder.java" startline="133" endline="143" pcid="2257"></source>
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/main/java/net/sourceforge/pmd/lang/plsql/dfa/StatementAndBraceFinder.java" startline="369" endline="380" pcid="4000"></source>
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/main/java/net/sourceforge/pmd/lang/java/dfa/StatementAndBraceFinder.java" startline="152" endline="162" pcid="2259"></source>
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/main/java/net/sourceforge/pmd/lang/plsql/dfa/StatementAndBraceFinder.java" startline="411" endline="429" pcid="4002"></source>
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/main/java/net/sourceforge/pmd/lang/plsql/dfa/StatementAndBraceFinder.java" startline="516" endline="527" pcid="4005"></source>
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/main/java/net/sourceforge/pmd/lang/java/dfa/StatementAndBraceFinder.java" startline="210" endline="219" pcid="2261"></source>
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/main/java/net/sourceforge/pmd/lang/java/dfa/StatementAndBraceFinder.java" startline="271" endline="280" pcid="2266"></source>
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/main/java/net/sourceforge/pmd/lang/plsql/dfa/StatementAndBraceFinder.java" startline="572" endline="581" pcid="4008"></source>
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/main/java/net/sourceforge/pmd/lang/plsql/dfa/StatementAndBraceFinder.java" startline="554" endline="563" pcid="4007"></source>
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/main/java/net/sourceforge/pmd/lang/plsql/dfa/StatementAndBraceFinder.java" startline="583" endline="592" pcid="4009"></source>
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/main/java/net/sourceforge/pmd/lang/plsql/dfa/StatementAndBraceFinder.java" startline="536" endline="545" pcid="4006"></source>
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/main/java/net/sourceforge/pmd/lang/java/dfa/StatementAndBraceFinder.java" startline="260" endline="269" pcid="2265"></source>
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/main/java/net/sourceforge/pmd/lang/java/dfa/StatementAndBraceFinder.java" startline="249" endline="258" pcid="2264"></source>
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/main/java/net/sourceforge/pmd/lang/java/dfa/StatementAndBraceFinder.java" startline="237" endline="246" pcid="2263"></source>
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/main/java/net/sourceforge/pmd/lang/plsql/dfa/StatementAndBraceFinder.java" startline="594" endline="603" pcid="4010"></source>
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/main/java/net/sourceforge/pmd/lang/plsql/dfa/StatementAndBraceFinder.java" startline="120" endline="129" pcid="3989"></source>
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/main/java/net/sourceforge/pmd/lang/plsql/dfa/StatementAndBraceFinder.java" startline="109" endline="118" pcid="3988"></source>
+</class>
+</genealogy>
+<genealogy gid="22" clone_group="no_change" fragment="same">
+<class id="22" nlines="19" nfragments="2">
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/main/java/net/sourceforge/pmd/lang/java/dfa/VariableAccessVisitor.java" startline="60" endline="84" pcid="2265"></source>
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/main/java/net/sourceforge/pmd/lang/plsql/dfa/VariableAccessVisitor.java" startline="86" endline="110" pcid="3992"></source>
+</class>
+<class id="23" nlines="19" nfragments="2">
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/main/java/net/sourceforge/pmd/lang/java/dfa/VariableAccessVisitor.java" startline="60" endline="84" pcid="2271"></source>
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/main/java/net/sourceforge/pmd/lang/plsql/dfa/VariableAccessVisitor.java" startline="86" endline="110" pcid="4018"></source>
+</class>
+</genealogy>
+<genealogy gid="23" clone_group="no_change" fragment="same">
+<class id="23" nlines="16" nfragments="2">
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/main/java/net/sourceforge/pmd/lang/java/dfa/VariableAccessVisitor.java" startline="86" endline="100" pcid="2266"></source>
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/main/java/net/sourceforge/pmd/lang/plsql/dfa/VariableAccessVisitor.java" startline="112" endline="126" pcid="3993"></source>
+</class>
+<class id="24" nlines="16" nfragments="2">
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/main/java/net/sourceforge/pmd/lang/java/dfa/VariableAccessVisitor.java" startline="86" endline="100" pcid="2272"></source>
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/main/java/net/sourceforge/pmd/lang/plsql/dfa/VariableAccessVisitor.java" startline="112" endline="126" pcid="4019"></source>
+</class>
+</genealogy>
+<genealogy gid="24" clone_group="no_change" fragment="same">
+<class id="24" nlines="18" nfragments="2">
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/main/java/net/sourceforge/pmd/lang/java/dfa/VariableAccessVisitor.java" startline="118" endline="136" pcid="2268"></source>
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/main/java/net/sourceforge/pmd/lang/plsql/dfa/VariableAccessVisitor.java" startline="145" endline="163" pcid="3995"></source>
+</class>
+<class id="25" nlines="18" nfragments="2">
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/main/java/net/sourceforge/pmd/lang/java/dfa/VariableAccessVisitor.java" startline="118" endline="136" pcid="2274"></source>
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/main/java/net/sourceforge/pmd/lang/plsql/dfa/VariableAccessVisitor.java" startline="145" endline="163" pcid="4021"></source>
+</class>
+</genealogy>
+<genealogy gid="25" clone_group="no_change" fragment="same">
+<class id="25" nlines="18" nfragments="5">
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/main/java/net/sourceforge/pmd/lang/java/rule/codesize/AbstractNcssCountRule.java" startline="50" endline="70" pcid="2475"></source>
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/main/java/net/sourceforge/pmd/lang/plsql/rule/codesize/AbstractNcssCountRule.java" startline="51" endline="80" pcid="4169"></source>
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/main/java/net/sourceforge/pmd/lang/plsql/rule/codesize/NcssObjectCountRule.java" startline="51" endline="77" pcid="4222"></source>
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/main/java/net/sourceforge/pmd/lang/plsql/rule/design/ExcessiveNodeCountRule.java" startline="33" endline="50" pcid="4255"></source>
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/main/java/net/sourceforge/pmd/lang/java/rule/design/ExcessiveNodeCountRule.java" startline="33" endline="50" pcid="2787"></source>
+</class>
+<class id="26" nlines="18" nfragments="5">
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/main/java/net/sourceforge/pmd/lang/java/rule/codesize/AbstractNcssCountRule.java" startline="50" endline="70" pcid="2482"></source>
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/main/java/net/sourceforge/pmd/lang/java/rule/design/ExcessiveNodeCountRule.java" startline="33" endline="50" pcid="2795"></source>
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/main/java/net/sourceforge/pmd/lang/plsql/rule/codesize/AbstractNcssCountRule.java" startline="51" endline="80" pcid="4195"></source>
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/main/java/net/sourceforge/pmd/lang/plsql/rule/codesize/NcssObjectCountRule.java" startline="51" endline="77" pcid="4248"></source>
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/main/java/net/sourceforge/pmd/lang/plsql/rule/design/ExcessiveNodeCountRule.java" startline="33" endline="50" pcid="4281"></source>
+</class>
+</genealogy>
+<genealogy gid="26" clone_group="no_change" fragment="same">
+<class id="26" nlines="10" nfragments="2">
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/main/java/net/sourceforge/pmd/lang/java/rule/codesize/AbstractNcssCountRule.java" startline="80" endline="88" pcid="2476"></source>
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/main/java/net/sourceforge/pmd/lang/plsql/rule/codesize/AbstractNcssCountRule.java" startline="92" endline="100" pcid="4170"></source>
+</class>
+<class id="27" nlines="10" nfragments="2">
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/main/java/net/sourceforge/pmd/lang/java/rule/codesize/AbstractNcssCountRule.java" startline="80" endline="88" pcid="2483"></source>
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/main/java/net/sourceforge/pmd/lang/plsql/rule/codesize/AbstractNcssCountRule.java" startline="92" endline="100" pcid="4196"></source>
+</class>
+</genealogy>
+<genealogy gid="27" clone_group="no_change" fragment="same">
+<class id="27" nlines="10" nfragments="4">
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/main/java/net/sourceforge/pmd/lang/java/rule/codesize/NPathComplexityRule.java" startline="41" endline="52" pcid="2524"></source>
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/main/java/net/sourceforge/pmd/lang/plsql/rule/codesize/NPathComplexityRule.java" startline="64" endline="77" pcid="4227"></source>
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/main/java/net/sourceforge/pmd/lang/plsql/rule/codesize/NPathComplexityRule.java" startline="49" endline="62" pcid="4226"></source>
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/main/java/net/sourceforge/pmd/lang/java/rule/codesize/NPathComplexityRule.java" startline="54" endline="65" pcid="2525"></source>
+</class>
+<class id="28" nlines="10" nfragments="4">
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/main/java/net/sourceforge/pmd/lang/java/rule/codesize/NPathComplexityRule.java" startline="41" endline="52" pcid="2531"></source>
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/main/java/net/sourceforge/pmd/lang/plsql/rule/codesize/NPathComplexityRule.java" startline="64" endline="77" pcid="4253"></source>
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/main/java/net/sourceforge/pmd/lang/java/rule/codesize/NPathComplexityRule.java" startline="54" endline="65" pcid="2532"></source>
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/main/java/net/sourceforge/pmd/lang/plsql/rule/codesize/NPathComplexityRule.java" startline="49" endline="62" pcid="4252"></source>
+</class>
+</genealogy>
+<genealogy gid="28" clone_group="no_change" fragment="same">
+<class id="28" nlines="19" nfragments="4">
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/main/java/net/sourceforge/pmd/lang/java/rule/codesize/NPathComplexityRule.java" startline="87" endline="117" pcid="2528"></source>
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/main/java/net/sourceforge/pmd/lang/plsql/rule/codesize/NPathComplexityRule.java" startline="219" endline="252" pcid="4235"></source>
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/main/java/net/sourceforge/pmd/lang/plsql/rule/codesize/NPathComplexityRule.java" startline="255" endline="277" pcid="4236"></source>
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/main/java/net/sourceforge/pmd/lang/plsql/rule/codesize/NPathComplexityRule.java" startline="168" endline="216" pcid="4234"></source>
+</class>
+<class id="29" nlines="19" nfragments="4">
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/main/java/net/sourceforge/pmd/lang/java/rule/codesize/NPathComplexityRule.java" startline="87" endline="117" pcid="2535"></source>
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/main/java/net/sourceforge/pmd/lang/plsql/rule/codesize/NPathComplexityRule.java" startline="219" endline="252" pcid="4261"></source>
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/main/java/net/sourceforge/pmd/lang/plsql/rule/codesize/NPathComplexityRule.java" startline="168" endline="216" pcid="4260"></source>
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/main/java/net/sourceforge/pmd/lang/plsql/rule/codesize/NPathComplexityRule.java" startline="255" endline="277" pcid="4262"></source>
+</class>
+</genealogy>
+<genealogy gid="29" clone_group="no_change" fragment="same">
+<class id="29" nlines="16" nfragments="2">
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/main/java/net/sourceforge/pmd/lang/java/rule/codesize/NPathComplexityRule.java" startline="153" endline="174" pcid="2532"></source>
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/main/java/net/sourceforge/pmd/lang/plsql/rule/codesize/NPathComplexityRule.java" startline="319" endline="341" pcid="4240"></source>
+</class>
+<class id="30" nlines="16" nfragments="2">
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/main/java/net/sourceforge/pmd/lang/java/rule/codesize/NPathComplexityRule.java" startline="153" endline="174" pcid="2539"></source>
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/main/java/net/sourceforge/pmd/lang/plsql/rule/codesize/NPathComplexityRule.java" startline="319" endline="341" pcid="4266"></source>
+</class>
+</genealogy>
+<genealogy gid="30" clone_group="no_change" fragment="same">
+<class id="30" nlines="16" nfragments="3">
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/main/java/net/sourceforge/pmd/lang/java/rule/codesize/NPathComplexityRule.java" startline="177" endline="199" pcid="2533"></source>
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/main/java/net/sourceforge/pmd/lang/plsql/rule/codesize/NPathComplexityRule.java" startline="366" endline="385" pcid="4242"></source>
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/main/java/net/sourceforge/pmd/lang/plsql/rule/codesize/NPathComplexityRule.java" startline="344" endline="363" pcid="4241"></source>
+</class>
+<class id="31" nlines="16" nfragments="3">
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/main/java/net/sourceforge/pmd/lang/java/rule/codesize/NPathComplexityRule.java" startline="177" endline="199" pcid="2540"></source>
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/main/java/net/sourceforge/pmd/lang/plsql/rule/codesize/NPathComplexityRule.java" startline="366" endline="385" pcid="4268"></source>
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/main/java/net/sourceforge/pmd/lang/plsql/rule/codesize/NPathComplexityRule.java" startline="344" endline="363" pcid="4267"></source>
+</class>
+</genealogy>
+<genealogy gid="31" clone_group="no_change" fragment="same">
+<class id="31" nlines="19" nfragments="2">
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/main/java/net/sourceforge/pmd/lang/java/rule/codesize/NPathComplexityRule.java" startline="237" endline="258" pcid="2536"></source>
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/main/java/net/sourceforge/pmd/lang/plsql/rule/codesize/NPathComplexityRule.java" startline="404" endline="428" pcid="4244"></source>
+</class>
+<class id="32" nlines="19" nfragments="2">
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/main/java/net/sourceforge/pmd/lang/java/rule/codesize/NPathComplexityRule.java" startline="237" endline="258" pcid="2543"></source>
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/main/java/net/sourceforge/pmd/lang/plsql/rule/codesize/NPathComplexityRule.java" startline="404" endline="428" pcid="4270"></source>
+</class>
+</genealogy>
+<genealogy gid="32" clone_group="no_change" fragment="same">
+<class id="32" nlines="14" nfragments="3">
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/main/java/net/sourceforge/pmd/lang/java/rule/codesize/StdCyclomaticComplexityRule.java" startline="162" endline="181" pcid="2551"></source>
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/main/java/net/sourceforge/pmd/lang/plsql/rule/codesize/CyclomaticComplexityRule.java" startline="246" endline="268" pcid="4206"></source>
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/main/java/net/sourceforge/pmd/lang/plsql/rule/codesize/CyclomaticComplexityRule.java" startline="221" endline="243" pcid="4205"></source>
+</class>
+<class id="33" nlines="14" nfragments="3">
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/main/java/net/sourceforge/pmd/lang/java/rule/codesize/StdCyclomaticComplexityRule.java" startline="162" endline="181" pcid="2558"></source>
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/main/java/net/sourceforge/pmd/lang/plsql/rule/codesize/CyclomaticComplexityRule.java" startline="221" endline="243" pcid="4231"></source>
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/main/java/net/sourceforge/pmd/lang/plsql/rule/codesize/CyclomaticComplexityRule.java" startline="246" endline="268" pcid="4232"></source>
+</class>
+</genealogy>
+<genealogy gid="33" clone_group="no_change" fragment="same">
+<class id="33" nlines="29" nfragments="4">
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/main/java/net/sourceforge/pmd/lang/java/rule/codesize/StdCyclomaticComplexityRule.java" startline="184" endline="214" pcid="2552"></source>
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/main/java/net/sourceforge/pmd/lang/plsql/rule/codesize/CyclomaticComplexityRule.java" startline="327" endline="373" pcid="4208"></source>
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/main/java/net/sourceforge/pmd/lang/plsql/rule/codesize/CyclomaticComplexityRule.java" startline="377" endline="413" pcid="4209"></source>
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/main/java/net/sourceforge/pmd/lang/plsql/rule/codesize/CyclomaticComplexityRule.java" startline="271" endline="324" pcid="4207"></source>
+</class>
+<class id="34" nlines="29" nfragments="4">
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/main/java/net/sourceforge/pmd/lang/java/rule/codesize/StdCyclomaticComplexityRule.java" startline="184" endline="214" pcid="2559"></source>
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/main/java/net/sourceforge/pmd/lang/plsql/rule/codesize/CyclomaticComplexityRule.java" startline="377" endline="413" pcid="4235"></source>
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/main/java/net/sourceforge/pmd/lang/plsql/rule/codesize/CyclomaticComplexityRule.java" startline="327" endline="373" pcid="4234"></source>
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/main/java/net/sourceforge/pmd/lang/plsql/rule/codesize/CyclomaticComplexityRule.java" startline="271" endline="324" pcid="4233"></source>
+</class>
+</genealogy>
+<genealogy gid="34" clone_group="no_change" fragment="same">
+<class id="34" nlines="15" nfragments="3">
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/main/java/net/sourceforge/pmd/lang/java/rule/comments/CommentRequiredRule.java" startline="83" endline="106" pcid="2584"></source>
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/main/java/net/sourceforge/pmd/lang/java/rule/comments/CommentRequiredRule.java" startline="192" endline="216" pcid="2589"></source>
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/main/java/net/sourceforge/pmd/lang/java/rule/comments/CommentRequiredRule.java" startline="166" endline="189" pcid="2588"></source>
+</class>
+<class id="35" nlines="15" nfragments="3">
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/main/java/net/sourceforge/pmd/lang/java/rule/comments/CommentRequiredRule.java" startline="83" endline="106" pcid="2591"></source>
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/main/java/net/sourceforge/pmd/lang/java/rule/comments/CommentRequiredRule.java" startline="192" endline="216" pcid="2596"></source>
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/main/java/net/sourceforge/pmd/lang/java/rule/comments/CommentRequiredRule.java" startline="166" endline="189" pcid="2595"></source>
+</class>
+</genealogy>
+<genealogy gid="35" clone_group="no_change" fragment="same">
+<class id="35" nlines="13" nfragments="2">
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/main/java/net/sourceforge/pmd/lang/java/rule/coupling/LawOfDemeterRule.java" startline="184" endline="196" pcid="2652"></source>
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/main/java/net/sourceforge/pmd/lang/java/rule/design/PreserveStackTraceRule.java" startline="166" endline="178" pcid="2840"></source>
+</class>
+<class id="36" nlines="13" nfragments="2">
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/main/java/net/sourceforge/pmd/lang/java/rule/coupling/LawOfDemeterRule.java" startline="184" endline="196" pcid="2659"></source>
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/main/java/net/sourceforge/pmd/lang/java/rule/design/PreserveStackTraceRule.java" startline="166" endline="178" pcid="2848"></source>
+</class>
+</genealogy>
+<genealogy gid="36" clone_group="no_change" fragment="same">
+<class id="36" nlines="13" nfragments="2">
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/main/java/net/sourceforge/pmd/lang/java/rule/coupling/LooseCouplingRule.java" startline="40" endline="52" pcid="2670"></source>
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/main/java/net/sourceforge/pmd/lang/java/typeresolution/rules/LooseCoupling.java" startline="38" endline="50" pcid="3354"></source>
+</class>
+<class id="37" nlines="13" nfragments="2">
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/main/java/net/sourceforge/pmd/lang/java/rule/coupling/LooseCouplingRule.java" startline="40" endline="52" pcid="2678"></source>
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/main/java/net/sourceforge/pmd/lang/java/typeresolution/rules/LooseCoupling.java" startline="38" endline="50" pcid="3380"></source>
+</class>
+</genealogy>
+<genealogy gid="37" clone_group="no_change" fragment="same">
+<class id="37" nlines="12" nfragments="2">
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/main/java/net/sourceforge/pmd/lang/java/rule/design/ExcessiveLengthRule.java" startline="28" endline="38" pcid="2785"></source>
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/main/java/net/sourceforge/pmd/lang/plsql/rule/design/ExcessiveLengthRule.java" startline="31" endline="53" pcid="4252"></source>
+</class>
+<class id="38" nlines="12" nfragments="2">
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/main/java/net/sourceforge/pmd/lang/java/rule/design/ExcessiveLengthRule.java" startline="28" endline="38" pcid="2793"></source>
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/main/java/net/sourceforge/pmd/lang/plsql/rule/design/ExcessiveLengthRule.java" startline="31" endline="53" pcid="4278"></source>
+</class>
+</genealogy>
+<genealogy gid="38" clone_group="no_change" fragment="same">
+<class id="38" nlines="13" nfragments="2">
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/main/java/net/sourceforge/pmd/lang/java/rule/design/GodClassRule.java" startline="252" endline="268" pcid="2807"></source>
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/main/java/net/sourceforge/pmd/lang/java/rule/design/GodClassRule.java" startline="270" endline="284" pcid="2808"></source>
+</class>
+<class id="39" nlines="13" nfragments="2">
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/main/java/net/sourceforge/pmd/lang/java/rule/design/GodClassRule.java" startline="252" endline="268" pcid="2815"></source>
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/main/java/net/sourceforge/pmd/lang/java/rule/design/GodClassRule.java" startline="270" endline="284" pcid="2816"></source>
+</class>
+</genealogy>
+<genealogy gid="39" clone_group="no_change" fragment="same">
+<class id="39" nlines="10" nfragments="2">
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/main/java/net/sourceforge/pmd/lang/java/rule/design/PositionalIteratorRule.java" startline="57" endline="66" pcid="2834"></source>
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/main/java/net/sourceforge/pmd/lang/java/rule/design/PositionalIteratorRule.java" startline="68" endline="77" pcid="2835"></source>
+</class>
+<class id="40" nlines="10" nfragments="2">
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/main/java/net/sourceforge/pmd/lang/java/rule/design/PositionalIteratorRule.java" startline="57" endline="66" pcid="2842"></source>
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/main/java/net/sourceforge/pmd/lang/java/rule/design/PositionalIteratorRule.java" startline="68" endline="77" pcid="2843"></source>
+</class>
+</genealogy>
+<genealogy gid="40" clone_group="no_change" fragment="same">
+<class id="40" nlines="13" nfragments="4">
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/main/java/net/sourceforge/pmd/lang/java/rule/JavaRuleChainVisitor.java" startline="20" endline="33" pcid="2911"></source>
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/main/java/net/sourceforge/pmd/lang/vm/rule/VmRuleChainVisitor.java" startline="22" endline="36" pcid="5111"></source>
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/main/java/net/sourceforge/pmd/lang/jsp/rule/JspRuleChainVisitor.java" startline="20" endline="33" pcid="3646"></source>
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/main/java/net/sourceforge/pmd/lang/plsql/rule/PLSQLRuleChainVisitor.java" startline="23" endline="38" pcid="4256"></source>
+</class>
+<class id="41" nlines="13" nfragments="4">
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/main/java/net/sourceforge/pmd/lang/java/rule/JavaRuleChainVisitor.java" startline="20" endline="33" pcid="2919"></source>
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/main/java/net/sourceforge/pmd/lang/plsql/rule/PLSQLRuleChainVisitor.java" startline="23" endline="38" pcid="4282"></source>
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/main/java/net/sourceforge/pmd/lang/vm/rule/VmRuleChainVisitor.java" startline="22" endline="36" pcid="5137"></source>
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/main/java/net/sourceforge/pmd/lang/jsp/rule/JspRuleChainVisitor.java" startline="20" endline="33" pcid="3672"></source>
+</class>
+</genealogy>
+<genealogy gid="41" clone_group="no_change" fragment="same">
+<class id="41" nlines="12" nfragments="2">
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/main/java/net/sourceforge/pmd/lang/java/rule/naming/VariableNamingConventionsRule.java" startline="191" endline="201" pcid="2985"></source>
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/main/java/net/sourceforge/pmd/lang/java/rule/naming/VariableNamingConventionsRule.java" startline="203" endline="212" pcid="2986"></source>
+</class>
+<class id="42" nlines="12" nfragments="2">
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/main/java/net/sourceforge/pmd/lang/java/rule/naming/VariableNamingConventionsRule.java" startline="191" endline="201" pcid="2993"></source>
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/main/java/net/sourceforge/pmd/lang/java/rule/naming/VariableNamingConventionsRule.java" startline="203" endline="212" pcid="2994"></source>
+</class>
+</genealogy>
+<genealogy gid="42" clone_group="no_change" fragment="same">
+<class id="42" nlines="14" nfragments="2">
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/main/java/net/sourceforge/pmd/lang/java/rule/strings/ConsecutiveLiteralAppendsRule.java" startline="249" endline="263" pcid="3047"></source>
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/main/java/net/sourceforge/pmd/lang/java/rule/strings/InsufficientStringBufferDeclarationRule.java" startline="312" endline="326" pcid="3069"></source>
+</class>
+<class id="43" nlines="14" nfragments="2">
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/main/java/net/sourceforge/pmd/lang/java/rule/strings/ConsecutiveLiteralAppendsRule.java" startline="249" endline="263" pcid="3055"></source>
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/main/java/net/sourceforge/pmd/lang/java/rule/strings/InsufficientStringBufferDeclarationRule.java" startline="312" endline="326" pcid="3077"></source>
+</class>
+</genealogy>
+<genealogy gid="43" clone_group="no_change" fragment="same">
+<class id="43" nlines="15" nfragments="2">
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/main/java/net/sourceforge/pmd/lang/java/rule/strings/ConsecutiveLiteralAppendsRule.java" startline="272" endline="285" pcid="3048"></source>
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/main/java/net/sourceforge/pmd/lang/java/rule/strings/InsufficientStringBufferDeclarationRule.java" startline="337" endline="350" pcid="3070"></source>
+</class>
+<class id="44" nlines="15" nfragments="2">
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/main/java/net/sourceforge/pmd/lang/java/rule/strings/ConsecutiveLiteralAppendsRule.java" startline="272" endline="285" pcid="3056"></source>
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/main/java/net/sourceforge/pmd/lang/java/rule/strings/InsufficientStringBufferDeclarationRule.java" startline="337" endline="350" pcid="3078"></source>
+</class>
+</genealogy>
+<genealogy gid="44" clone_group="no_change" fragment="same">
+<class id="44" nlines="12" nfragments="2">
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/main/java/net/sourceforge/pmd/lang/java/rule/sunsecure/AbstractSunSecureRule.java" startline="33" endline="44" pcid="3086"></source>
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/main/java/net/sourceforge/pmd/lang/java/rule/sunsecure/AbstractSunSecureRule.java" startline="77" endline="88" pcid="3088"></source>
+</class>
+<class id="45" nlines="12" nfragments="2">
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/main/java/net/sourceforge/pmd/lang/java/rule/sunsecure/AbstractSunSecureRule.java" startline="33" endline="44" pcid="3094"></source>
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/main/java/net/sourceforge/pmd/lang/java/rule/sunsecure/AbstractSunSecureRule.java" startline="77" endline="88" pcid="3096"></source>
+</class>
+</genealogy>
+<genealogy gid="45" clone_group="no_change" fragment="same">
+<class id="45" nlines="13" nfragments="2">
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/main/java/net/sourceforge/pmd/lang/java/rule/unusedcode/UnusedFormalParameterRule.java" startline="98" endline="112" pcid="3124"></source>
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/main/java/net/sourceforge/pmd/lang/java/rule/unusedcode/UnusedLocalVariableRule.java" startline="33" endline="43" pcid="3126"></source>
+</class>
+<class id="46" nlines="13" nfragments="2">
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/main/java/net/sourceforge/pmd/lang/java/rule/unusedcode/UnusedFormalParameterRule.java" startline="98" endline="112" pcid="3132"></source>
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/main/java/net/sourceforge/pmd/lang/java/rule/unusedcode/UnusedLocalVariableRule.java" startline="33" endline="43" pcid="3134"></source>
+</class>
+</genealogy>
+<genealogy gid="46" clone_group="no_change" fragment="same">
+<class id="46" nlines="10" nfragments="2">
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/main/java/net/sourceforge/pmd/lang/java/rule/unusedcode/UnusedPrivateFieldRule.java" startline="48" endline="57" pcid="3132"></source>
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/main/java/net/sourceforge/pmd/lang/java/rule/unusedcode/UnusedPrivateFieldRule.java" startline="62" endline="71" pcid="3133"></source>
+</class>
+<class id="47" nlines="10" nfragments="2">
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/main/java/net/sourceforge/pmd/lang/java/rule/unusedcode/UnusedPrivateFieldRule.java" startline="48" endline="57" pcid="3140"></source>
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/main/java/net/sourceforge/pmd/lang/java/rule/unusedcode/UnusedPrivateFieldRule.java" startline="62" endline="71" pcid="3141"></source>
+</class>
+</genealogy>
+<genealogy gid="47" clone_group="no_change" fragment="same">
+<class id="47" nlines="30" nfragments="2">
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/main/java/net/sourceforge/pmd/lang/java/symboltable/ClassScope.java" startline="63" endline="99" pcid="3161"></source>
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/main/java/net/sourceforge/pmd/lang/plsql/symboltable/ClassScope.java" startline="56" endline="86" pcid="4273"></source>
+</class>
+<class id="48" nlines="30" nfragments="2">
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/main/java/net/sourceforge/pmd/lang/java/symboltable/ClassScope.java" startline="66" endline="102" pcid="3169"></source>
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/main/java/net/sourceforge/pmd/lang/plsql/symboltable/ClassScope.java" startline="56" endline="86" pcid="4299"></source>
+</class>
+</genealogy>
+<genealogy gid="48" clone_group="no_change" fragment="same">
+<class id="48" nlines="13" nfragments="4">
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/main/java/net/sourceforge/pmd/lang/java/symboltable/LocalScope.java" startline="24" endline="36" pcid="3196"></source>
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/main/java/net/sourceforge/pmd/lang/plsql/symboltable/MethodScope.java" startline="33" endline="44" pcid="4303"></source>
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/main/java/net/sourceforge/pmd/lang/java/symboltable/MethodScope.java" startline="30" endline="41" pcid="3210"></source>
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/main/java/net/sourceforge/pmd/lang/plsql/symboltable/LocalScope.java" startline="18" endline="30" pcid="4286"></source>
+</class>
+<class id="49" nlines="13" nfragments="4">
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/main/java/net/sourceforge/pmd/lang/java/symboltable/LocalScope.java" startline="24" endline="36" pcid="3205"></source>
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/main/java/net/sourceforge/pmd/lang/plsql/symboltable/LocalScope.java" startline="18" endline="30" pcid="4312"></source>
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/main/java/net/sourceforge/pmd/lang/plsql/symboltable/MethodScope.java" startline="33" endline="44" pcid="4329"></source>
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/main/java/net/sourceforge/pmd/lang/java/symboltable/MethodScope.java" startline="30" endline="41" pcid="3219"></source>
+</class>
+</genealogy>
+<genealogy gid="49" clone_group="no_change" fragment="same">
+<class id="49" nlines="17" nfragments="2">
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/main/java/net/sourceforge/pmd/lang/java/symboltable/MethodNameDeclaration.java" startline="38" endline="56" pcid="3204"></source>
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/main/java/net/sourceforge/pmd/lang/plsql/symboltable/MethodNameDeclaration.java" startline="56" endline="74" pcid="4296"></source>
+</class>
+<class id="50" nlines="17" nfragments="2">
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/main/java/net/sourceforge/pmd/lang/java/symboltable/MethodNameDeclaration.java" startline="38" endline="56" pcid="3213"></source>
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/main/java/net/sourceforge/pmd/lang/plsql/symboltable/MethodNameDeclaration.java" startline="56" endline="74" pcid="4322"></source>
+</class>
+</genealogy>
+<genealogy gid="50" clone_group="no_change" fragment="same">
+<class id="50" nlines="36" nfragments="2">
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/main/java/net/sourceforge/pmd/lang/java/symboltable/MethodNameDeclaration.java" startline="59" endline="117" pcid="3205"></source>
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/main/java/net/sourceforge/pmd/lang/plsql/symboltable/MethodNameDeclaration.java" startline="77" endline="137" pcid="4297"></source>
+</class>
+<class id="51" nlines="36" nfragments="2">
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/main/java/net/sourceforge/pmd/lang/java/symboltable/MethodNameDeclaration.java" startline="59" endline="117" pcid="3214"></source>
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/main/java/net/sourceforge/pmd/lang/plsql/symboltable/MethodNameDeclaration.java" startline="77" endline="137" pcid="4323"></source>
+</class>
+</genealogy>
+<genealogy gid="51" clone_group="no_change" fragment="same">
+<class id="51" nlines="25" nfragments="2">
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/main/java/net/sourceforge/pmd/lang/java/symboltable/OccurrenceFinder.java" startline="14" endline="54" pcid="3220"></source>
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/main/java/net/sourceforge/pmd/lang/plsql/symboltable/OccurrenceFinder.java" startline="17" endline="66" pcid="4313"></source>
+</class>
+<class id="52" nlines="25" nfragments="2">
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/main/java/net/sourceforge/pmd/lang/java/symboltable/OccurrenceFinder.java" startline="14" endline="54" pcid="3229"></source>
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/main/java/net/sourceforge/pmd/lang/plsql/symboltable/OccurrenceFinder.java" startline="17" endline="66" pcid="4339"></source>
+</class>
+</genealogy>
+<genealogy gid="52" clone_group="inconsistent_change" fragment="same">
+<class id="52" nlines="11" nfragments="2">
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/main/java/net/sourceforge/pmd/lang/java/symboltable/ScopeAndDeclarationFinder.java" startline="116" endline="127" pcid="3225"></source>
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/main/java/net/sourceforge/pmd/lang/plsql/symboltable/ScopeAndDeclarationFinder.java" startline="112" endline="124" pcid="4335"></source>
+</class>
+<class id="53" nlines="12" nfragments="2">
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/main/java/net/sourceforge/pmd/lang/java/symboltable/ScopeAndDeclarationFinder.java" startline="134" endline="147" pcid="3236"></source>
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/main/java/net/sourceforge/pmd/lang/plsql/symboltable/ScopeAndDeclarationFinder.java" startline="112" endline="124" pcid="4361"></source>
+</class>
+</genealogy>
+<genealogy gid="53" clone_group="inconsistent_change" fragment="same">
+<class id="53" nlines="12" nfragments="2">
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/main/java/net/sourceforge/pmd/lang/java/symboltable/TypeSet.java" startline="70" endline="81" pcid="3261"></source>
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/main/java/net/sourceforge/pmd/lang/plsql/symboltable/TypeSet.java" startline="70" endline="81" pcid="4368"></source>
+</class>
+<class id="54" nlines="12" nfragments="2">
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/main/java/net/sourceforge/pmd/lang/java/symboltable/TypeSet.java" startline="153" endline="164" pcid="3285"></source>
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/main/java/net/sourceforge/pmd/lang/plsql/symboltable/TypeSet.java" startline="70" endline="81" pcid="4394"></source>
+</class>
+</genealogy>
+<genealogy gid="54" clone_group="no_change" fragment="same">
+<class id="54" nlines="10" nfragments="2">
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/main/java/net/sourceforge/pmd/lang/java/symboltable/TypeSet.java" startline="88" endline="97" pcid="3262"></source>
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/main/java/net/sourceforge/pmd/lang/plsql/symboltable/TypeSet.java" startline="88" endline="97" pcid="4369"></source>
+</class>
+<class id="55" nlines="10" nfragments="2">
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/main/java/net/sourceforge/pmd/lang/java/symboltable/TypeSet.java" startline="176" endline="185" pcid="3286"></source>
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/main/java/net/sourceforge/pmd/lang/plsql/symboltable/TypeSet.java" startline="88" endline="97" pcid="4395"></source>
+</class>
+</genealogy>
+<genealogy gid="55" clone_group="no_change" fragment="same">
+<class id="55" nlines="12" nfragments="2">
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/main/java/net/sourceforge/pmd/lang/java/symboltable/TypeSet.java" startline="142" endline="156" pcid="3270"></source>
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/main/java/net/sourceforge/pmd/lang/plsql/symboltable/TypeSet.java" startline="142" endline="156" pcid="4377"></source>
+</class>
+<class id="56" nlines="12" nfragments="2">
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/main/java/net/sourceforge/pmd/lang/java/symboltable/TypeSet.java" startline="256" endline="271" pcid="3295"></source>
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/main/java/net/sourceforge/pmd/lang/plsql/symboltable/TypeSet.java" startline="142" endline="156" pcid="4403"></source>
+</class>
+</genealogy>
+<genealogy gid="56" clone_group="no_change" fragment="same">
+<class id="56" nlines="10" nfragments="4">
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/main/java/net/sourceforge/pmd/lang/Language.java" startline="155" endline="164" pcid="3657"></source>
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/main/java/net/sourceforge/pmd/RuleSet.java" startline="432" endline="441" pcid="5569"></source>
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/main/java/net/sourceforge/pmd/RuleSet.java" startline="173" endline="182" pcid="5542"></source>
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/main/java/net/sourceforge/pmd/lang/xpath/MatchesFunction.java" startline="43" endline="52" pcid="5265"></source>
+</class>
+<class id="57" nlines="10" nfragments="4">
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/main/java/net/sourceforge/pmd/lang/Language.java" startline="155" endline="164" pcid="3683"></source>
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/main/java/net/sourceforge/pmd/RuleSet.java" startline="507" endline="516" pcid="5595"></source>
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/main/java/net/sourceforge/pmd/RuleSet.java" startline="183" endline="192" pcid="5568"></source>
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/main/java/net/sourceforge/pmd/lang/xpath/MatchesFunction.java" startline="43" endline="52" pcid="5291"></source>
+</class>
+</genealogy>
+<genealogy gid="57" clone_group="no_change" fragment="same">
+<class id="57" nlines="12" nfragments="5">
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/main/java/net/sourceforge/pmd/lang/plsql/rule/codesize/NPathComplexityRule.java" startline="80" endline="93" pcid="4228"></source>
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/main/java/net/sourceforge/pmd/lang/plsql/rule/codesize/NPathComplexityRule.java" startline="96" endline="109" pcid="4229"></source>
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/main/java/net/sourceforge/pmd/lang/plsql/rule/codesize/NPathComplexityRule.java" startline="112" endline="125" pcid="4230"></source>
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/main/java/net/sourceforge/pmd/lang/plsql/rule/codesize/NPathComplexityRule.java" startline="128" endline="141" pcid="4231"></source>
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/main/java/net/sourceforge/pmd/lang/plsql/rule/codesize/NPathComplexityRule.java" startline="144" endline="157" pcid="4232"></source>
+</class>
+<class id="58" nlines="12" nfragments="5">
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/main/java/net/sourceforge/pmd/lang/plsql/rule/codesize/NPathComplexityRule.java" startline="80" endline="93" pcid="4254"></source>
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/main/java/net/sourceforge/pmd/lang/plsql/rule/codesize/NPathComplexityRule.java" startline="128" endline="141" pcid="4257"></source>
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/main/java/net/sourceforge/pmd/lang/plsql/rule/codesize/NPathComplexityRule.java" startline="144" endline="157" pcid="4258"></source>
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/main/java/net/sourceforge/pmd/lang/plsql/rule/codesize/NPathComplexityRule.java" startline="112" endline="125" pcid="4256"></source>
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/main/java/net/sourceforge/pmd/lang/plsql/rule/codesize/NPathComplexityRule.java" startline="96" endline="109" pcid="4255"></source>
+</class>
+</genealogy>
+<genealogy gid="58" clone_group="no_change" fragment="same">
+<class id="58" nlines="15" nfragments="2">
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/main/java/net/sourceforge/pmd/lang/plsql/rule/codesize/TooManyFieldsRule.java" startline="48" endline="65" pcid="4248"></source>
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/main/java/net/sourceforge/pmd/lang/plsql/rule/codesize/TooManyFieldsRule.java" startline="68" endline="85" pcid="4249"></source>
+</class>
+<class id="59" nlines="15" nfragments="2">
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/main/java/net/sourceforge/pmd/lang/plsql/rule/codesize/TooManyFieldsRule.java" startline="48" endline="65" pcid="4274"></source>
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/main/java/net/sourceforge/pmd/lang/plsql/rule/codesize/TooManyFieldsRule.java" startline="68" endline="85" pcid="4275"></source>
+</class>
+</genealogy>
+<genealogy gid="59" clone_group="no_change" fragment="same">
+<class id="59" nlines="19" nfragments="2">
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/main/java/net/sourceforge/pmd/lang/plsql/symboltable/ScopeAndDeclarationFinder.java" startline="278" endline="313" pcid="4344"></source>
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/main/java/net/sourceforge/pmd/lang/plsql/symboltable/ScopeAndDeclarationFinder.java" startline="316" endline="351" pcid="4345"></source>
+</class>
+<class id="60" nlines="19" nfragments="2">
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/main/java/net/sourceforge/pmd/lang/plsql/symboltable/ScopeAndDeclarationFinder.java" startline="278" endline="313" pcid="4370"></source>
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/main/java/net/sourceforge/pmd/lang/plsql/symboltable/ScopeAndDeclarationFinder.java" startline="316" endline="351" pcid="4371"></source>
+</class>
+</genealogy>
+<genealogy gid="60" clone_group="no_change" fragment="same">
+<class id="60" nlines="15" nfragments="2">
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/main/java/net/sourceforge/pmd/lang/rule/properties/AbstractPackagedProperty.java" startline="69" endline="80" pcid="4543"></source>
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/main/java/net/sourceforge/pmd/util/StringUtil.java" startline="506" endline="517" pcid="6023"></source>
+</class>
+<class id="61" nlines="15" nfragments="2">
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/main/java/net/sourceforge/pmd/lang/rule/properties/AbstractPackagedProperty.java" startline="69" endline="80" pcid="4569"></source>
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/main/java/net/sourceforge/pmd/util/StringUtil.java" startline="506" endline="517" pcid="6051"></source>
+</class>
+</genealogy>
+<genealogy gid="61" clone_group="no_change" fragment="same">
+<class id="61" nlines="14" nfragments="2">
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/main/java/net/sourceforge/pmd/lang/rule/properties/AbstractProperty.java" startline="359" endline="371" pcid="4573"></source>
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/main/java/net/sourceforge/pmd/util/CollectionUtil.java" startline="204" endline="219" pcid="5713"></source>
+</class>
+<class id="62" nlines="14" nfragments="2">
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/main/java/net/sourceforge/pmd/lang/rule/properties/AbstractProperty.java" startline="359" endline="371" pcid="4599"></source>
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/main/java/net/sourceforge/pmd/util/CollectionUtil.java" startline="204" endline="219" pcid="5741"></source>
+</class>
+</genealogy>
+<genealogy gid="62" clone_group="no_change" fragment="same">
+<class id="62" nlines="12" nfragments="4">
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/main/java/net/sourceforge/pmd/lang/rule/properties/factories/BasicPropertyDescriptorFactory.java" startline="118" endline="130" pcid="4640"></source>
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/main/java/net/sourceforge/pmd/lang/rule/properties/factories/BasicPropertyDescriptorFactory.java" startline="146" endline="158" pcid="4642"></source>
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/main/java/net/sourceforge/pmd/lang/rule/properties/factories/BasicPropertyDescriptorFactory.java" startline="160" endline="172" pcid="4643"></source>
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/main/java/net/sourceforge/pmd/lang/rule/properties/factories/BasicPropertyDescriptorFactory.java" startline="132" endline="144" pcid="4641"></source>
+</class>
+<class id="63" nlines="12" nfragments="4">
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/main/java/net/sourceforge/pmd/lang/rule/properties/factories/BasicPropertyDescriptorFactory.java" startline="118" endline="130" pcid="4666"></source>
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/main/java/net/sourceforge/pmd/lang/rule/properties/factories/BasicPropertyDescriptorFactory.java" startline="132" endline="144" pcid="4667"></source>
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/main/java/net/sourceforge/pmd/lang/rule/properties/factories/BasicPropertyDescriptorFactory.java" startline="160" endline="172" pcid="4669"></source>
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/main/java/net/sourceforge/pmd/lang/rule/properties/factories/BasicPropertyDescriptorFactory.java" startline="146" endline="158" pcid="4668"></source>
+</class>
+</genealogy>
+<genealogy gid="63" clone_group="no_change" fragment="same">
+<class id="63" nlines="11" nfragments="3">
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/main/java/net/sourceforge/pmd/lang/xml/ast/XmlParser.java" startline="176" endline="185" pcid="5171"></source>
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/main/java/net/sourceforge/pmd/lang/xml/ast/XmlParser.java" startline="264" endline="274" pcid="5182"></source>
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/main/java/net/sourceforge/pmd/lang/xml/ast/XmlParser.java" startline="224" endline="235" pcid="5178"></source>
+</class>
+<class id="64" nlines="11" nfragments="3">
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/main/java/net/sourceforge/pmd/lang/xml/ast/XmlParser.java" startline="176" endline="185" pcid="5197"></source>
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/main/java/net/sourceforge/pmd/lang/xml/ast/XmlParser.java" startline="264" endline="274" pcid="5208"></source>
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/main/java/net/sourceforge/pmd/lang/xml/ast/XmlParser.java" startline="224" endline="235" pcid="5204"></source>
+</class>
+</genealogy>
+<genealogy gid="64" clone_group="no_change" fragment="same">
+<class id="64" nlines="10" nfragments="2">
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/main/java/net/sourceforge/pmd/lang/xml/rule/AbstractXmlRule.java" startline="33" endline="42" pcid="5211"></source>
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/main/java/net/sourceforge/pmd/lang/xml/rule/XmlXPathRule.java" startline="22" endline="31" pcid="5221"></source>
+</class>
+<class id="65" nlines="10" nfragments="2">
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/main/java/net/sourceforge/pmd/lang/xml/rule/AbstractXmlRule.java" startline="33" endline="42" pcid="5237"></source>
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/main/java/net/sourceforge/pmd/lang/xml/rule/XmlXPathRule.java" startline="22" endline="31" pcid="5247"></source>
+</class>
+</genealogy>
+<genealogy gid="65" clone_group="no_change" fragment="same">
+<class id="65" nlines="11" nfragments="2">
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/main/java/net/sourceforge/pmd/lang/xpath/Initializer.java" startline="31" endline="41" pcid="5260"></source>
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/main/java/net/sourceforge/pmd/lang/xpath/Initializer.java" startline="54" endline="63" pcid="5262"></source>
+</class>
+<class id="66" nlines="11" nfragments="2">
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/main/java/net/sourceforge/pmd/lang/xpath/Initializer.java" startline="31" endline="41" pcid="5286"></source>
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/main/java/net/sourceforge/pmd/lang/xpath/Initializer.java" startline="54" endline="63" pcid="5288"></source>
+</class>
+</genealogy>
+<genealogy gid="66" clone_group="no_change" fragment="same">
+<class id="66" nlines="12" nfragments="2">
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/main/java/net/sourceforge/pmd/renderers/EmacsRenderer.java" startline="31" endline="42" pcid="5399"></source>
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/main/java/net/sourceforge/pmd/renderers/TextRenderer.java" startline="39" endline="51" pcid="5440"></source>
+</class>
+<class id="67" nlines="12" nfragments="2">
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/main/java/net/sourceforge/pmd/renderers/EmacsRenderer.java" startline="31" endline="42" pcid="5425"></source>
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/main/java/net/sourceforge/pmd/renderers/TextRenderer.java" startline="39" endline="51" pcid="5466"></source>
+</class>
+</genealogy>
+<genealogy gid="67" clone_group="no_change" fragment="same">
+<class id="67" nlines="24" nfragments="2">
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/main/java/net/sourceforge/pmd/renderers/HTMLRenderer.java" startline="138" endline="163" pcid="5407"></source>
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/main/java/net/sourceforge/pmd/renderers/HTMLRenderer.java" startline="165" endline="195" pcid="5408"></source>
+</class>
+<class id="68" nlines="24" nfragments="2">
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/main/java/net/sourceforge/pmd/renderers/HTMLRenderer.java" startline="138" endline="163" pcid="5433"></source>
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/main/java/net/sourceforge/pmd/renderers/HTMLRenderer.java" startline="165" endline="195" pcid="5434"></source>
+</class>
+</genealogy>
+<genealogy gid="68" clone_group="no_change" fragment="same">
+<class id="68" nlines="19" nfragments="2">
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/main/java/net/sourceforge/pmd/util/database/DBMSMetadata.java" startline="118" endline="145" pcid="5726"></source>
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/main/java/net/sourceforge/pmd/util/database/DBMSMetadata.java" startline="157" endline="183" pcid="5727"></source>
+</class>
+<class id="69" nlines="19" nfragments="2">
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/main/java/net/sourceforge/pmd/util/database/DBMSMetadata.java" startline="118" endline="145" pcid="5754"></source>
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/main/java/net/sourceforge/pmd/util/database/DBMSMetadata.java" startline="157" endline="183" pcid="5755"></source>
+</class>
+</genealogy>
+<genealogy gid="69" clone_group="no_change" fragment="same">
+<class id="69" nlines="18" nfragments="3">
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/main/java/net/sourceforge/pmd/util/database/DBURI.java" startline="277" endline="298" pcid="5750"></source>
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/test/java/net/sourceforge/pmd/util/database/DBURITest.java" startline="64" endline="96" pcid="7566"></source>
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/main/java/net/sourceforge/pmd/util/database/DBURI.java" startline="306" endline="343" pcid="5751"></source>
+</class>
+<class id="70" nlines="18" nfragments="3">
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/main/java/net/sourceforge/pmd/util/database/DBURI.java" startline="277" endline="298" pcid="5778"></source>
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/test/java/net/sourceforge/pmd/util/database/DBURITest.java" startline="64" endline="96" pcid="7544"></source>
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/main/java/net/sourceforge/pmd/util/database/DBURI.java" startline="306" endline="343" pcid="5779"></source>
+</class>
+</genealogy>
+<genealogy gid="70" clone_group="consistent_change" fragment="same">
+<class id="70" nlines="15" nfragments="2">
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/main/java/net/sourceforge/pmd/util/designer/Designer.java" startline="236" endline="249" pcid="5833"></source>
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/main/java/net/sourceforge/pmd/util/designer/Designer.java" startline="306" endline="324" pcid="5844"></source>
+</class>
+<class id="71" nlines="15" nfragments="2">
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/main/java/net/sourceforge/pmd/util/designer/Designer.java" startline="236" endline="249" pcid="5861"></source>
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/main/java/net/sourceforge/pmd/util/designer/Designer.java" startline="306" endline="324" pcid="5872"></source>
+</class>
+</genealogy>
+<genealogy gid="71" clone_group="no_change" fragment="same">
+<class id="71" nlines="10" nfragments="2">
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/main/java/net/sourceforge/pmd/util/filter/AndFilter.java" startline="22" endline="31" pcid="5944"></source>
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/main/java/net/sourceforge/pmd/util/filter/OrFilter.java" startline="22" endline="31" pcid="5976"></source>
+</class>
+<class id="72" nlines="10" nfragments="2">
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/main/java/net/sourceforge/pmd/util/filter/AndFilter.java" startline="22" endline="31" pcid="5972"></source>
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/main/java/net/sourceforge/pmd/util/filter/OrFilter.java" startline="22" endline="31" pcid="6004"></source>
+</class>
+</genealogy>
+<genealogy gid="72" clone_group="no_change" fragment="same">
+<class id="72" nlines="11" nfragments="2">
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/main/java/net/sourceforge/pmd/util/filter/Filters.java" startline="92" endline="102" pcid="5959"></source>
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/main/java/net/sourceforge/pmd/util/filter/Filters.java" startline="126" endline="136" pcid="5965"></source>
+</class>
+<class id="73" nlines="11" nfragments="2">
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/main/java/net/sourceforge/pmd/util/filter/Filters.java" startline="92" endline="102" pcid="5987"></source>
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/main/java/net/sourceforge/pmd/util/filter/Filters.java" startline="126" endline="136" pcid="5993"></source>
+</class>
+</genealogy>
+<genealogy gid="73" clone_group="no_change" fragment="same">
+<class id="73" nlines="16" nfragments="2">
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/main/java/net/sourceforge/pmd/util/filter/Filters.java" startline="151" endline="170" pcid="5968"></source>
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/main/java/net/sourceforge/pmd/util/filter/Filters.java" startline="185" endline="202" pcid="5969"></source>
+</class>
+<class id="74" nlines="16" nfragments="2">
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/main/java/net/sourceforge/pmd/util/filter/Filters.java" startline="151" endline="170" pcid="5996"></source>
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/main/java/net/sourceforge/pmd/util/filter/Filters.java" startline="185" endline="202" pcid="5997"></source>
+</class>
+</genealogy>
+<genealogy gid="74" clone_group="no_change" fragment="same">
+<class id="74" nlines="18" nfragments="2">
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/main/java/net/sourceforge/pmd/util/StringUtil.java" startline="128" endline="145" pcid="6008"></source>
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/main/java/net/sourceforge/pmd/util/StringUtil.java" startline="154" endline="171" pcid="6009"></source>
+</class>
+<class id="75" nlines="18" nfragments="2">
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/main/java/net/sourceforge/pmd/util/StringUtil.java" startline="128" endline="145" pcid="6036"></source>
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/main/java/net/sourceforge/pmd/util/StringUtil.java" startline="154" endline="171" pcid="6037"></source>
+</class>
+</genealogy>
+<genealogy gid="75" clone_group="no_change" fragment="same">
+<class id="75" nlines="15" nfragments="2">
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/main/java/net/sourceforge/pmd/util/viewer/gui/EvaluationResultsPanel.java" startline="65" endline="83" pcid="6046"></source>
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/main/java/net/sourceforge/pmd/util/viewer/gui/XPathPanel.java" startline="57" endline="72" pcid="6072"></source>
+</class>
+<class id="76" nlines="15" nfragments="2">
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/main/java/net/sourceforge/pmd/util/viewer/gui/EvaluationResultsPanel.java" startline="65" endline="83" pcid="6074"></source>
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/main/java/net/sourceforge/pmd/util/viewer/gui/XPathPanel.java" startline="57" endline="72" pcid="6100"></source>
+</class>
+</genealogy>
+<genealogy gid="76" clone_group="no_change" fragment="same">
+<class id="76" nlines="15" nfragments="2">
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/test/java/net/sourceforge/pmd/AbstractRuleTest.java" startline="52" endline="67" pcid="6116"></source>
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/test/java/net/sourceforge/pmd/AbstractRuleTest.java" startline="70" endline="83" pcid="6117"></source>
+</class>
+<class id="77" nlines="15" nfragments="2">
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/test/java/net/sourceforge/pmd/AbstractRuleTest.java" startline="52" endline="67" pcid="6144"></source>
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/test/java/net/sourceforge/pmd/AbstractRuleTest.java" startline="70" endline="83" pcid="6145"></source>
+</class>
+</genealogy>
+<genealogy gid="77" clone_group="no_change" fragment="same">
+<class id="77" nlines="11" nfragments="2">
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/test/java/net/sourceforge/pmd/ast/ClassDeclTest.java" startline="58" endline="71" pcid="6236"></source>
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/test/java/net/sourceforge/pmd/ast/MethodDeclTest.java" startline="78" endline="91" pcid="6291"></source>
+</class>
+<class id="78" nlines="11" nfragments="2">
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/test/java/net/sourceforge/pmd/ast/ClassDeclTest.java" startline="58" endline="71" pcid="6264"></source>
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/test/java/net/sourceforge/pmd/ast/MethodDeclTest.java" startline="78" endline="91" pcid="6319"></source>
+</class>
+</genealogy>
+<genealogy gid="78" clone_group="no_change" fragment="same">
+<class id="78" nlines="11" nfragments="3">
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/test/java/net/sourceforge/pmd/ast/SimpleNodeTest.java" startline="157" endline="167" pcid="6314"></source>
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/test/java/net/sourceforge/pmd/ast/SimpleNodeTest.java" startline="170" endline="182" pcid="6315"></source>
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/test/java/net/sourceforge/pmd/ast/SimpleNodeTest.java" startline="185" endline="200" pcid="6316"></source>
+</class>
+<class id="79" nlines="11" nfragments="3">
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/test/java/net/sourceforge/pmd/ast/SimpleNodeTest.java" startline="157" endline="167" pcid="6342"></source>
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/test/java/net/sourceforge/pmd/ast/SimpleNodeTest.java" startline="170" endline="182" pcid="6343"></source>
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/test/java/net/sourceforge/pmd/ast/SimpleNodeTest.java" startline="185" endline="200" pcid="6344"></source>
+</class>
+</genealogy>
+<genealogy gid="79" clone_group="no_change" fragment="same">
+<class id="79" nlines="10" nfragments="2">
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/test/java/net/sourceforge/pmd/cpd/JavaTokensTokenizerTest.java" startline="141" endline="170" pcid="6421"></source>
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/test/java/net/sourceforge/pmd/cpd/JavaTokensTokenizerTest.java" startline="174" endline="204" pcid="6422"></source>
+</class>
+<class id="80" nlines="10" nfragments="2">
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/test/java/net/sourceforge/pmd/cpd/JavaTokensTokenizerTest.java" startline="141" endline="170" pcid="6455"></source>
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/test/java/net/sourceforge/pmd/cpd/JavaTokensTokenizerTest.java" startline="174" endline="204" pcid="6456"></source>
+</class>
+</genealogy>
+<genealogy gid="80" clone_group="no_change" fragment="same">
+<class id="80" nlines="14" nfragments="2">
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/test/java/net/sourceforge/pmd/ExcludeLinesTest.java" startline="34" endline="47" pcid="6506"></source>
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/test/java/net/sourceforge/pmd/lang/java/rule/XPathRuleTest.java" startline="50" endline="63" pcid="6683"></source>
+</class>
+<class id="81" nlines="14" nfragments="2">
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/test/java/net/sourceforge/pmd/ExcludeLinesTest.java" startline="34" endline="47" pcid="6540"></source>
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/test/java/net/sourceforge/pmd/lang/java/rule/XPathRuleTest.java" startline="50" endline="63" pcid="6659"></source>
+</class>
+</genealogy>
+<genealogy gid="81" clone_group="no_change" fragment="same">
+<class id="81" nlines="31" nfragments="2">
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/test/java/net/sourceforge/pmd/lang/ecmascript/EcmascriptParserOptionsTest.java" startline="81" endline="119" pcid="6580"></source>
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/test/java/net/sourceforge/pmd/lang/xml/XmlParserOptionsTest.java" startline="127" endline="158" pcid="6836"></source>
+</class>
+<class id="82" nlines="31" nfragments="2">
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/test/java/net/sourceforge/pmd/lang/ecmascript/EcmascriptParserOptionsTest.java" startline="81" endline="119" pcid="6613"></source>
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/test/java/net/sourceforge/pmd/lang/xml/XmlParserOptionsTest.java" startline="127" endline="158" pcid="6811"></source>
+</class>
+</genealogy>
+<genealogy gid="0" clone_group="disappeared" fragment="">
+<class id="82" nlines="14" nfragments="2">
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/test/java/net/sourceforge/pmd/lang/java/rule/codesize/CyclomaticComplexityTest.java" startline="74" endline="87" pcid="6605"></source>
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/test/java/net/sourceforge/pmd/lang/java/rule/codesize/StdCyclomaticComplexityTest.java" startline="74" endline="87" pcid="6622"></source>
+</class>
+</genealogy>
+<genealogy gid="83" clone_group="no_change" fragment="same">
+<class id="83" nlines="10" nfragments="2">
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/test/java/net/sourceforge/pmd/lang/jsp/ast/JspDocStyleTest.java" startline="234" endline="243" pcid="6705"></source>
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/test/java/net/sourceforge/pmd/lang/jsp/ast/JspDocStyleTest.java" startline="262" endline="271" pcid="6707"></source>
+</class>
+<class id="83" nlines="10" nfragments="2">
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/test/java/net/sourceforge/pmd/lang/jsp/ast/JspDocStyleTest.java" startline="234" endline="243" pcid="6685"></source>
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/test/java/net/sourceforge/pmd/lang/jsp/ast/JspDocStyleTest.java" startline="262" endline="271" pcid="6687"></source>
+</class>
+</genealogy>
+<genealogy gid="84" clone_group="no_change" fragment="same">
+<class id="84" nlines="10" nfragments="3">
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/test/java/net/sourceforge/pmd/lang/jsp/ast/JspDocStyleTest.java" startline="408" endline="419" pcid="6717"></source>
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/test/java/net/sourceforge/pmd/lang/jsp/ast/JspDocStyleTest.java" startline="454" endline="466" pcid="6720"></source>
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/test/java/net/sourceforge/pmd/lang/jsp/ast/JspDocStyleTest.java" startline="437" endline="448" pcid="6719"></source>
+</class>
+<class id="84" nlines="10" nfragments="3">
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/test/java/net/sourceforge/pmd/lang/jsp/ast/JspDocStyleTest.java" startline="408" endline="419" pcid="6697"></source>
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/test/java/net/sourceforge/pmd/lang/jsp/ast/JspDocStyleTest.java" startline="454" endline="466" pcid="6700"></source>
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/test/java/net/sourceforge/pmd/lang/jsp/ast/JspDocStyleTest.java" startline="437" endline="448" pcid="6699"></source>
+</class>
+</genealogy>
+<genealogy gid="85" clone_group="no_change" fragment="same">
+<class id="85" nlines="11" nfragments="3">
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/test/java/net/sourceforge/pmd/lang/jsp/ast/JspDocStyleTest.java" startline="565" endline="578" pcid="6728"></source>
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/test/java/net/sourceforge/pmd/lang/jsp/ast/JspDocStyleTest.java" startline="581" endline="594" pcid="6729"></source>
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/test/java/net/sourceforge/pmd/lang/jsp/ast/JspDocStyleTest.java" startline="832" endline="849" pcid="6736"></source>
+</class>
+<class id="85" nlines="11" nfragments="3">
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/test/java/net/sourceforge/pmd/lang/jsp/ast/JspDocStyleTest.java" startline="565" endline="578" pcid="6708"></source>
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/test/java/net/sourceforge/pmd/lang/jsp/ast/JspDocStyleTest.java" startline="581" endline="594" pcid="6709"></source>
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/test/java/net/sourceforge/pmd/lang/jsp/ast/JspDocStyleTest.java" startline="832" endline="849" pcid="6716"></source>
+</class>
+</genealogy>
+<genealogy gid="86" clone_group="no_change" fragment="same">
+<class id="86" nlines="17" nfragments="4">
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/test/java/net/sourceforge/pmd/lang/jsp/ast/JspDocStyleTest.java" startline="622" endline="652" pcid="6731"></source>
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/test/java/net/sourceforge/pmd/lang/jsp/ast/JspDocStyleTest.java" startline="748" endline="777" pcid="6734"></source>
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/test/java/net/sourceforge/pmd/lang/jsp/ast/JspDocStyleTest.java" startline="708" endline="737" pcid="6733"></source>
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/test/java/net/sourceforge/pmd/lang/jsp/ast/JspDocStyleTest.java" startline="786" endline="821" pcid="6735"></source>
+</class>
+<class id="86" nlines="17" nfragments="4">
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/test/java/net/sourceforge/pmd/lang/jsp/ast/JspDocStyleTest.java" startline="622" endline="652" pcid="6711"></source>
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/test/java/net/sourceforge/pmd/lang/jsp/ast/JspDocStyleTest.java" startline="748" endline="777" pcid="6714"></source>
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/test/java/net/sourceforge/pmd/lang/jsp/ast/JspDocStyleTest.java" startline="708" endline="737" pcid="6713"></source>
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/test/java/net/sourceforge/pmd/lang/jsp/ast/JspDocStyleTest.java" startline="786" endline="821" pcid="6715"></source>
+</class>
+</genealogy>
+<genealogy gid="87" clone_group="no_change" fragment="same">
+<class id="87" nlines="18" nfragments="2">
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/test/java/net/sourceforge/pmd/lang/jsp/ast/JspDocStyleTest.java" startline="858" endline="876" pcid="6737"></source>
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/test/java/net/sourceforge/pmd/lang/jsp/ast/JspDocStyleTest.java" startline="883" endline="901" pcid="6739"></source>
+</class>
+<class id="87" nlines="18" nfragments="2">
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/test/java/net/sourceforge/pmd/lang/jsp/ast/JspDocStyleTest.java" startline="858" endline="876" pcid="6717"></source>
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/test/java/net/sourceforge/pmd/lang/jsp/ast/JspDocStyleTest.java" startline="883" endline="901" pcid="6719"></source>
+</class>
+</genealogy>
+<genealogy gid="88" clone_group="no_change" fragment="same">
+<class id="88" nlines="19" nfragments="3">
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/test/java/net/sourceforge/pmd/lang/jsp/ast/OpenTagRegisterTest.java" startline="59" endline="78" pcid="6756"></source>
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/test/java/net/sourceforge/pmd/lang/jsp/ast/OpenTagRegisterTest.java" startline="111" endline="134" pcid="6758"></source>
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/test/java/net/sourceforge/pmd/lang/jsp/ast/OpenTagRegisterTest.java" startline="85" endline="105" pcid="6757"></source>
+</class>
+<class id="88" nlines="18" nfragments="3">
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/test/java/net/sourceforge/pmd/lang/jsp/ast/OpenTagRegisterTest.java" startline="59" endline="78" pcid="6736"></source>
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/test/java/net/sourceforge/pmd/lang/jsp/ast/OpenTagRegisterTest.java" startline="85" endline="105" pcid="6737"></source>
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/test/java/net/sourceforge/pmd/lang/jsp/ast/OpenTagRegisterTest.java" startline="111" endline="134" pcid="6738"></source>
+</class>
+</genealogy>
+<genealogy gid="89" clone_group="no_change" fragment="same">
+<class id="89" nlines="10" nfragments="2">
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/test/java/net/sourceforge/pmd/lang/plsql/AbstractPLSQLParserTst.java" startline="47" endline="57" pcid="6775"></source>
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/test/java/net/sourceforge/pmd/testframework/ParserTst.java" startline="43" endline="53" pcid="7439"></source>
+</class>
+<class id="89" nlines="10" nfragments="2">
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/test/java/net/sourceforge/pmd/lang/plsql/AbstractPLSQLParserTst.java" startline="47" endline="57" pcid="6753"></source>
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/test/java/net/sourceforge/pmd/testframework/ParserTst.java" startline="43" endline="53" pcid="7411"></source>
+</class>
+</genealogy>
+<genealogy gid="90" clone_group="no_change" fragment="same">
+<class id="90" nlines="12" nfragments="2">
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/test/java/net/sourceforge/pmd/lang/plsql/AbstractPLSQLParserTst.java" startline="73" endline="84" pcid="6778"></source>
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/test/java/net/sourceforge/pmd/testframework/ParserTst.java" startline="69" endline="81" pcid="7442"></source>
+</class>
+<class id="90" nlines="12" nfragments="2">
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/test/java/net/sourceforge/pmd/lang/plsql/AbstractPLSQLParserTst.java" startline="73" endline="84" pcid="6756"></source>
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/test/java/net/sourceforge/pmd/testframework/ParserTst.java" startline="69" endline="81" pcid="7414"></source>
+</class>
+</genealogy>
+<genealogy gid="91" clone_group="no_change" fragment="same">
+<class id="91" nlines="12" nfragments="2">
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/test/java/net/sourceforge/pmd/lang/xml/rule/AbstractDomXmlRuleTest.java" startline="100" endline="121" pcid="6809"></source>
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/test/java/net/sourceforge/pmd/lang/xml/rule/AbstractDomXmlRuleTest.java" startline="124" endline="144" pcid="6810"></source>
+</class>
+<class id="91" nlines="12" nfragments="2">
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/test/java/net/sourceforge/pmd/lang/xml/rule/AbstractDomXmlRuleTest.java" startline="100" endline="121" pcid="6785"></source>
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/test/java/net/sourceforge/pmd/lang/xml/rule/AbstractDomXmlRuleTest.java" startline="124" endline="144" pcid="6786"></source>
+</class>
+</genealogy>
+<genealogy gid="92" clone_group="no_change" fragment="same">
+<class id="92" nlines="24" nfragments="3">
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/test/java/net/sourceforge/pmd/lang/xml/XmlParserTest.java" startline="122" endline="145" pcid="6839"></source>
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/test/java/net/sourceforge/pmd/lang/xml/XmlParserTest.java" startline="151" endline="174" pcid="6840"></source>
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/test/java/net/sourceforge/pmd/lang/xml/XmlParserTest.java" startline="180" endline="208" pcid="6841"></source>
+</class>
+<class id="92" nlines="24" nfragments="3">
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/test/java/net/sourceforge/pmd/lang/xml/XmlParserTest.java" startline="122" endline="145" pcid="6814"></source>
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/test/java/net/sourceforge/pmd/lang/xml/XmlParserTest.java" startline="151" endline="174" pcid="6815"></source>
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/test/java/net/sourceforge/pmd/lang/xml/XmlParserTest.java" startline="180" endline="208" pcid="6816"></source>
+</class>
+</genealogy>
+<genealogy gid="93" clone_group="no_change" fragment="same">
+<class id="93" nlines="22" nfragments="2">
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/test/java/net/sourceforge/pmd/lang/xml/XmlParserTest.java" startline="214" endline="237" pcid="6842"></source>
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/test/java/net/sourceforge/pmd/lang/xml/XmlParserTest.java" startline="243" endline="264" pcid="6843"></source>
+</class>
+<class id="93" nlines="22" nfragments="2">
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/test/java/net/sourceforge/pmd/lang/xml/XmlParserTest.java" startline="214" endline="237" pcid="6817"></source>
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/test/java/net/sourceforge/pmd/lang/xml/XmlParserTest.java" startline="243" endline="264" pcid="6818"></source>
+</class>
+</genealogy>
+<genealogy gid="94" clone_group="no_change" fragment="same">
+<class id="94" nlines="26" nfragments="2">
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/test/java/net/sourceforge/pmd/lang/xml/XmlParserTest.java" startline="270" endline="295" pcid="6844"></source>
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/test/java/net/sourceforge/pmd/lang/xml/XmlParserTest.java" startline="301" endline="328" pcid="6845"></source>
+</class>
+<class id="94" nlines="26" nfragments="2">
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/test/java/net/sourceforge/pmd/lang/xml/XmlParserTest.java" startline="270" endline="295" pcid="6819"></source>
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/test/java/net/sourceforge/pmd/lang/xml/XmlParserTest.java" startline="301" endline="328" pcid="6820"></source>
+</class>
+</genealogy>
+<genealogy gid="95" clone_group="no_change" fragment="same">
+<class id="95" nlines="12" nfragments="2">
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/test/java/net/sourceforge/pmd/properties/MethodPropertyTest.java" startline="91" endline="105" pcid="6921"></source>
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/test/java/net/sourceforge/pmd/properties/MethodPropertyTest.java" startline="118" endline="132" pcid="6923"></source>
+</class>
+<class id="95" nlines="12" nfragments="2">
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/test/java/net/sourceforge/pmd/properties/MethodPropertyTest.java" startline="91" endline="105" pcid="6895"></source>
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/test/java/net/sourceforge/pmd/properties/MethodPropertyTest.java" startline="118" endline="132" pcid="6897"></source>
+</class>
+</genealogy>
+<genealogy gid="0" clone_group="disappeared_inconsistently" fragment="">
+<class id="96" nlines="17" nfragments="2">
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/test/java/net/sourceforge/pmd/RuleSetFactoryTest.java" startline="505" endline="529" pcid="7113"></source>
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/test/java/net/sourceforge/pmd/RuleSetFactoryTest.java" startline="536" endline="561" pcid="7115"></source>
+</class>
+</genealogy>
+<genealogy gid="97" clone_group="no_change" fragment="same">
+<class id="97" nlines="15" nfragments="2">
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/test/java/net/sourceforge/pmd/RuleSetTest.java" startline="119" endline="133" pcid="7180"></source>
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/test/java/net/sourceforge/pmd/RuleSetTest.java" startline="136" endline="150" pcid="7181"></source>
+</class>
+<class id="96" nlines="15" nfragments="2">
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/test/java/net/sourceforge/pmd/RuleSetTest.java" startline="119" endline="133" pcid="7152"></source>
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/test/java/net/sourceforge/pmd/RuleSetTest.java" startline="136" endline="150" pcid="7153"></source>
+</class>
+</genealogy>
+<genealogy gid="98" clone_group="no_change" fragment="same">
+<class id="98" nlines="13" nfragments="2">
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/test/java/net/sourceforge/pmd/RuleSetTest.java" startline="295" endline="307" pcid="7194"></source>
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/test/java/net/sourceforge/pmd/RuleSetTest.java" startline="310" endline="322" pcid="7195"></source>
+</class>
+<class id="97" nlines="13" nfragments="2">
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/test/java/net/sourceforge/pmd/RuleSetTest.java" startline="295" endline="307" pcid="7166"></source>
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/test/java/net/sourceforge/pmd/RuleSetTest.java" startline="310" endline="322" pcid="7167"></source>
+</class>
+</genealogy>
+<genealogy gid="99" clone_group="no_change" fragment="same">
+<class id="99" nlines="12" nfragments="2">
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/test/java/net/sourceforge/pmd/RuleViolationTest.java" startline="20" endline="30" pcid="7205"></source>
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/test/java/net/sourceforge/pmd/RuleViolationTest.java" startline="34" endline="45" pcid="7206"></source>
+</class>
+<class id="98" nlines="12" nfragments="2">
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/test/java/net/sourceforge/pmd/RuleViolationTest.java" startline="20" endline="30" pcid="7177"></source>
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/test/java/net/sourceforge/pmd/RuleViolationTest.java" startline="34" endline="45" pcid="7178"></source>
+</class>
+</genealogy>
+<genealogy gid="100" clone_group="no_change" fragment="same">
+<class id="100" nlines="14" nfragments="3">
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/test/java/net/sourceforge/pmd/RuleViolationTest.java" startline="49" endline="63" pcid="7207"></source>
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/test/java/net/sourceforge/pmd/RuleViolationTest.java" startline="84" endline="97" pcid="7209"></source>
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/test/java/net/sourceforge/pmd/RuleViolationTest.java" startline="67" endline="80" pcid="7208"></source>
+</class>
+<class id="99" nlines="14" nfragments="3">
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/test/java/net/sourceforge/pmd/RuleViolationTest.java" startline="49" endline="63" pcid="7179"></source>
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/test/java/net/sourceforge/pmd/RuleViolationTest.java" startline="84" endline="97" pcid="7181"></source>
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/test/java/net/sourceforge/pmd/RuleViolationTest.java" startline="67" endline="80" pcid="7180"></source>
+</class>
+</genealogy>
+<genealogy gid="101" clone_group="no_change" fragment="same">
+<class id="101" nlines="11" nfragments="4">
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/test/java/net/sourceforge/pmd/stat/StatisticalRuleTest.java" startline="643" endline="654" pcid="7286"></source>
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/test/java/net/sourceforge/pmd/stat/StatisticalRuleTest.java" startline="725" endline="736" pcid="7298"></source>
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/test/java/net/sourceforge/pmd/stat/StatisticalRuleTest.java" startline="682" endline="693" pcid="7292"></source>
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/test/java/net/sourceforge/pmd/stat/StatisticalRuleTest.java" startline="769" endline="780" pcid="7304"></source>
+</class>
+<class id="100" nlines="11" nfragments="4">
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/test/java/net/sourceforge/pmd/stat/StatisticalRuleTest.java" startline="643" endline="654" pcid="7258"></source>
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/test/java/net/sourceforge/pmd/stat/StatisticalRuleTest.java" startline="682" endline="693" pcid="7264"></source>
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/test/java/net/sourceforge/pmd/stat/StatisticalRuleTest.java" startline="725" endline="736" pcid="7270"></source>
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/test/java/net/sourceforge/pmd/stat/StatisticalRuleTest.java" startline="769" endline="780" pcid="7276"></source>
+</class>
+</genealogy>
+<genealogy gid="102" clone_group="no_change" fragment="same">
+<class id="102" nlines="15" nfragments="2">
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/test/java/net/sourceforge/pmd/symboltable/ClassScopeTest.java" startline="174" endline="190" pcid="7360"></source>
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/test/java/net/sourceforge/pmd/symboltable/ClassScopeTest.java" startline="193" endline="209" pcid="7361"></source>
+</class>
+<class id="101" nlines="15" nfragments="2">
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/test/java/net/sourceforge/pmd/symboltable/ClassScopeTest.java" startline="174" endline="190" pcid="7332"></source>
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/test/java/net/sourceforge/pmd/symboltable/ClassScopeTest.java" startline="193" endline="209" pcid="7333"></source>
+</class>
+</genealogy>
+<genealogy gid="103" clone_group="no_change" fragment="same">
+<class id="103" nlines="11" nfragments="2">
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/test/java/net/sourceforge/pmd/symboltable/LocalScopeTest.java" startline="28" endline="38" pcid="7371"></source>
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/test/java/net/sourceforge/pmd/symboltable/LocalScopeTest.java" startline="41" endline="51" pcid="7372"></source>
+</class>
+<class id="102" nlines="11" nfragments="2">
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/test/java/net/sourceforge/pmd/symboltable/LocalScopeTest.java" startline="28" endline="38" pcid="7343"></source>
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/test/java/net/sourceforge/pmd/symboltable/LocalScopeTest.java" startline="41" endline="51" pcid="7344"></source>
+</class>
+</genealogy>
+<genealogy gid="104" clone_group="inconsistent_change" fragment="same">
+<class id="104" nlines="20" nfragments="2">
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/test/java/net/sourceforge/pmd/testframework/RuleTst.java" startline="123" endline="147" pcid="7453"></source>
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/test/java/net/sourceforge/pmd/testframework/RuleTst.java" startline="149" endline="173" pcid="7454"></source>
+</class>
+<class id="103" nlines="20" nfragments="2">
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/test/java/net/sourceforge/pmd/testframework/RuleTst.java" startline="123" endline="147" pcid="7434"></source>
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/test/java/net/sourceforge/pmd/testframework/RuleTst.java" startline="149" endline="173" pcid="7435"></source>
+</class>
+</genealogy>
+<genealogy gid="105" clone_group="no_change" fragment="same">
+<class id="105" nlines="15" nfragments="4">
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/test/java/net/sourceforge/pmd/typeresolution/ClassTypeResolverTest.java" startline="292" endline="307" pcid="7504"></source>
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/test/java/net/sourceforge/pmd/typeresolution/ClassTypeResolverTest.java" startline="457" endline="473" pcid="7510"></source>
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/test/java/net/sourceforge/pmd/typeresolution/ClassTypeResolverTest.java" startline="477" endline="497" pcid="7511"></source>
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/test/java/net/sourceforge/pmd/typeresolution/ClassTypeResolverTest.java" startline="410" endline="431" pcid="7508"></source>
+</class>
+<class id="104" nlines="15" nfragments="4">
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/test/java/net/sourceforge/pmd/typeresolution/ClassTypeResolverTest.java" startline="292" endline="307" pcid="7482"></source>
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/test/java/net/sourceforge/pmd/typeresolution/ClassTypeResolverTest.java" startline="457" endline="473" pcid="7488"></source>
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/test/java/net/sourceforge/pmd/typeresolution/ClassTypeResolverTest.java" startline="477" endline="497" pcid="7489"></source>
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/test/java/net/sourceforge/pmd/typeresolution/ClassTypeResolverTest.java" startline="410" endline="431" pcid="7486"></source>
+</class>
+</genealogy>
+<genealogy gid="106" clone_group="no_change" fragment="same">
+<class id="106" nlines="15" nfragments="2">
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/test/java/net/sourceforge/pmd/util/database/DBMSMetadataTest.java" startline="155" endline="172" pcid="7553"></source>
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/test/java/net/sourceforge/pmd/util/database/DBMSMetadataTest.java" startline="177" endline="193" pcid="7554"></source>
+</class>
+<class id="105" nlines="15" nfragments="2">
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/test/java/net/sourceforge/pmd/util/database/DBMSMetadataTest.java" startline="155" endline="172" pcid="7531"></source>
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/test/java/net/sourceforge/pmd/util/database/DBMSMetadataTest.java" startline="177" endline="193" pcid="7532"></source>
+</class>
+</genealogy>
+<genealogy gid="107" clone_group="no_change" fragment="same">
+<class id="107" nlines="11" nfragments="4">
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/test/java/net/sourceforge/pmd/util/filter/RegexStringFilterTest.java" startline="15" endline="25" pcid="7621"></source>
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/test/java/net/sourceforge/pmd/util/filter/RegexStringFilterTest.java" startline="28" endline="38" pcid="7622"></source>
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/test/java/net/sourceforge/pmd/util/filter/RegexStringFilterTest.java" startline="54" endline="64" pcid="7624"></source>
+<source file="versions/pmd-pmd_releases-5.1.2/pmd/src/test/java/net/sourceforge/pmd/util/filter/RegexStringFilterTest.java" startline="41" endline="51" pcid="7623"></source>
+</class>
+<class id="106" nlines="11" nfragments="4">
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/test/java/net/sourceforge/pmd/util/filter/RegexStringFilterTest.java" startline="15" endline="25" pcid="7599"></source>
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/test/java/net/sourceforge/pmd/util/filter/RegexStringFilterTest.java" startline="28" endline="38" pcid="7600"></source>
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/test/java/net/sourceforge/pmd/util/filter/RegexStringFilterTest.java" startline="41" endline="51" pcid="7601"></source>
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/test/java/net/sourceforge/pmd/util/filter/RegexStringFilterTest.java" startline="54" endline="64" pcid="7602"></source>
+</class>
+</genealogy>
+<genealogy gid="0" clone_type="1" clone_group="appeared" fragment="n/a">
+<class id="19" nlines="10" nfragments="2">
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/main/java/net/sourceforge/pmd/lang/java/ast/ASTLiteral.java" startline="65" endline="74" pcid="1872"></source>
+<source file="versions/pmd-pmd_releases-5.1.3/pmd/src/main/java/net/sourceforge/pmd/lang/java/ast/ASTLiteral.java" startline="80" endline="89" pcid="1873"></source>
+</class>
+</genealogy>
+</genealogies>

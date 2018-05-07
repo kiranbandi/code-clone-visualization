@@ -1,0 +1,29 @@
+<genealogies version1="wget-1.10" version2="wget-1.11">
+<genealogy gid="1" clone_group="consistent_change" fragment="same">
+<class id="1" nlines="10" nfragments="2">
+<source file="versions/wget-1.10/src/connect.c.ifdefed" startline="891" endline="902" pcid="42"></source>
+<source file="versions/wget-1.10/src/connect.c.ifdefed" startline="916" endline="927" pcid="43"></source>
+</class>
+<class id="1" nlines="10" nfragments="2">
+<source file="versions/wget-1.11/src/connect.c.ifdefed" startline="839" endline="850" pcid="32"></source>
+<source file="versions/wget-1.11/src/connect.c.ifdefed" startline="864" endline="875" pcid="33"></source>
+</class>
+</genealogy>
+<genealogy gid="0" clone_group="disappeared_inconsistently" fragment="">
+<class id="2" nlines="25" nfragments="2">
+<source file="versions/wget-1.10/src/ftp-basic.c.ifdefed" startline="833" endline="865" pcid="100"></source>
+<source file="versions/wget-1.10/src/ftp-basic.c.ifdefed" startline="1062" endline="1101" pcid="106"></source>
+</class>
+</genealogy>
+<genealogy gid="3" clone_group="inconsistent_change" fragment="deleted">
+<class id="3" nlines="25" nfragments="3">
+<source file="versions/wget-1.10/src/ftp-basic.c.ifdefed" startline="869" endline="902" pcid="101"></source>
+<source file="versions/wget-1.10/src/ftp-basic.c.ifdefed" startline="935" endline="968" pcid="103"></source>
+<source file="versions/wget-1.10/src/ftp-basic.c.ifdefed" startline="972" endline="1005" pcid="104"></source>
+</class>
+<class id="2" nlines="25" nfragments="2">
+<source file="versions/wget-1.11/src/ftp-basic.c.ifdefed" startline="857" endline="890" pcid="88"></source>
+<source file="versions/wget-1.11/src/ftp-basic.c.ifdefed" startline="923" endline="956" pcid="90"></source>
+</class>
+</genealogy>
+</genealogies>
