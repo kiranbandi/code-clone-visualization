@@ -4,28 +4,46 @@ import _ from 'lodash'
 var uniqueVersionList = []
 var uniqueChangeType = []
 
-export default function (cloneResponse) {
+export default function(cloneResponse) {
 
     let responseArray = cloneResponse.data.split("\n"),
         projectName = responseArray[0].split("\\").slice(-1).join(),
         genealogyInfo = responseArray.slice(1, 5).join('\n'),
         versionCount = Number(genealogyInfo.split('\n')[0].slice(20));
 
+    let count = 0;
+
     // Genealogy of every clone set is represented in a single line that starts with "[Version" so we look for every line that starts with that 
     // and then process that line and the next 7 lines following it as a bunch because they contain info regarding this clone set
     let lineIndex = 0,
-        genealogyList = [];
+        genealogyList = [],
+        deadGenealogyList = [],
+        cloneStatus;
+
     while (lineIndex < responseArray.length) {
         if (responseArray[lineIndex].indexOf('[Version') > -1) {
-            let cloneClass = responseArray[lineIndex],
-                parsedSet = splitAndParseCloneSet(responseArray[lineIndex]);
-            if (parsedSet.length > 0) {
-                genealogyList.push({
-                    'set': parsedSet,
-                    // Following 8 lines contain the information regarding that clone set genealogy so we store that and skip those lines
-                    // to parse through the list faster
-                    'info': responseArray.slice(lineIndex + 1, lineIndex + 8).join('\n')
-                })
+            let cloneClass = responseArray[lineIndex];
+            let { changePairList, genealogyType } = splitAndParseCloneSet(responseArray[lineIndex]);
+
+            if (changePairList.length > 0) {
+
+                if (genealogyType == 'Alive') {
+                    genealogyList.push({
+                        'set': changePairList,
+                        'type': 'Alive',
+                        // Following 8 lines contain the information regarding that clone set genealogy so we store that and skip those lines
+                        // to parse through the list faster
+                        'info': responseArray.slice(lineIndex + 1, lineIndex + 8).join('\n')
+                    })
+                } else {
+                    deadGenealogyList.push({
+                        'set': changePairList,
+                        'type': genealogyType, // disappeared or split 
+                        // Following 8 lines contain the information regarding that clone set genealogy so we store that and skip those lines
+                        // to parse through the list faster
+                        'info': responseArray.slice(lineIndex + 1, lineIndex + 8).join('\n')
+                    })
+                }
             }
             lineIndex += 7
         }
@@ -33,18 +51,10 @@ export default function (cloneResponse) {
         lineIndex += 1;
     }
     // preprocess datalist for d3
-    genealogyList = preProcessData(genealogyList)
+    genealogyList = preProcessData(genealogyList);
+    deadGenealogyList = preProcessData(deadGenealogyList);
 
-    // console.log(uniqueChangeType)
-
-    return { genealogyList, projectName, genealogyInfo, versionCount, uniqueVersionList };
-}
-
-function checkExist(arr, value) {
-    let found = arr.some(function (e) {
-        return (e.id === value);
-    });
-    return found;
+    return { genealogyList, deadGenealogyList, projectName, genealogyInfo, versionCount, uniqueVersionList };
 }
 
 function splitAndParseCloneSet(cloneSetString) {
@@ -57,13 +67,10 @@ function splitAndParseCloneSet(cloneSetString) {
     // so we loop through the tab split list in groups of 3 segments
     let cloneSetStringSplit = cloneSetString.split('\t'),
         loopIndex = 0,
-        changePairList = [];
+        changePairList = [],
+        genealogyType = 'Alive';
 
-    // ignored clone sets that have change type split or dissappeared  - TEMPORARY FIX !!
-    if (cloneSetString.indexOf('split') > -1 || cloneSetString.indexOf('disappeared') > -1) {
-        // console.log(cloneSetString)
-        return [];
-    }
+
     // Since we move through the list in sets of three we go forward only if the first segment has the string version in it 
     // and the segment following it is not empty 
     // to check if the string is not empty we use split and join trick to remove spaces and then check to see if it has length more than 1
@@ -72,7 +79,19 @@ function splitAndParseCloneSet(cloneSetString) {
         // for source and target remove the leading and trailing square brackets and split the segment using the comma inbetween
         let source = cloneSetStringSplit[loopIndex].slice(1, -1).split(','),
             changeType = cloneSetStringSplit[loopIndex + 1],
-            target = cloneSetStringSplit[loopIndex + 2].slice(1, -1).split(',');
+            target;
+        // if the change type is disappeared or disappeared_inconsistently we can break the loop since thats the end of that particular genealogy
+        if (changeType.indexOf('disappeared') > -1) {
+            genealogyType = 'disappeared';
+            break;
+        }
+        // if the change type is split
+        if (changeType.indexOf('split') > -1) {
+            genealogyType = 'split';
+            break;
+        }
+
+        target = cloneSetStringSplit[loopIndex + 2].slice(1, -1).split(',');
         // To get the version from the segment we isolate version by splitting with ':' and then get the second part 
         // we then remove spaces from this part using split and join  
         // To get  cloneType we just look for the last six characters in the segment from the last 
@@ -84,9 +103,7 @@ function splitAndParseCloneSet(cloneSetString) {
 
         // Add source and target version to list of versions to keep track of all unique versions that have occured so far
         uniqueVersionList = _.union(uniqueVersionList, [sourceVersion, targetVersion]);
-
         uniqueChangeType = _.union(uniqueChangeType, [cloneSetStringSplit[loopIndex + 1]]);
-
 
         changePairList.push({
             'source': {
@@ -103,18 +120,18 @@ function splitAndParseCloneSet(cloneSetString) {
         })
         loopIndex += 2
     }
-    return changePairList;
+    return { changePairList, genealogyType };
 }
 
 // once we have gone through all the data we have the list of all unique version names that can appear 
 // so we then use that to preprocess the genealogy set for d3 to make it easier for us to draw elements
 
-function preProcessData(genealogyList) {
+function preProcessData(cloneList) {
 
     // Create an empty list with version names and placeholder for clone types
     let cloneVersionList = {};
 
-    genealogyList.map((genealogy) => {
+    cloneList.map((genealogy) => {
         uniqueVersionList.map((versionName) => { cloneVersionList[versionName] = '' })
         genealogy.set.map((set) => {
             cloneVersionList[set.source.version] = set.source.cloneType
@@ -123,5 +140,6 @@ function preProcessData(genealogyList) {
         genealogy.serialList = Object.keys(cloneVersionList).map((key) => { return { 'version': key, 'cloneType': cloneVersionList[key] } })
     });
 
-    return genealogyList;
+    return cloneList;
+
 }

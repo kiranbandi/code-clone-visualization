@@ -15,7 +15,6 @@ export default function(cloneData) {
     // add the legend at the top before rendering the actual plot 
     legend('#circos-root');
 
-
     let circularMainContainer = d3.select('#circos-root').append('div');
     circularMainContainer.attr('class', 'circularMainContainer')
         .style("width", width + 'px').selectAll("*").remove();
@@ -55,7 +54,7 @@ export default function(cloneData) {
                 .data(data.set)
                 .enter()
                 .append('path')
-                .attr('class', '.changeArc')
+                .attr('class', 'changeArc')
                 .attr("d", d3.arc()
                     .innerRadius(function(d, i) {
                         return arcMin + (((radius / versionCountUpdate) * _.indexOf(uniqueVersionList, d.source.version)) + (radius / (versionCountUpdate * 2)));
@@ -145,7 +144,7 @@ export default function(cloneData) {
                 .attr('fill', purpleColor)
 
 
-            cloneMap({ 'genealogyList': [d], versionCount, uniqueVersionList });
+            cloneMap({ 'genealogy': [d], versionCount, uniqueVersionList });
         })
         .on("mouseout", function() {
             d3.selectAll('path.changeArc-pointer').remove();

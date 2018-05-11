@@ -44,7 +44,7 @@ axios.get('assets/files/' + projectSource.root).then(function(response) {
     subHeadingContainer.append('h3').attr('class', 'SubHeadingTitle').text('Project Name : ' + cloneData.projectName);
     cloneData.genealogyInfo.split('\n').map((content) => subHeadingContainer.append('h3').attr('class', 'SubHeadingTitle').text(content))
 
-    //get link data
+    // get link data
     if (projectSource.link) {
 
         _.forEach(cloneData.uniqueVersionList, function(entry, index) {
@@ -55,9 +55,10 @@ axios.get('assets/files/' + projectSource.root).then(function(response) {
 
         axios.all(linkPromises)
             .then((response) => {
-                processLinkFiles(response);
+                processLinkFiles(response, cloneData);
             })
             .catch(function(error) {
+                console.log(error);
                 alert("Some of the genealogy link files are not available , Please try again");
             });
     }
@@ -68,6 +69,6 @@ axios.get('assets/files/' + projectSource.root).then(function(response) {
     matrix(cloneData);
 
 }).catch(function(error) {
-    console.log(error)
+    console.log(error);
     alert("There was an error in loading the clone genealogy file , Please try again");
 })

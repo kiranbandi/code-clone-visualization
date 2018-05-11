@@ -3,11 +3,11 @@ import { symbol, symbolCircle, symbolSquare, symbolTriangle, symbolStar } from "
 import _ from 'lodash';
 import { blueColor, redColor, greenColor, grayColor } from './colors';
 
-export default function (cloneData) {
+export default function(cloneData) {
 
-    let { genealogyList, versionCount, uniqueVersionList } = cloneData,
-        paddingHeightPerGroup = 20,
-        height = (genealogyList.length * paddingHeightPerGroup) + 200,
+    let { genealogy, versionCount, uniqueVersionList } = cloneData,
+    paddingHeightPerGroup = 20,
+        height = (genealogy.length * paddingHeightPerGroup) + 200,
         squareRange = document.body.clientWidth,
         width = squareRange - (squareRange / 10);
 
@@ -18,8 +18,7 @@ export default function (cloneData) {
             .style("width", width + 'px')
             .style("height", height + 'px')
             .selectAll('*').remove();
-    }
-    else {
+    } else {
         mainContainer = d3.select('#root').append('div')
         mainContainer.attr('class', 'mainContainer')
             .style("width", width + 'px')
@@ -44,7 +43,7 @@ export default function (cloneData) {
         .attr('width', width)
 
     let genealogySetGroup = contentContainer.selectAll('g')
-        .data(genealogyList)
+        .data(genealogy)
         .enter()
         .append('g')
         .attr('transform', (d, i) => "translate(0," + paddingHeightPerGroup * i + ")");
@@ -62,7 +61,7 @@ export default function (cloneData) {
         .attr('y1', (d) => d.changeType.indexOf('added') > -1 ? '-4' : '0')
         .attr('x1', width / versionCount)
         .attr('y2', (d) => d.changeType.indexOf('added') > -1 ? '-4' : '0')
-        .attr("transform", function (d, i) {
+        .attr("transform", function(d, i) {
             return "translate(" + (((width / versionCount) * _.indexOf(uniqueVersionList, d.source.version)) + (width / (versionCount * 2))) + "," + paddingHeightPerGroup + ")";
         })
 
@@ -79,7 +78,7 @@ export default function (cloneData) {
         .attr('y1', 4)
         .attr('x1', width / versionCount)
         .attr('y2', 4)
-        .attr("transform", function (d, i) {
+        .attr("transform", function(d, i) {
             return "translate(" + (((width / versionCount) * _.indexOf(uniqueVersionList, d.source.version)) + (width / (versionCount * 2))) + "," + paddingHeightPerGroup + ")";
         })
         .style('stroke-dasharray', (d, i) => d.changeType.indexOf('added') > -1 ? '0' : ('0' + "," + width / versionCount))
@@ -91,7 +90,7 @@ export default function (cloneData) {
         .attr("class", 'cloneMarker ')
         .attr("d", symbol().size(375).type((d, i) => symbolCircle))
         .style("fill", (d, i) => (d.cloneType.length > 1) ? grayColor : 'white')
-        .attr("transform", function (d, i) {
+        .attr("transform", function(d, i) {
             return "translate(" + (((width / versionCount) * i) + (width / (versionCount * 2))) + "," + paddingHeightPerGroup + ")";
         })
 
@@ -100,13 +99,10 @@ export default function (cloneData) {
         .append('text')
         .attr("class", 'cloneMarkerText ')
         .text((d) => {
-            return d.cloneType.length > 1 ? d.cloneType.split("-")[1] : ''
+            return d.cloneType.length > 1 ? d.cloneType.split("-")[1] : '';
         })
-        .attr("transform", function (d, i) {
+        .attr("transform", function(d, i) {
             return "translate(" + (((width / versionCount) * i) + (width / (versionCount * 2)) - 4) + "," + (paddingHeightPerGroup + 5) + ")";
         });
 
-
-
 }
-
