@@ -3,7 +3,11 @@ import { symbol, symbolCircle, symbolSquare, symbolTriangle, symbolStar } from "
 import _ from 'lodash';
 import { blueColor, redColor, greenColor, grayColor } from './colors';
 
-export default function(cloneData) {
+
+// This code was initally written for multiple genealogies 
+// but is being used only for a single genealogy at a time 
+
+export default function(cloneData, linkGenealogy) {
 
     let { genealogy, versionCount, uniqueVersionList } = cloneData,
     paddingHeightPerGroup = 20,
@@ -12,6 +16,9 @@ export default function(cloneData) {
         width = squareRange - (squareRange / 10);
 
     let mainContainer = d3.select('.mainContainer');
+
+    // for projects with more than 10 versions double the clone map width
+    width = versionCount > 20 ? width * 2 : width;
 
     if (mainContainer.node()) {
         mainContainer.attr('class', 'mainContainer')
@@ -25,7 +32,13 @@ export default function(cloneData) {
             .style("height", height + 'px');
     }
 
-    mainContainer.append('h3').attr('class', 'SubHeadingTitle plotTitle historyTitle').text('Clone Change History');
+    mainContainer.append('h3').attr('class', 'SubHeadingTitle plotTitle historyTitle').text('Genealogy Change History');
+
+    //  intial information regarding that particular genealogy
+    let subHeadingContainer = mainContainer.append('div').attr('class', 'cloneInfoContainer');
+    _.map(genealogy[0].info.split('\n'), (infoValue) => {
+        subHeadingContainer.append('p').attr('class', 'infoParagraph').text(infoValue);
+    })
 
     let versionNameContainer = mainContainer.append('div')
         .attr('class', 'versionNameContainer')
@@ -34,7 +47,11 @@ export default function(cloneData) {
         .enter()
         .append('h2')
         .style("width", width / versionCount + 'px')
-        .text((d) => d)
+        .text((d) => {
+            let folderNameSplit = d.split('-');
+            // filter out only the version number from the name to save space on the UI
+            return _.find(folderNameSplit, function(element) { return /\d/.test(element) });
+        })
         .style('font-size', (d) => ((width / versionCount) * 0.15 > 20 ? 20 : (width / versionCount) * 0.15) + 'px');
 
     let contentContainer = mainContainer.append('svg')
@@ -83,16 +100,19 @@ export default function(cloneData) {
         })
         .style('stroke-dasharray', (d, i) => d.changeType.indexOf('added') > -1 ? '0' : ('0' + "," + width / versionCount))
 
-
+    // Since the clone marker and the cloneMarker Text are different elements we attach the same click function to both elements
+    //  probably should be modified later on with a more elegant solution
     genealogySetGroup.selectAll('.cloneMarker').data((d) => d.serialList)
         .enter()
         .append('path')
-        .attr("class", 'cloneMarker ')
+        .attr("class", 'cloneMarker')
         .attr("d", symbol().size(375).type((d, i) => symbolCircle))
         .style("fill", (d, i) => (d.cloneType.length > 1) ? grayColor : 'white')
         .attr("transform", function(d, i) {
             return "translate(" + (((width / versionCount) * i) + (width / (versionCount * 2))) + "," + paddingHeightPerGroup + ")";
         })
+        .on("click", markerClicked.bind({ genealogy, linkGenealogy }));
+
 
     genealogySetGroup.selectAll('.cloneMarkerText').data((d) => d.serialList)
         .enter()
@@ -103,6 +123,27 @@ export default function(cloneData) {
         })
         .attr("transform", function(d, i) {
             return "translate(" + (((width / versionCount) * i) + (width / (versionCount * 2)) - 4) + "," + (paddingHeightPerGroup + 5) + ")";
-        });
+        })
+        .on("click", markerClicked.bind({ genealogy, linkGenealogy }));
+
+}
+
+function markerClicked(data) {
+
+    let { genealogyMapSource, genealogyMapTarget } = this.linkGenealogy,
+        changeList = this.genealogy[0].set;
+
+    let sourceChangeNode = _.find(changeList, function(o) { return o.source.version == data.version; }),
+        targetChangeNode = _.find(changeList, function(o) { return o.target.version == data.version; }),
+        sourceGenealogyKey = sourceChangeNode ? data.version + '@' + sourceChangeNode.source.classId : 0,
+        targetGenealogyKey = targetChangeNode ? data.version + '@' + targetChangeNode.target.classId : 0;
+
+    if ((sourceGenealogyKey in genealogyMapSource) || (targetGenealogyKey in genealogyMapTarget)) {
+        console.log('found');
+    }
+}
+
+// Change visualisation for each individual genealogy for a given source or target version
+function changeMap() {
 
 }

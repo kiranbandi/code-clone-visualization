@@ -5,7 +5,7 @@ import { blueColor, redColor, greenColor, purpleColor } from './colors';
 import cloneMap from './cloneMap';
 import legend from './legend';
 
-export default function(cloneData) {
+export default function(cloneData, linkGenealogy) {
 
     let { genealogyList, projectName, genealogyInfo, versionCount, uniqueVersionList } = cloneData, { clientWidth } = document.body,
         squareRange = clientWidth < window.innerHeight ? clientWidth : window.innerHeight,
@@ -144,7 +144,7 @@ export default function(cloneData) {
                 .attr('fill', purpleColor)
 
 
-            cloneMap({ 'genealogy': [d], versionCount, uniqueVersionList });
+            cloneMap({ 'genealogy': [d], versionCount, uniqueVersionList }, linkGenealogy);
         })
         .on("mouseout", function() {
             d3.selectAll('path.changeArc-pointer').remove();

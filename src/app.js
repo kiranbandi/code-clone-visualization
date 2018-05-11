@@ -39,14 +39,8 @@ axios.get('assets/files/' + projectSource.root).then(function(response) {
     let cloneData = processGcadOutput(response),
         linkPromises = [];
 
-    //  intial information regarding the project  , its version count and the gcad paramters
-    let subHeadingContainer = d3.select('#project-description')
-    subHeadingContainer.append('h3').attr('class', 'SubHeadingTitle').text('Project Name : ' + cloneData.projectName);
-    cloneData.genealogyInfo.split('\n').map((content) => subHeadingContainer.append('h3').attr('class', 'SubHeadingTitle').text(content))
-
     // get link data
     if (projectSource.link) {
-
         _.forEach(cloneData.uniqueVersionList, function(entry, index) {
             if (index <= (cloneData.uniqueVersionList.length - 2)) {
                 linkPromises.push(axios.get('assets/files/' + projectSource.link + "/" + (cloneData.uniqueVersionList[index] + "_" + cloneData.uniqueVersionList[index + 1]) + ".xml"))
@@ -55,20 +49,32 @@ axios.get('assets/files/' + projectSource.root).then(function(response) {
 
         axios.all(linkPromises)
             .then((response) => {
-                processLinkFiles(response, cloneData);
+                let linkGenealogy = processLinkFiles(response, cloneData);
+                start(cloneData, linkGenealogy);
             })
             .catch(function(error) {
                 console.log(error);
                 alert("Some of the genealogy link files are not available , Please try again");
+                start(cloneData);
             });
     }
 
-    // calling circular map 
-    circularMap(cloneData);
-    // calling linear map 
-    matrix(cloneData);
 
 }).catch(function(error) {
     console.log(error);
     alert("There was an error in loading the clone genealogy file , Please try again");
 })
+
+function start(cloneData, linkGenealogy = {}) {
+    //  intial information regarding the project  , its version count and the gcad paramters
+    let subHeadingContainer = d3.select('#project-description')
+    subHeadingContainer.select('h3').remove();
+    subHeadingContainer.append('h3').attr('class', 'SubHeadingTitle').text('Project Name : ' + cloneData.projectName);
+    cloneData.genealogyInfo.split('\n').map((content) => subHeadingContainer.append('h3').attr('class', 'SubHeadingTitle').text(content))
+
+    // calling circular map 
+    circularMap(cloneData, linkGenealogy);
+    // calling linear map 
+    matrix(cloneData, linkGenealogy);
+
+}

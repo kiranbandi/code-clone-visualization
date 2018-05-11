@@ -43,11 +43,13 @@
 }
 
 .cloneMarker {
-    stroke-width: 3
+    stroke-width: 3;
+    cursor: pointer;
 }
 
 text.cloneMarkerText {
     font-weight: bold;
+    cursor: pointer;
     font-size: 15px;
     font-family: sans-serif;
     fill: white;
@@ -171,4 +173,19 @@ text.cloneMarkerText {
 
 .changeArc {
     cursor: pointer;
+}
+
+h3.SubHeadingTitle.noCapital {
+    text-transform: capitalize;
+    font-size: 1.4em;
+}
+
+.cloneInfoContainer {
+    text-align: center;
+}
+
+.cloneInfoContainer>.infoParagraph {
+    font-family: sans-serif;
+    text-transform: uppercase;
+    font-size: 1em;
 }

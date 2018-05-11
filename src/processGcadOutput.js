@@ -53,7 +53,7 @@ export default function(cloneResponse) {
     // preprocess datalist for d3
     genealogyList = preProcessData(genealogyList);
     deadGenealogyList = preProcessData(deadGenealogyList);
-
+    console.log('Basic Genealogy Data Processing Complete');
     return { genealogyList, deadGenealogyList, projectName, genealogyInfo, versionCount, uniqueVersionList };
 }
 

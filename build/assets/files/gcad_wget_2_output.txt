@@ -11,7 +11,7 @@ Genealogies
 [Version: wget-1.10, Clone Class ID : 1 Type-2]	consistent_change same	[Version: wget-1.11, Clone Class ID : 1 Type-2]	no_change same	[Version: wget-1.12, Clone Class ID : 3 Type-2]	no_change same	[Version: wget-1.13, Clone Class ID : 4 Type-2]	no_change same	[Version: wget-1.14, Clone Class ID : 11 Type-2]	no_change same	[Version: wget-1.15, Clone Class ID : 9 Type-2]	no_change same	[Version: wget-1.16, Clone Class ID : 9 Type-2]	no_change same	[Version: wget-1.17, Clone Class ID : 8 Type-2]	no_change same	[Version: wget-1.18, Clone Class ID : 8 Type-2]	no_change same	[Version: wget-1.19, Clone Class ID : 8 Type-2]	
 Life Status : Alive
 Duration : 10 Releases
-Last Changed : 8 Releases Eearlier
+Last Changed : 8 Releases Earlier
 Consistently Changed : 1
 Inconsistently Changed : 0
 Change Pattern : Consistently Chnaged
@@ -21,7 +21,7 @@ Fragments : SAME
 [Version: wget-1.10, Clone Class ID : 2 Type-3]	disappeared_inconsistently n/a	99999 Type-3(wget-1.11) 
 Life Status : 
 Duration : 2 Releases
-Last Changed : 1 Releases Eearlier
+Last Changed : 1 Releases Earlier
 Consistently Changed : 0
 Inconsistently Changed : 1
 Chnage Pattern : Inconsistently Changed
@@ -30,16 +30,16 @@ Chnage Pattern : Inconsistently Changed
 [Version: wget-1.10, Clone Class ID : 3 Type-3]	inconsistent_change deleted	[Version: wget-1.11, Clone Class ID : 2 Type-3]	no_change same	[Version: wget-1.12, Clone Class ID : 4 Type-3]	no_change same	[Version: wget-1.13, Clone Class ID : 5 Type-3]	no_change same	[Version: wget-1.14, Clone Class ID : 28 Type-3]	no_change same	[Version: wget-1.15, Clone Class ID : 26 Type-3]	no_change same	[Version: wget-1.16, Clone Class ID : 26 Type-3]	no_change same	[Version: wget-1.17, Clone Class ID : 25 Type-3]	no_change same	[Version: wget-1.18, Clone Class ID : 25 Type-3]	no_change same	[Version: wget-1.19, Clone Class ID : 25 Type-3]	
 Life Status : Alive
 Duration : 10 Releases
-Last Changed : 8 Releases Eearlier
+Last Changed : 8 Releases Earlier
 Consistently Changed : 0
 Inconsistently Changed : 1
-Chnage Pattern : Inconsistently ChangedFragments : Deleted
+Chnage Pattern : Inconsistently Changed Fragments : Deleted
 
 
 [Version: wget-1.12, Clone Class ID : 1 Type-3]	no_change same	[Version: wget-1.13, Clone Class ID : 1 Type-3]	no_change same	[Version: wget-1.14, Clone Class ID : 1 Type-3]	no_change same	[Version: wget-1.15, Clone Class ID : 1 Type-3]	no_change same	[Version: wget-1.16, Clone Class ID : 1 Type-3]	disappeared
 Life Status : Dead
 Duration : 5 Releases
-Last Changed : 4 Releases Eearlier
+Last Changed : 4 Releases Earlier
 Consistently Changed : 0
 Inconsistently Changed : 0
 Change Pattern : Static 
@@ -49,7 +49,7 @@ Fragments : SAME
 [Version: wget-1.12, Clone Class ID : 2 Type-3]	no_change same	[Version: wget-1.13, Clone Class ID : 2 Type-3]	no_change same	[Version: wget-1.14, Clone Class ID : 2 Type-3]	no_change same	[Version: wget-1.15, Clone Class ID : 2 Type-3]	no_change same	[Version: wget-1.16, Clone Class ID : 2 Type-3]	disappeared
 Life Status : Dead
 Duration : 5 Releases
-Last Changed : 4 Releases Eearlier
+Last Changed : 4 Releases Earlier
 Consistently Changed : 0
 Inconsistently Changed : 0
 Change Pattern : Static 
@@ -59,7 +59,7 @@ Fragments : SAME
 [Version: wget-1.13, Clone Class ID : 3 Type-3]	no_change same	[Version: wget-1.14, Clone Class ID : 10 Type-3]	no_change same	[Version: wget-1.15, Clone Class ID : 8 Type-3]	no_change same	[Version: wget-1.16, Clone Class ID : 8 Type-3]	no_change same	[Version: wget-1.17, Clone Class ID : 7 Type-3]	no_change same	[Version: wget-1.18, Clone Class ID : 7 Type-3]	no_change same	[Version: wget-1.19, Clone Class ID : 7 Type-3]	
 Life Status : Alive
 Duration : 7 Releases
-Last Changed : 6 Releases Eearlier
+Last Changed : 6 Releases Earlier
 Consistently Changed : 0
 Inconsistently Changed : 0
 Change Pattern : Static 
@@ -69,7 +69,7 @@ Fragments : SAME
 [Version: wget-1.14, Clone Class ID : 3 Type-3]	no_change same	[Version: wget-1.15, Clone Class ID : 3 Type-3]	no_change same	[Version: wget-1.16, Clone Class ID : 3 Type-3]	no_change same	[Version: wget-1.17, Clone Class ID : 1 Type-3]	no_change same	[Version: wget-1.18, Clone Class ID : 1 Type-3]	no_change same	[Version: wget-1.19, Clone Class ID : 1 Type-3]	
 Life Status : Alive
 Duration : 6 Releases
-Last Changed : 5 Releases Eearlier
+Last Changed : 5 Releases Earlier
 Consistently Changed : 0
 Inconsistently Changed : 0
 Change Pattern : Static 
@@ -79,7 +79,7 @@ Fragments : SAME
 [Version: wget-1.14, Clone Class ID : 4 Type-2]	no_change same	[Version: wget-1.15, Clone Class ID : 4 Type-2]	no_change same	[Version: wget-1.16, Clone Class ID : 4 Type-2]	no_change same	[Version: wget-1.17, Clone Class ID : 2 Type-2]	no_change same	[Version: wget-1.18, Clone Class ID : 2 Type-2]	no_change same	[Version: wget-1.19, Clone Class ID : 2 Type-2]	
 Life Status : Alive
 Duration : 6 Releases
-Last Changed : 5 Releases Eearlier
+Last Changed : 5 Releases Earlier
 Consistently Changed : 0
 Inconsistently Changed : 0
 Change Pattern : Static 
@@ -89,7 +89,7 @@ Fragments : SAME
 [Version: wget-1.14, Clone Class ID : 5 Type-2]	no_change same	[Version: wget-1.15, Clone Class ID : 5 Type-2]	no_change same	[Version: wget-1.16, Clone Class ID : 5 Type-2]	no_change same	[Version: wget-1.17, Clone Class ID : 3 Type-2]	no_change same	[Version: wget-1.18, Clone Class ID : 3 Type-2]	no_change same	[Version: wget-1.19, Clone Class ID : 3 Type-2]	
 Life Status : Alive
 Duration : 6 Releases
-Last Changed : 5 Releases Eearlier
+Last Changed : 5 Releases Earlier
 Consistently Changed : 0
 Inconsistently Changed : 0
 Change Pattern : Static 
@@ -99,7 +99,7 @@ Fragments : SAME
 [Version: wget-1.14, Clone Class ID : 7 Type-3]	no_change same	[Version: wget-1.15, Clone Class ID : 6 Type-3]	no_change same	[Version: wget-1.16, Clone Class ID : 6 Type-3]	no_change added	[Version: wget-1.17, Clone Class ID : 4 Type-3]	no_change same	[Version: wget-1.18, Clone Class ID : 4 Type-3]	no_change added	[Version: wget-1.19, Clone Class ID : 4 Type-3]	
 Life Status : Alive
 Duration : 6 Releases
-Last Changed : 5 Releases Eearlier
+Last Changed : 5 Releases Earlier
 Consistently Changed : 0
 Inconsistently Changed : 0
 Change Pattern : Static 
@@ -109,7 +109,7 @@ Fragments : Added
 [Version: wget-1.14, Clone Class ID : 9 Type-3]	no_change same	[Version: wget-1.15, Clone Class ID : 7 Type-3]	no_change same	[Version: wget-1.16, Clone Class ID : 7 Type-3]	no_change same	[Version: wget-1.17, Clone Class ID : 6 Type-3]	no_change same	[Version: wget-1.18, Clone Class ID : 6 Type-3]	no_change same	[Version: wget-1.19, Clone Class ID : 6 Type-3]	
 Life Status : Alive
 Duration : 6 Releases
-Last Changed : 5 Releases Eearlier
+Last Changed : 5 Releases Earlier
 Consistently Changed : 0
 Inconsistently Changed : 0
 Change Pattern : Static 
@@ -119,7 +119,7 @@ Fragments : SAME
 [Version: wget-1.14, Clone Class ID : 12 Type-1]	no_change same	[Version: wget-1.15, Clone Class ID : 10 Type-1]	no_change same	[Version: wget-1.16, Clone Class ID : 10 Type-1]	consistent_change same	[Version: wget-1.17, Clone Class ID : 9 Type-1]	no_change same	[Version: wget-1.18, Clone Class ID : 9 Type-1]	consistent_change same	[Version: wget-1.19, Clone Class ID : 9 Type-1]	
 Life Status : Alive
 Duration : 6 Releases
-Last Changed : 0 Releases Eearlier
+Last Changed : 0 Releases Earlier
 Consistently Changed : 2
 Inconsistently Changed : 0
 Change Pattern : Consistently Chnaged
@@ -129,7 +129,7 @@ Fragments : SAME
 [Version: wget-1.14, Clone Class ID : 13 Type-1]	consistent_change same	[Version: wget-1.15, Clone Class ID : 11 Type-1]	no_change same	[Version: wget-1.16, Clone Class ID : 11 Type-1]	no_change same	[Version: wget-1.17, Clone Class ID : 10 Type-1]	no_change same	[Version: wget-1.18, Clone Class ID : 10 Type-1]	consistent_change same	[Version: wget-1.19, Clone Class ID : 10 Type-1]	
 Life Status : Alive
 Duration : 6 Releases
-Last Changed : 0 Releases Eearlier
+Last Changed : 0 Releases Earlier
 Consistently Changed : 2
 Inconsistently Changed : 0
 Change Pattern : Consistently Chnaged
@@ -139,7 +139,7 @@ Fragments : SAME
 [Version: wget-1.14, Clone Class ID : 14 Type-1]	no_change same	[Version: wget-1.15, Clone Class ID : 12 Type-1]	no_change same	[Version: wget-1.16, Clone Class ID : 12 Type-1]	no_change same	[Version: wget-1.17, Clone Class ID : 11 Type-1]	no_change same	[Version: wget-1.18, Clone Class ID : 11 Type-1]	consistent_change same	[Version: wget-1.19, Clone Class ID : 11 Type-1]	
 Life Status : Alive
 Duration : 6 Releases
-Last Changed : 0 Releases Eearlier
+Last Changed : 0 Releases Earlier
 Consistently Changed : 1
 Inconsistently Changed : 0
 Change Pattern : Consistently Chnaged
@@ -149,7 +149,7 @@ Fragments : SAME
 [Version: wget-1.14, Clone Class ID : 15 Type-1]	no_change same	[Version: wget-1.15, Clone Class ID : 13 Type-1]	no_change same	[Version: wget-1.16, Clone Class ID : 13 Type-1]	no_change same	[Version: wget-1.17, Clone Class ID : 12 Type-1]	no_change same	[Version: wget-1.18, Clone Class ID : 12 Type-1]	consistent_change same	[Version: wget-1.19, Clone Class ID : 12 Type-1]	
 Life Status : Alive
 Duration : 6 Releases
-Last Changed : 0 Releases Eearlier
+Last Changed : 0 Releases Earlier
 Consistently Changed : 1
 Inconsistently Changed : 0
 Change Pattern : Consistently Chnaged
@@ -159,7 +159,7 @@ Fragments : SAME
 [Version: wget-1.14, Clone Class ID : 16 Type-1]	consistent_change same	[Version: wget-1.15, Clone Class ID : 14 Type-1]	no_change same	[Version: wget-1.16, Clone Class ID : 14 Type-1]	no_change same	[Version: wget-1.17, Clone Class ID : 13 Type-1]	no_change same	[Version: wget-1.18, Clone Class ID : 13 Type-1]	consistent_change same	[Version: wget-1.19, Clone Class ID : 13 Type-1]	
 Life Status : Alive
 Duration : 6 Releases
-Last Changed : 0 Releases Eearlier
+Last Changed : 0 Releases Earlier
 Consistently Changed : 2
 Inconsistently Changed : 0
 Change Pattern : Consistently Chnaged
@@ -169,7 +169,7 @@ Fragments : SAME
 [Version: wget-1.14, Clone Class ID : 17 Type-1]	no_change same	[Version: wget-1.15, Clone Class ID : 15 Type-1]	no_change same	[Version: wget-1.16, Clone Class ID : 15 Type-1]	no_change same	[Version: wget-1.17, Clone Class ID : 14 Type-1]	no_change same	[Version: wget-1.18, Clone Class ID : 14 Type-1]	no_change same	[Version: wget-1.19, Clone Class ID : 14 Type-1]	
 Life Status : Alive
 Duration : 6 Releases
-Last Changed : 5 Releases Eearlier
+Last Changed : 5 Releases Earlier
 Consistently Changed : 0
 Inconsistently Changed : 0
 Change Pattern : Static 
@@ -179,7 +179,7 @@ Fragments : SAME
 [Version: wget-1.14, Clone Class ID : 18 Type-1]	no_change same	[Version: wget-1.15, Clone Class ID : 16 Type-1]	no_change same	[Version: wget-1.16, Clone Class ID : 16 Type-1]	no_change same	[Version: wget-1.17, Clone Class ID : 15 Type-1]	no_change same	[Version: wget-1.18, Clone Class ID : 15 Type-1]	consistent_change same	[Version: wget-1.19, Clone Class ID : 15 Type-1]	
 Life Status : Alive
 Duration : 6 Releases
-Last Changed : 0 Releases Eearlier
+Last Changed : 0 Releases Earlier
 Consistently Changed : 1
 Inconsistently Changed : 0
 Change Pattern : Consistently Chnaged
@@ -189,7 +189,7 @@ Fragments : SAME
 [Version: wget-1.14, Clone Class ID : 19 Type-1]	no_change same	[Version: wget-1.15, Clone Class ID : 17 Type-1]	no_change same	[Version: wget-1.16, Clone Class ID : 17 Type-1]	no_change same	[Version: wget-1.17, Clone Class ID : 16 Type-1]	no_change same	[Version: wget-1.18, Clone Class ID : 16 Type-1]	no_change same	[Version: wget-1.19, Clone Class ID : 16 Type-1]	
 Life Status : Alive
 Duration : 6 Releases
-Last Changed : 5 Releases Eearlier
+Last Changed : 5 Releases Earlier
 Consistently Changed : 0
 Inconsistently Changed : 0
 Change Pattern : Static 
@@ -199,7 +199,7 @@ Fragments : SAME
 [Version: wget-1.14, Clone Class ID : 20 Type-1]	no_change same	[Version: wget-1.15, Clone Class ID : 18 Type-1]	no_change same	[Version: wget-1.16, Clone Class ID : 18 Type-1]	no_change same	[Version: wget-1.17, Clone Class ID : 17 Type-1]	no_change same	[Version: wget-1.18, Clone Class ID : 17 Type-1]	no_change same	[Version: wget-1.19, Clone Class ID : 17 Type-1]	
 Life Status : Alive
 Duration : 6 Releases
-Last Changed : 5 Releases Eearlier
+Last Changed : 5 Releases Earlier
 Consistently Changed : 0
 Inconsistently Changed : 0
 Change Pattern : Static 
@@ -209,7 +209,7 @@ Fragments : SAME
 [Version: wget-1.14, Clone Class ID : 21 Type-1]	no_change same	[Version: wget-1.15, Clone Class ID : 19 Type-1]	no_change same	[Version: wget-1.16, Clone Class ID : 19 Type-1]	no_change same	[Version: wget-1.17, Clone Class ID : 18 Type-1]	no_change same	[Version: wget-1.18, Clone Class ID : 18 Type-1]	no_change same	[Version: wget-1.19, Clone Class ID : 18 Type-1]	
 Life Status : Alive
 Duration : 6 Releases
-Last Changed : 5 Releases Eearlier
+Last Changed : 5 Releases Earlier
 Consistently Changed : 0
 Inconsistently Changed : 0
 Change Pattern : Static 
@@ -219,7 +219,7 @@ Fragments : SAME
 [Version: wget-1.14, Clone Class ID : 22 Type-1]	no_change same	[Version: wget-1.15, Clone Class ID : 20 Type-1]	no_change same	[Version: wget-1.16, Clone Class ID : 20 Type-1]	no_change same	[Version: wget-1.17, Clone Class ID : 19 Type-1]	no_change same	[Version: wget-1.18, Clone Class ID : 19 Type-1]	no_change same	[Version: wget-1.19, Clone Class ID : 19 Type-1]	
 Life Status : Alive
 Duration : 6 Releases
-Last Changed : 5 Releases Eearlier
+Last Changed : 5 Releases Earlier
 Consistently Changed : 0
 Inconsistently Changed : 0
 Change Pattern : Static 
@@ -229,7 +229,7 @@ Fragments : SAME
 [Version: wget-1.14, Clone Class ID : 23 Type-1]	consistent_change same	[Version: wget-1.15, Clone Class ID : 21 Type-1]	no_change same	[Version: wget-1.16, Clone Class ID : 21 Type-1]	no_change same	[Version: wget-1.17, Clone Class ID : 20 Type-1]	no_change same	[Version: wget-1.18, Clone Class ID : 20 Type-1]	consistent_change same	[Version: wget-1.19, Clone Class ID : 20 Type-1]	
 Life Status : Alive
 Duration : 6 Releases
-Last Changed : 0 Releases Eearlier
+Last Changed : 0 Releases Earlier
 Consistently Changed : 2
 Inconsistently Changed : 0
 Change Pattern : Consistently Chnaged
@@ -239,7 +239,7 @@ Fragments : SAME
 [Version: wget-1.14, Clone Class ID : 24 Type-1]	no_change same	[Version: wget-1.15, Clone Class ID : 22 Type-1]	no_change same	[Version: wget-1.16, Clone Class ID : 22 Type-1]	no_change same	[Version: wget-1.17, Clone Class ID : 21 Type-1]	no_change same	[Version: wget-1.18, Clone Class ID : 21 Type-1]	consistent_change same	[Version: wget-1.19, Clone Class ID : 21 Type-1]	
 Life Status : Alive
 Duration : 6 Releases
-Last Changed : 0 Releases Eearlier
+Last Changed : 0 Releases Earlier
 Consistently Changed : 1
 Inconsistently Changed : 0
 Change Pattern : Consistently Chnaged
@@ -249,7 +249,7 @@ Fragments : SAME
 [Version: wget-1.14, Clone Class ID : 25 Type-1]	consistent_change same	[Version: wget-1.15, Clone Class ID : 23 Type-1]	no_change same	[Version: wget-1.16, Clone Class ID : 23 Type-1]	no_change same	[Version: wget-1.17, Clone Class ID : 22 Type-1]	no_change same	[Version: wget-1.18, Clone Class ID : 22 Type-1]	consistent_change same	[Version: wget-1.19, Clone Class ID : 22 Type-1]	
 Life Status : Alive
 Duration : 6 Releases
-Last Changed : 0 Releases Eearlier
+Last Changed : 0 Releases Earlier
 Consistently Changed : 2
 Inconsistently Changed : 0
 Change Pattern : Consistently Chnaged
@@ -259,7 +259,7 @@ Fragments : SAME
 [Version: wget-1.14, Clone Class ID : 26 Type-1]	no_change same	[Version: wget-1.15, Clone Class ID : 24 Type-1]	no_change same	[Version: wget-1.16, Clone Class ID : 24 Type-1]	no_change same	[Version: wget-1.17, Clone Class ID : 23 Type-1]	no_change same	[Version: wget-1.18, Clone Class ID : 23 Type-1]	consistent_change same	[Version: wget-1.19, Clone Class ID : 23 Type-1]	
 Life Status : Alive
 Duration : 6 Releases
-Last Changed : 0 Releases Eearlier
+Last Changed : 0 Releases Earlier
 Consistently Changed : 1
 Inconsistently Changed : 0
 Change Pattern : Consistently Chnaged
@@ -269,7 +269,7 @@ Fragments : SAME
 [Version: wget-1.14, Clone Class ID : 27 Type-1]	no_change same	[Version: wget-1.15, Clone Class ID : 25 Type-1]	no_change same	[Version: wget-1.16, Clone Class ID : 25 Type-1]	no_change same	[Version: wget-1.17, Clone Class ID : 24 Type-1]	no_change same	[Version: wget-1.18, Clone Class ID : 24 Type-1]	no_change same	[Version: wget-1.19, Clone Class ID : 24 Type-1]	
 Life Status : Alive
 Duration : 6 Releases
-Last Changed : 5 Releases Eearlier
+Last Changed : 5 Releases Earlier
 Consistently Changed : 0
 Inconsistently Changed : 0
 Change Pattern : Static 
@@ -279,7 +279,7 @@ Fragments : SAME
 [Version: wget-1.14, Clone Class ID : 29 Type-2]	no_change same	[Version: wget-1.15, Clone Class ID : 27 Type-2]	no_change same	[Version: wget-1.16, Clone Class ID : 27 Type-2]	no_change same	[Version: wget-1.17, Clone Class ID : 26 Type-2]	no_change same	[Version: wget-1.18, Clone Class ID : 26 Type-2]	no_change same	[Version: wget-1.19, Clone Class ID : 26 Type-2]	
 Life Status : Alive
 Duration : 6 Releases
-Last Changed : 5 Releases Eearlier
+Last Changed : 5 Releases Earlier
 Consistently Changed : 0
 Inconsistently Changed : 0
 Change Pattern : Static 
@@ -289,7 +289,7 @@ Fragments : SAME
 [Version: wget-1.14, Clone Class ID : 30 Type-3]	no_change same	[Version: wget-1.15, Clone Class ID : 28 Type-3]	consistent_change same	[Version: wget-1.16, Clone Class ID : 28 Type-3]	no_change same	[Version: wget-1.17, Clone Class ID : 27 Type-3]	no_change same	[Version: wget-1.18, Clone Class ID : 27 Type-3]	no_change same	[Version: wget-1.19, Clone Class ID : 27 Type-3]	
 Life Status : Alive
 Duration : 6 Releases
-Last Changed : 3 Releases Eearlier
+Last Changed : 3 Releases Earlier
 Consistently Changed : 1
 Inconsistently Changed : 0
 Change Pattern : Consistently Chnaged
@@ -299,7 +299,7 @@ Fragments : SAME
 [Version: wget-1.17, Clone Class ID : 5 Type-3]	no_change same	[Version: wget-1.18, Clone Class ID : 5 Type-3]	no_change same	[Version: wget-1.19, Clone Class ID : 5 Type-3]	
 Life Status : Alive
 Duration : 3 Releases
-Last Changed : 2 Releases Eearlier
+Last Changed : 2 Releases Earlier
 Consistently Changed : 0
 Inconsistently Changed : 0
 Change Pattern : Static 
