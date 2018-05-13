@@ -1,5 +1,29 @@
-#loaderText {
+body {
     font-family: sans-serif;
+}
+
+.filterPanel {
+    height: 135px;
+    padding: 0px 5%;
+    text-align: center;
+}
+
+.filterPanel>div {
+    text-align: center;
+    display: inline-block;
+}
+
+button#recreatePlot {
+    margin-left: 1em;
+}
+
+#sliderContainer {
+    width: 50%;
+    vertical-align: middle;
+    margin-right: 1.5em;
+}
+
+#loaderText {
     text-align: center;
     text-transform: uppercase;
     margin: 40px;
@@ -11,7 +35,6 @@
 }
 
 .SubHeadingTitle {
-    font-family: sans-serif;
     text-align: center;
     text-transform: uppercase;
     color: #577279;
@@ -30,7 +53,6 @@
 
 #root .mainContainer h2,
 #root .matrixMainContainer h2 {
-    font-family: sans-serif;
     text-align: center;
     text-transform: uppercase;
     display: inline-block;
@@ -51,7 +73,6 @@ text.cloneMarkerText {
     font-weight: bold;
     cursor: pointer;
     font-size: 15px;
-    font-family: sans-serif;
     fill: white;
 }
 
@@ -59,7 +80,6 @@ text.cloneMarkerText {
 .tooltip-circularMap {
     background-color: #dcd5d5;
     padding: 10px;
-    font-family: sans-serif;
     text-transform: capitalize;
     font-size: 12px;
     font-weight: bold;
@@ -69,7 +89,7 @@ text.cloneMarkerText {
 /* ///////////////////////////// Style for Circular Map //////////////////////////////// */
 
 #root .circularMainContainer,
-#root .circularMainContainer,
+#root .mainContainer,
 #root .matrixMainContainer {
     margin: 0px auto;
     display: block;
@@ -92,17 +112,18 @@ text.cloneMarkerText {
     width: 2em;
 }
 
+.changeLegend {
+    display: inline-block;
+    border: 0.5em;
+    width: 4em;
+}
+
 .globalLegendText {
-    font-family: sans-serif;
     text-transform: uppercase;
     color: #4e89bd;
     font-size: 1.1em;
     font-weight: bold;
     padding-left: 2%;
-}
-
-.mainContainer {
-    margin: 0px auto;
 }
 
 .arcContainer {
@@ -155,7 +176,6 @@ text.cloneMarkerText {
 
 #description {
     margin: 2%;
-    font-family: sans-serif;
     font-size: 1.3em;
     background: #edeeee;
     padding: 2%;
@@ -185,7 +205,45 @@ h3.SubHeadingTitle.noCapital {
 }
 
 .cloneInfoContainer>.infoParagraph {
-    font-family: sans-serif;
     text-transform: uppercase;
     font-size: 1em;
+}
+
+.cloneDescriptionContainer {
+    width: 50%;
+    display: inline-block;
+    text-align: center;
+}
+
+h3.descriptionHeader {
+    text-align: center;
+    text-transform: uppercase;
+    color: #577279;
+    font-size: 1em;
+}
+
+.cloneDescriptionContainer>p {
+    font-size: 1em;
+    font-weight: bold;
+    color: #534b4b;
+}
+
+.hiddenMarker {
+    pointer-events: none;
+}
+
+.changeSubContainer {
+    margin-top: 1%;
+    border: 0.2em solid #a63a3a;
+    padding: 2%;
+}
+
+.fragmentContainer {
+    margin-top: 2%;
+}
+
+.fragmentContainer>p {
+    font-size: 0.75em;
+    color: #534b4b;
+    padding: 0px 1em;
 }

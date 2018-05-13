@@ -9,7 +9,7 @@ import matrix from './matrix';
 import cloneMap from './cloneMap';
 import { blueColor, redColor, greenColor, grayColor } from './colors';
 import { sampleSourceMapper } from './sampleSourceMapper';
-
+import slider from './slider';
 
 // tab switch implementation - show hide depending on button press , by default only description is shown
 d3.selectAll('#tab-switch-container > button').on('click', () => {
@@ -71,6 +71,22 @@ function start(cloneData, linkGenealogy = {}) {
     subHeadingContainer.select('h3').remove();
     subHeadingContainer.append('h3').attr('class', 'SubHeadingTitle').text('Project Name : ' + cloneData.projectName);
     cloneData.genealogyInfo.split('\n').map((content) => subHeadingContainer.append('h3').attr('class', 'SubHeadingTitle').text(content))
+
+    let minRange = 1,
+        maxRange = cloneData.versionCount + 1;
+
+    // initialize slider 
+    slider(minRange, maxRange, cloneData.versionCount, (min, max) => {
+        minRange = min - 1;
+        maxRange = max - 1;
+    });
+
+    // tab switch implementation - show hide depending on button press , by default only description is shown
+    d3.selectAll('#recreatePlot').on('click', () => {
+
+        circularMap(cloneData, linkGenealogy);
+
+    })
 
     // calling circular map 
     circularMap(cloneData, linkGenealogy);

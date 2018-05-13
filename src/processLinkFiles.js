@@ -24,6 +24,7 @@ export default function(responseArray, cloneData) {
                 let sourceKey = value.source + "@" + value.class[0]._attributes.id,
                     targetKey = value.target + "@" + value.class[1]._attributes.id;
                 value.targetPresent = true;
+                value.multiClass = true;
                 genealogyMapSource[sourceKey] = value;
                 genealogyMapTarget[targetKey] = value;
             }
@@ -32,11 +33,13 @@ export default function(responseArray, cloneData) {
         // so there is only source version info and thus only one class
         else {
             value.targetPresent = false;
+            value.multiClass = false;
             // if the file name has the source version name in it store the value in sourcemap else targetmap
             if (value.class.source[0]._attributes.file.indexOf(value.source) > -1) {
                 genealogyMapSource[value.source + "@" + value.class._attributes.id] = value;
             } else {
                 genealogyMapTarget[value.target + "@" + value.class._attributes.id] = value;
+                value.targetPresent = true;
             }
         }
     })

@@ -12,12 +12,21 @@ export default function(cloneData, linkGenealogy) {
         width = squareRange,
         radius = width / 2;
 
-    // add the legend at the top before rendering the actual plot 
-    legend('#circos-root');
+    let circularMainContainer = d3.select('#root .circularMainContainer');
 
-    let circularMainContainer = d3.select('#circos-root').append('div');
-    circularMainContainer.attr('class', 'circularMainContainer')
-        .style("width", width + 'px').selectAll("*").remove();
+
+    if (circularMainContainer.node()) {
+        circularMainContainer.selectAll('*').remove();
+    } else {
+        circularMainContainer = d3.select('#circos-root').append('div').attr('class', 'circularMainContainer');
+        // add the legend at the top before rendering the actual plot 
+        legend('#circos-root');
+    }
+
+    // toggle to view the dead and split genealogy list
+    // genealogyList = genealogyList.concat(cloneData.deadGenealogyList);
+
+    circularMainContainer.style("width", width + 'px');
 
     let circularRootSVG = circularMainContainer.append('svg')
         .attr('class', 'circularRootSVG')
