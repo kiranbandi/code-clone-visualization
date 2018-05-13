@@ -3,7 +3,6 @@ body {
 }
 
 .filterPanel {
-    height: 135px;
     padding: 0px 5%;
     text-align: center;
 }
@@ -20,7 +19,6 @@ button#recreatePlot {
 #sliderContainer {
     width: 50%;
     vertical-align: middle;
-    margin-right: 1.5em;
 }
 
 #loaderText {
@@ -246,4 +244,8 @@ h3.descriptionHeader {
     font-size: 0.75em;
     color: #534b4b;
     padding: 0px 1em;
+}
+
+.filterPanel>p {
+    font-size: 1.1em;
 }
