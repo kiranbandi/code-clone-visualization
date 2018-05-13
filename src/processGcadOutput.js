@@ -11,8 +11,6 @@ export default function(cloneResponse) {
         genealogyInfo = responseArray.slice(1, 5).join('\n'),
         versionCount = Number(genealogyInfo.split('\n')[0].slice(20));
 
-    let count = 0;
-
     // Genealogy of every clone set is represented in a single line that starts with "[Version" so we look for every line that starts with that 
     // and then process that line and the next 7 lines following it as a bunch because they contain info regarding this clone set
     let lineIndex = 0,
@@ -57,7 +55,7 @@ export default function(cloneResponse) {
     return { genealogyList, deadGenealogyList, projectName, genealogyInfo, versionCount, uniqueVersionList };
 }
 
-function splitAndParseCloneSet(cloneSetString) {
+function splitAndParseCloneSet(cloneSetString, count) {
     // Split the entire string by tab and then read through the list sequentially
     // since we will be getting the genealogy information between 2 clones at a time 
     // we will be grouping the result into clone sets so 1->2->3->4 would be grouped as [{1,2},{2,3},{3,4}]
@@ -88,6 +86,11 @@ function splitAndParseCloneSet(cloneSetString) {
         // if the change type is split
         if (changeType.indexOf('split') > -1) {
             genealogyType = 'split';
+            break;
+        }
+        // inconclusive genealogy type , so tagged as dead genealogies
+        if (changeType.indexOf('n/a') > -1) {
+            genealogyType = 'disappeared';
             break;
         }
 

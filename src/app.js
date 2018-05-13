@@ -77,20 +77,35 @@ function start(cloneData, linkGenealogy = {}) {
 
     // initialize slider 
     slider(minRange, maxRange, cloneData.versionCount, (min, max) => {
-        minRange = min - 1;
-        maxRange = max - 1;
+        minRange = min;
+        maxRange = max;
     });
 
     // tab switch implementation - show hide depending on button press , by default only description is shown
     d3.selectAll('#recreatePlot').on('click', () => {
-
-        circularMap(cloneData, linkGenealogy);
-
+        let filterOptions = {};
+        filterOptions['includeDeadGenealogies'] = d3.select('#filterGenealogy').property('checked');
+        filterCloneData(cloneData, minRange, maxRange);
+        circularMap(cloneData, linkGenealogy, filterOptions);
     })
 
     // calling circular map 
     circularMap(cloneData, linkGenealogy);
     // calling linear map 
     matrix(cloneData, linkGenealogy);
+
+}
+
+function filterCloneData(cloneData, minRange, maxRange) {
+
+    let { genealogyList, deadGenealogyList, versionCount, uniqueVersionList } = cloneData,
+    filteredVersionList = uniqueVersionList.slice(minRange - 1, maxRange - 1);
+
+    cloneData.genealogyList = _.filter(genealogyList, (changeList) => {
+
+        debugger;
+
+    })
+
 
 }
