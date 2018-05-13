@@ -5,15 +5,17 @@ export default function(responseArray, cloneData) {
     let genealogyMapSource = {},
         genealogyMapTarget = {},
         xml2jsonData,
-        jsonCollection = _.reduce(responseArray, (store, xml) => {
-            xml2jsonData = convert.xml2js(xml.data, { compact: true, spaces: 0 }).genealogies;
-            return store.concat(
-                _.map(xml2jsonData.genealogy, (info) => {
-                    info.source = xml2jsonData._attributes.version1;
-                    info.target = xml2jsonData._attributes.version2;
-                    return info;
-                }));
-        }, []);
+        jsonCollection = [];
+
+    _.forEach(responseArray, (xml) => {
+        xml2jsonData = convert.xml2js(xml.data, { compact: true, spaces: 0 }).genealogies;
+        jsonCollection = jsonCollection.concat(
+            _.map(xml2jsonData.genealogy, (info) => {
+                info.source = xml2jsonData._attributes.version1;
+                info.target = xml2jsonData._attributes.version2;
+                return info;
+            }));
+    });
 
     // simple genealogy collection 
     _.forEach(jsonCollection, (value, index) => {

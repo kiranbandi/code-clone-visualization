@@ -18,7 +18,7 @@ export default function(cloneData, linkGenealogy) {
     let mainContainer = d3.select('.mainContainer');
 
     // for projects with more than 10 versions double the clone map width
-    width = versionCount > 20 ? width * 2 : width;
+    width = versionCount > 20 ? width * 1.25 : width;
 
     if (mainContainer.node()) {
         mainContainer.attr('class', 'mainContainer')

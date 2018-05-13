@@ -1,5 +1,6 @@
 import * as d3 from 'd3';
 import { blueColor, redColor, greenColor } from './colors';
+import _ from 'lodash';
 
 // code for clone change type legend
 export default function(rootId) {

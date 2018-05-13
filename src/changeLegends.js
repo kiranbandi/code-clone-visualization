@@ -1,5 +1,6 @@
 import * as d3 from 'd3';
 import { blueColor, redColor, greenColor } from './colors';
+import _ from 'lodash';
 
 
 // normal line - fragments are same 

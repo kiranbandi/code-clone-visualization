@@ -2,6 +2,7 @@
 /* original developer - https://github.com/evoluteur */
 import * as d3 from 'd3';
 import { blueColor } from './colors';
+import _ from 'lodash';
 
 export default function(v1, v2, max, change) {
 
