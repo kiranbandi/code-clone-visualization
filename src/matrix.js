@@ -3,8 +3,9 @@ import { symbol, symbolCircle, symbolSquare, symbolTriangle, symbolStar } from "
 import _ from 'lodash';
 import { blueColor, redColor, greenColor, grayColor } from './colors';
 import legend from './legend';
+import cloneMap from './cloneMap';
 
-export default function(cloneData) {
+export default function(cloneData, linkGenealogy) {
 
     let { genealogyList, projectName, genealogyInfo, versionCount, uniqueVersionList } = cloneData,
     squareRange = document.body.clientWidth;
@@ -49,7 +50,8 @@ export default function(cloneData) {
                     classId: e.target.classId,
                     cloneType: e.target.cloneType,
                     changeType: e.changeType,
-                    tooltipInfo: item.info
+                    tooltipInfo: item.info,
+                    row: index
                 };
             }
         });
@@ -131,8 +133,8 @@ export default function(cloneData) {
                 let t_info = tooltip._groups[0][0].getBoundingClientRect();
                 let m_info = contentContainer._groups[0][0].getBoundingClientRect();
 
-                let t_x1 = event.pageX + 0;
-                let t_y1 = event.pageY - 0;
+                let t_x1 = d3.event.pageX + 0;
+                let t_y1 = d3.event.pageY - 0;
 
                 //checking x coordinates of tooltip going beyond matrix boundary
                 if (t_x1 + t_info.width > m_info.left + window.scrollX + m_info.width) {
@@ -149,4 +151,7 @@ export default function(cloneData) {
         })
         .on("mouseout", function() { return tooltip.style("visibility", "hidden"); })
 
+        .on("click", function(d) {
+            cloneMap({ 'genealogy': [genealogyList[d.row]], versionCount, uniqueVersionList }, linkGenealogy);
+        })
 }
