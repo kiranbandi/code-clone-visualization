@@ -33,7 +33,7 @@ Duration : 6 Releases
 Last Changed : 3 Releases Earlier
 Consistently Changed : 1
 Inconsistently Changed : 0
-Change Pattern : Consistently Chnaged
+Change Pattern : Consistently Changed
 Fragments : SAME
 
 
@@ -182,7 +182,7 @@ Duration : 6 Releases
 Last Changed : 3 Releases Earlier
 Consistently Changed : 1
 Inconsistently Changed : 0
-Change Pattern : Consistently Chnaged
+Change Pattern : Consistently Changed
 Fragments : SAME
 
 
@@ -210,7 +210,7 @@ Duration : 6 Releases
 Last Changed : 3 Releases Earlier
 Consistently Changed : 1
 Inconsistently Changed : 0
-Change Pattern : Consistently Chnaged
+Change Pattern : Consistently Changed
 Fragments : Added
 
 
@@ -303,7 +303,7 @@ Duration : 6 Releases
 Last Changed : 3 Releases Earlier
 Consistently Changed : 1
 Inconsistently Changed : 0
-Change Pattern : Consistently Chnaged
+Change Pattern : Consistently Changed
 Fragments : SAME
 
 
@@ -341,7 +341,7 @@ Duration : 6 Releases
 Last Changed : 2 Releases Earlier
 Consistently Changed : 2
 Inconsistently Changed : 0
-Change Pattern : Consistently Chnaged
+Change Pattern : Consistently Changed
 Fragments : SAME
 
 
@@ -379,7 +379,7 @@ Duration : 6 Releases
 Last Changed : 2 Releases Earlier
 Consistently Changed : 1
 Inconsistently Changed : 0
-Change Pattern : Consistently Chnaged
+Change Pattern : Consistently Changed
 Fragments : SAME
 
 
@@ -389,7 +389,7 @@ Duration : 6 Releases
 Last Changed : 2 Releases Earlier
 Consistently Changed : 2
 Inconsistently Changed : 0
-Change Pattern : Consistently Chnaged
+Change Pattern : Consistently Changed
 Fragments : SAME
 
 
@@ -409,7 +409,7 @@ Duration : 6 Releases
 Last Changed : 3 Releases Earlier
 Consistently Changed : 1
 Inconsistently Changed : 0
-Change Pattern : Consistently Chnaged
+Change Pattern : Consistently Changed
 Fragments : SAME
 
 
@@ -428,7 +428,7 @@ Duration : 6 Releases
 Last Changed : 3 Releases Earlier
 Consistently Changed : 1
 Inconsistently Changed : 0
-Change Pattern : Consistently Chnaged
+Change Pattern : Consistently Changed
 Fragments : SAME
 
 
@@ -580,7 +580,7 @@ Duration : 6 Releases
 Last Changed : 2 Releases Earlier
 Consistently Changed : 2
 Inconsistently Changed : 0
-Change Pattern : Consistently Chnaged
+Change Pattern : Consistently Changed
 Fragments : Added
 
 
@@ -599,7 +599,7 @@ Duration : 6 Releases
 Last Changed : 3 Releases Earlier
 Consistently Changed : 1
 Inconsistently Changed : 0
-Change Pattern : Consistently Chnaged
+Change Pattern : Consistently Changed
 Fragments : SAME
 
 
@@ -627,7 +627,7 @@ Duration : 6 Releases
 Last Changed : 2 Releases Earlier
 Consistently Changed : 2
 Inconsistently Changed : 0
-Change Pattern : Consistently Chnaged
+Change Pattern : Consistently Changed
 Fragments : SAME
 
 
@@ -637,7 +637,7 @@ Duration : 6 Releases
 Last Changed : 2 Releases Earlier
 Consistently Changed : 2
 Inconsistently Changed : 0
-Change Pattern : Consistently Chnaged
+Change Pattern : Consistently Changed
 Fragments : SAME
 
 
@@ -647,7 +647,7 @@ Duration : 6 Releases
 Last Changed : 3 Releases Earlier
 Consistently Changed : 1
 Inconsistently Changed : 0
-Change Pattern : Consistently Chnaged
+Change Pattern : Consistently Changed
 Fragments : SAME
 
 
@@ -675,7 +675,7 @@ Duration : 6 Releases
 Last Changed : 3 Releases Earlier
 Consistently Changed : 1
 Inconsistently Changed : 0
-Change Pattern : Consistently Chnaged
+Change Pattern : Consistently Changed
 Fragments : SAME
 
 
@@ -694,7 +694,7 @@ Duration : 6 Releases
 Last Changed : 3 Releases Earlier
 Consistently Changed : 1
 Inconsistently Changed : 0
-Change Pattern : Consistently Chnaged
+Change Pattern : Consistently Changed
 Fragments : Added
 
 
@@ -713,7 +713,7 @@ Duration : 6 Releases
 Last Changed : 3 Releases Earlier
 Consistently Changed : 1
 Inconsistently Changed : 0
-Change Pattern : Consistently Chnaged
+Change Pattern : Consistently Changed
 Fragments : SAME
 
 
@@ -723,7 +723,7 @@ Duration : 6 Releases
 Last Changed : 3 Releases Earlier
 Consistently Changed : 1
 Inconsistently Changed : 0
-Change Pattern : Consistently Chnaged
+Change Pattern : Consistently Changed
 Fragments : SAME
 
 
@@ -1122,7 +1122,7 @@ Duration : 6 Releases
 Last Changed : 3 Releases Earlier
 Consistently Changed : 1
 Inconsistently Changed : 0
-Change Pattern : Consistently Chnaged
+Change Pattern : Consistently Changed
 Fragments : SAME
 
 
@@ -1177,7 +1177,7 @@ Duration : 3 Releases
 Last Changed : 0 Releases Earlier
 Consistently Changed : 1
 Inconsistently Changed : 0
-Change Pattern : Consistently Chnaged
+Change Pattern : Consistently Changed
 Fragments : Added
 
 
@@ -1197,7 +1197,7 @@ Duration : 6 Releases
 Last Changed : 3 Releases Earlier
 Consistently Changed : 1
 Inconsistently Changed : 0
-Change Pattern : Consistently Chnaged
+Change Pattern : Consistently Changed
 Fragments : SAME
 
 
@@ -1263,7 +1263,7 @@ Duration : 6 Releases
 Last Changed : 3 Releases Earlier
 Consistently Changed : 1
 Inconsistently Changed : 0
-Change Pattern : Consistently Chnaged
+Change Pattern : Consistently Changed
 Fragments : Added
 
 
@@ -1291,7 +1291,7 @@ Duration : 6 Releases
 Last Changed : 3 Releases Earlier
 Consistently Changed : 1
 Inconsistently Changed : 0
-Change Pattern : Consistently Chnaged
+Change Pattern : Consistently Changed
 Fragments : SAME
 
 
@@ -1378,7 +1378,7 @@ Duration : 6 Releases
 Last Changed : 2 Releases Earlier
 Consistently Changed : 1
 Inconsistently Changed : 0
-Change Pattern : Consistently Chnaged
+Change Pattern : Consistently Changed
 Fragments : SAME
 
 
@@ -1417,7 +1417,7 @@ Duration : 6 Releases
 Last Changed : 3 Releases Earlier
 Consistently Changed : 1
 Inconsistently Changed : 0
-Change Pattern : Consistently Chnaged
+Change Pattern : Consistently Changed
 Fragments : SAME
 
 
@@ -1445,7 +1445,7 @@ Duration : 6 Releases
 Last Changed : 3 Releases Earlier
 Consistently Changed : 1
 Inconsistently Changed : 0
-Change Pattern : Consistently Chnaged
+Change Pattern : Consistently Changed
 Fragments : Added
 
 
@@ -1455,7 +1455,7 @@ Duration : 6 Releases
 Last Changed : 3 Releases Earlier
 Consistently Changed : 1
 Inconsistently Changed : 0
-Change Pattern : Consistently Chnaged
+Change Pattern : Consistently Changed
 Fragments : SAME
 
 
@@ -1465,7 +1465,7 @@ Duration : 6 Releases
 Last Changed : 3 Releases Earlier
 Consistently Changed : 1
 Inconsistently Changed : 0
-Change Pattern : Consistently Chnaged
+Change Pattern : Consistently Changed
 Fragments : SAME
 
 
@@ -1475,7 +1475,7 @@ Duration : 6 Releases
 Last Changed : 3 Releases Earlier
 Consistently Changed : 1
 Inconsistently Changed : 0
-Change Pattern : Consistently Chnaged
+Change Pattern : Consistently Changed
 Fragments : SAME
 
 
@@ -1485,7 +1485,7 @@ Duration : 6 Releases
 Last Changed : 3 Releases Earlier
 Consistently Changed : 1
 Inconsistently Changed : 0
-Change Pattern : Consistently Chnaged
+Change Pattern : Consistently Changed
 Fragments : SAME
 
 
@@ -1513,7 +1513,7 @@ Duration : 6 Releases
 Last Changed : 3 Releases Earlier
 Consistently Changed : 1
 Inconsistently Changed : 0
-Change Pattern : Consistently Chnaged
+Change Pattern : Consistently Changed
 Fragments : SAME
 
 
@@ -1541,7 +1541,7 @@ Duration : 6 Releases
 Last Changed : 3 Releases Earlier
 Consistently Changed : 1
 Inconsistently Changed : 0
-Change Pattern : Consistently Chnaged
+Change Pattern : Consistently Changed
 Fragments : SAME
 
 
@@ -1561,7 +1561,7 @@ Duration : 6 Releases
 Last Changed : 3 Releases Earlier
 Consistently Changed : 1
 Inconsistently Changed : 0
-Change Pattern : Consistently Chnaged
+Change Pattern : Consistently Changed
 Fragments : SAME
 
 
@@ -1601,7 +1601,7 @@ Duration : 6 Releases
 Last Changed : 3 Releases Earlier
 Consistently Changed : 1
 Inconsistently Changed : 0
-Change Pattern : Consistently Chnaged
+Change Pattern : Consistently Changed
 Fragments : SAME
 
 
@@ -1929,7 +1929,7 @@ Duration : 6 Releases
 Last Changed : 3 Releases Earlier
 Consistently Changed : 1
 Inconsistently Changed : 0
-Change Pattern : Consistently Chnaged
+Change Pattern : Consistently Changed
 Fragments : SAME
 
 
@@ -2023,7 +2023,7 @@ Duration : 6 Releases
 Last Changed : 3 Releases Earlier
 Consistently Changed : 1
 Inconsistently Changed : 0
-Change Pattern : Consistently Chnaged
+Change Pattern : Consistently Changed
 Fragments : SAME
 
 
@@ -2033,7 +2033,7 @@ Duration : 6 Releases
 Last Changed : 2 Releases Earlier
 Consistently Changed : 2
 Inconsistently Changed : 0
-Change Pattern : Consistently Chnaged
+Change Pattern : Consistently Changed
 Fragments : SAME
 
 
@@ -2081,7 +2081,7 @@ Duration : 6 Releases
 Last Changed : 2 Releases Earlier
 Consistently Changed : 2
 Inconsistently Changed : 0
-Change Pattern : Consistently Chnaged
+Change Pattern : Consistently Changed
 Fragments : SAME
 
 
@@ -2091,7 +2091,7 @@ Duration : 6 Releases
 Last Changed : 2 Releases Earlier
 Consistently Changed : 2
 Inconsistently Changed : 0
-Change Pattern : Consistently Chnaged
+Change Pattern : Consistently Changed
 Fragments : SAME
 
 
@@ -2186,7 +2186,7 @@ Duration : 6 Releases
 Last Changed : 3 Releases Earlier
 Consistently Changed : 1
 Inconsistently Changed : 0
-Change Pattern : Consistently Chnaged
+Change Pattern : Consistently Changed
 Fragments : SAME
 
 
@@ -2281,7 +2281,7 @@ Duration : 6 Releases
 Last Changed : 2 Releases Earlier
 Consistently Changed : 1
 Inconsistently Changed : 0
-Change Pattern : Consistently Chnaged
+Change Pattern : Consistently Changed
 Fragments : SAME
 
 
@@ -2339,7 +2339,7 @@ Duration : 6 Releases
 Last Changed : 3 Releases Earlier
 Consistently Changed : 1
 Inconsistently Changed : 0
-Change Pattern : Consistently Chnaged
+Change Pattern : Consistently Changed
 Fragments : SAME
 
 
@@ -2395,7 +2395,7 @@ Duration : 6 Releases
 Last Changed : 3 Releases Earlier
 Consistently Changed : 1
 Inconsistently Changed : 0
-Change Pattern : Consistently Chnaged
+Change Pattern : Consistently Changed
 Fragments : SAME
 
 
@@ -2424,7 +2424,7 @@ Duration : 6 Releases
 Last Changed : 3 Releases Earlier
 Consistently Changed : 1
 Inconsistently Changed : 0
-Change Pattern : Consistently Chnaged
+Change Pattern : Consistently Changed
 Fragments : Added
 
 
@@ -2464,7 +2464,7 @@ Duration : 6 Releases
 Last Changed : 2 Releases Earlier
 Consistently Changed : 2
 Inconsistently Changed : 0
-Change Pattern : Consistently Chnaged
+Change Pattern : Consistently Changed
 Fragments : SAME
 
 
@@ -2539,7 +2539,7 @@ Duration : 6 Releases
 Last Changed : 3 Releases Earlier
 Consistently Changed : 1
 Inconsistently Changed : 0
-Change Pattern : Consistently Chnaged
+Change Pattern : Consistently Changed
 Fragments : SAME
 
 
@@ -2967,7 +2967,7 @@ Duration : 4 Releases
 Last Changed : 2 Releases Earlier
 Consistently Changed : 1
 Inconsistently Changed : 0
-Change Pattern : Consistently Chnaged
+Change Pattern : Consistently Changed
 Fragments : Added
 
 
@@ -3291,7 +3291,7 @@ Duration : 4 Releases
 Last Changed : 1 Releases Earlier
 Consistently Changed : 2
 Inconsistently Changed : 0
-Change Pattern : Consistently Chnaged
+Change Pattern : Consistently Changed
 Fragments : SAME
 
 

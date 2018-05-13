@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html lang="en">
 
 <head>
@@ -9,6 +8,8 @@
     <meta name="description" content="Code Clone Visualisation">
     <link rel="shortcut icon" href="assets/images/favicon.png">
     <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="assets/slider.css">
+    <link rel="stylesheet" href="assets/checkbox.css">
     <meta name="author" content="kiranbandi">
     <title>Code Clone Visualisation</title>
 </head>
@@ -40,6 +41,18 @@
                 </ul>
             </div>
             <div id='circos-root' class='hide'>
+                <div class='filterPanel'>
+                    <h3 class='SubHeadingTitle plotTitle'>Data Filter Panel</h3>
+                    <div id="sliderContainer"></div>
+                    <div>
+                        <input type="checkbox" id="filterGenealogy" />
+                        <label for="filterGenealogy" class='SubHeadingTitle'>Split and Dissapeared Genealogies</label>
+                    </div>
+                    <div>
+                        <button class='button' id='recreatePlot'>FILTER</button>
+                    </div>
+                </div>
+
                 <h3 class='SubHeadingTitle plotTitle'>Circular Plot - Representation of Change Patterns in Clones</h3>
             </div>
             <div id='scatter-root' class='hide'>

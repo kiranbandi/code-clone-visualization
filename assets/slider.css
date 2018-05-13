@@ -1,0 +1,44 @@
+ /* code courtesy of https://github.com/evoluteur/d3-dual-range-slider 
+ original developer - https://github.com/evoluteur  */
+ /* slider ------------------------------ */
+ 
+ .ticks {
+     font: 14px sans-serif;
+ }
+ 
+ .track,
+ .track-inset,
+ .track-overlay {
+     stroke-linecap: round;
+ }
+ 
+ .track {
+     stroke: #bbb;
+     stroke-width: 10px;
+ }
+ 
+ .track-overlay {
+     pointer-events: stroke;
+     stroke-width: 50px;
+     cursor: crosshair;
+ }
+ 
+ .sel-range {
+     stroke: #9CCC65;
+     stroke-width: 8px;
+ }
+ 
+ .handle {
+     fill: #E0F7FA;
+     stroke: #000;
+     stroke-opacity: 0.5;
+     stroke-width: 1.25px;
+ }
+ 
+ .handle:hover {
+     fill: #B2EBF2;
+ }
+ 
+ .handle.active {
+     fill: #4DD0E1;
+ }
