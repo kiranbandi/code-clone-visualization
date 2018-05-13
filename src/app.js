@@ -55,7 +55,7 @@ axios.get('assets/files/' + projectSource.root).then(function(response) {
             })
             .catch(function(error) {
                 console.log(error);
-                alert("Some of the genealogy link files are not available , Please try again");
+                alert("Some of the genealogy link files are not available , So you will not be able to view the complete detailed description");
                 start(cloneData);
             });
     }
@@ -84,11 +84,9 @@ function start(cloneData, linkGenealogy = {}) {
 
     // tab switch implementation - show hide depending on button press , by default only description is shown
     d3.selectAll('#recreatePlot').on('click', () => {
-        let filterOptions = {},
-            filteredData;
-        filterOptions['includeDeadGenealogies'] = d3.select('#filterGenealogy').property('checked');
-        filteredData = filterCloneData(cloneData, minRange, maxRange);
-        circularMap(filteredData, linkGenealogy, filterOptions);
+        let filterOptions = { minRange, maxRange, 'includeDeadGenealogies': d3.select('#filterGenealogy').property('checked') },
+            filteredData = filterCloneData(cloneData, filterOptions);
+        circularMap(filteredData, linkGenealogy);
     })
 
     // calling circular map 

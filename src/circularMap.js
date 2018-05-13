@@ -5,13 +5,12 @@ import { blueColor, redColor, greenColor, purpleColor } from './colors';
 import cloneMap from './cloneMap';
 import legend from './legend';
 
-export default function(cloneData, linkGenealogy, filterOptions = {}) {
+export default function(cloneData, linkGenealogy) {
 
     let { genealogyList, projectName, genealogyInfo, versionCount, uniqueVersionList } = cloneData, { clientWidth } = document.body,
         squareRange = clientWidth < window.innerHeight ? clientWidth : window.innerHeight,
         width = squareRange,
-        radius = width / 2,
-        includeDeadGenealogies = filterOptions.includeDeadGenealogies || false;
+        radius = width / 2;
 
     let circularMainContainer = d3.select('#root .circularMainContainer');
 
@@ -22,11 +21,6 @@ export default function(cloneData, linkGenealogy, filterOptions = {}) {
         circularMainContainer = d3.select('#circos-root').append('div').attr('class', 'circularMainContainer');
         // add the legend at the top before rendering the actual plot 
         legend('#circos-root');
-    }
-
-    if (includeDeadGenealogies) {
-        // toggle to view the dead and split genealogy list
-        genealogyList = genealogyList.concat(cloneData.deadGenealogyList);
     }
 
     circularMainContainer.style("width", width + 'px');
