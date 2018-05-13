@@ -10,6 +10,7 @@ import cloneMap from './cloneMap';
 import { blueColor, redColor, greenColor, grayColor } from './colors';
 import { sampleSourceMapper } from './sampleSourceMapper';
 import slider from './slider';
+import filterCloneData from './filterCloneData';
 
 // tab switch implementation - show hide depending on button press , by default only description is shown
 d3.selectAll('#tab-switch-container > button').on('click', () => {
@@ -73,39 +74,26 @@ function start(cloneData, linkGenealogy = {}) {
     cloneData.genealogyInfo.split('\n').map((content) => subHeadingContainer.append('h3').attr('class', 'SubHeadingTitle').text(content))
 
     let minRange = 1,
-        maxRange = cloneData.versionCount + 1;
+        maxRange = cloneData.versionCount;
 
     // initialize slider 
-    slider(minRange, maxRange, cloneData.versionCount, (min, max) => {
+    slider(minRange, maxRange, maxRange, (min, max) => {
         minRange = min;
         maxRange = max;
     });
 
     // tab switch implementation - show hide depending on button press , by default only description is shown
     d3.selectAll('#recreatePlot').on('click', () => {
-        let filterOptions = {};
+        let filterOptions = {},
+            filteredData;
         filterOptions['includeDeadGenealogies'] = d3.select('#filterGenealogy').property('checked');
-        filterCloneData(cloneData, minRange, maxRange);
-        circularMap(cloneData, linkGenealogy, filterOptions);
+        filteredData = filterCloneData(cloneData, minRange, maxRange);
+        circularMap(filteredData, linkGenealogy, filterOptions);
     })
 
     // calling circular map 
     circularMap(cloneData, linkGenealogy);
     // calling linear map 
     matrix(cloneData, linkGenealogy);
-
-}
-
-function filterCloneData(cloneData, minRange, maxRange) {
-
-    let { genealogyList, deadGenealogyList, versionCount, uniqueVersionList } = cloneData,
-    filteredVersionList = uniqueVersionList.slice(minRange - 1, maxRange - 1);
-
-    cloneData.genealogyList = _.filter(genealogyList, (changeList) => {
-
-        debugger;
-
-    })
-
 
 }
