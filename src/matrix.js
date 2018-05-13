@@ -3,8 +3,9 @@ import { symbol, symbolCircle, symbolSquare, symbolTriangle, symbolStar } from "
 import _ from 'lodash';
 import { blueColor, redColor, greenColor, grayColor } from './colors';
 import legend from './legend';
+import cloneMap from './cloneMap';
 
-export default function(cloneData) {
+export default function(cloneData, linkGenealogy) {
 
     let { genealogyList, projectName, genealogyInfo, versionCount, uniqueVersionList } = cloneData,
     squareRange = document.body.clientWidth;
@@ -49,7 +50,8 @@ export default function(cloneData) {
                     classId: e.target.classId,
                     cloneType: e.target.cloneType,
                     changeType: e.changeType,
-                    tooltipInfo: item.info
+                    tooltipInfo: item.info,
+                    row: index
                 };
             }
         });
@@ -149,4 +151,7 @@ export default function(cloneData) {
         })
         .on("mouseout", function() { return tooltip.style("visibility", "hidden"); })
 
+        .on("click", function(d) {
+            cloneMap({ 'genealogy': [genealogyList[d.row]], versionCount, uniqueVersionList }, linkGenealogy);
+        })
 }
