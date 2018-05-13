@@ -131,8 +131,8 @@ export default function(cloneData) {
                 let t_info = tooltip._groups[0][0].getBoundingClientRect();
                 let m_info = contentContainer._groups[0][0].getBoundingClientRect();
 
-                let t_x1 = event.pageX + 0;
-                let t_y1 = event.pageY - 0;
+                let t_x1 = d3.event.pageX + 0;
+                let t_y1 = d3.event.pageY - 0;
 
                 //checking x coordinates of tooltip going beyond matrix boundary
                 if (t_x1 + t_info.width > m_info.left + window.scrollX + m_info.width) {

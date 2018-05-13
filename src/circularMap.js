@@ -99,8 +99,8 @@ export default function(cloneData, linkGenealogy) {
             // create Tooltip 
             let c_info = circularRootSVG._groups[0][0].getBoundingClientRect();
             let c_tooltip_info = tooltip._groups[0][0].getBoundingClientRect();
-            let t_y1 = event.pageY;
-            let t_x1 = event.pageX;
+            let t_y1 = d3.event.pageY;
+            let t_x1 = d3.event.pageX;
 
             //adjust circular tooltip
             if (t_x1 >= c_info.width / 2 + c_info.left) {
