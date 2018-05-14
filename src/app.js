@@ -11,12 +11,20 @@ import { blueColor, redColor, greenColor, grayColor } from './colors';
 import { sampleSourceMapper } from './sampleSourceMapper';
 import slider from './slider';
 import filterCloneData from './filterCloneData';
+import generateSPCPPlot from './generateSPCPPlot';
+
+let spcpPlotPresent = false;
 
 // tab switch implementation - show hide depending on button press , by default only description is shown
 d3.selectAll('#tab-switch-container > button').on('click', () => {
     let button_id = d3.event.target.id;
     d3.selectAll('#root > div ').classed('hide', true);
     d3.selectAll('#' + button_id.split('button-')[1]).classed('hide', false);
+    d3.selectAll('#project-description').classed('hide', button_id == 'button-spcp-root');
+
+    if ((button_id == 'button-spcp-root') && (!spcpPlotPresent)) {
+        spcpPlotPresent = generateSPCPPlot();
+    }
 })
 
 const getParams = query => {
@@ -77,7 +85,7 @@ function start(cloneData, linkGenealogy = {}) {
         maxRange = cloneData.versionCount;
 
     // initialize slider 
-    slider(minRange, maxRange, maxRange, (min, max) => {
+    slider('#sliderContainer', minRange, maxRange, maxRange, false, (min, max) => {
         minRange = min;
         maxRange = max;
     });
@@ -93,5 +101,4 @@ function start(cloneData, linkGenealogy = {}) {
     circularMap(cloneData, linkGenealogy);
     // calling linear map 
     matrix(cloneData, linkGenealogy);
-
 }

@@ -4,11 +4,12 @@ import * as d3 from 'd3';
 import { blueColor } from './colors';
 import _ from 'lodash';
 
-export default function(v1, v2, max, change) {
+export default function(selector, v1, v2, max, ticksNotNeeded = false, change) {
 
     var sliderVals = [v1, v2],
-        width = d3.select('#root').node().clientWidth * 0.40,
-        svg = d3.select("#sliderContainer").append("svg")
+        widthFactor = ticksNotNeeded ? 0.60 : 0.40,
+        width = d3.select('#root').node().clientWidth * widthFactor,
+        svg = d3.select(selector).append("svg")
         .attr('width', width + 50)
         .attr('height', 50);
 
@@ -20,6 +21,10 @@ export default function(v1, v2, max, change) {
     var xMin = x(0),
         xMax = x(max),
         ticks = max > 20 ? x.ticks(20) : x.ticks(max);
+
+    if (ticksNotNeeded) {
+        ticks = x.ticks(5);
+    }
 
     var slider = svg.append("g")
         .attr("class", "slider")
