@@ -7,7 +7,13 @@ body {
     text-align: center;
 }
 
-.filterPanel>div {
+.filterPanelSPCP {
+    padding: 2em 5% 3em 5%;
+    text-align: center;
+}
+
+.filterPanel>div,
+.filterPanelSPCP>div {
     text-align: center;
     display: inline-block;
 }
@@ -18,6 +24,11 @@ button#recreatePlot {
 
 #sliderContainer {
     width: 50%;
+    vertical-align: middle;
+}
+
+#sliderContainerSPCP {
+    width: 70%;
     vertical-align: middle;
 }
 
@@ -88,7 +99,8 @@ text.cloneMarkerText {
 
 #root .circularMainContainer,
 #root .mainContainer,
-#root .matrixMainContainer {
+#root .matrixMainContainer,
+#root .spcpContainer {
     margin: 0px auto;
     display: block;
 }
@@ -246,6 +258,17 @@ h3.descriptionHeader {
     padding: 0px 1em;
 }
 
-.filterPanel>p {
+.filterPanel>p,
+.filterPanelSPCP>p {
     font-size: 1.1em;
+}
+
+#spcp-root>p {
+    text-align: center;
+    font-size: 1.1em;
+}
+
+h3.LoadingTitle {
+    margin: 5em auto;
+    font-size: 1.3em;
 }
