@@ -12,10 +12,7 @@ export default function(cloneData, linkGenealogy) {
 
     let width = squareRange - (squareRange / 10),
         height = width / 5;
-
-    // add the legend at the top before rendering the actual plot 
-    legend('#scatter-root');
-
+    
     // if a map exists remove it , could probably handle this better in a future version
     d3.selectAll('matrixMainContainer').remove()
 
@@ -29,6 +26,9 @@ export default function(cloneData, linkGenealogy) {
         .attr('class', 'contentContainer')
         .attr('height', height)
         .attr('width', width)
+
+    // add the legend at the bottom before rendering the actual plot 
+    legend('#scatter-root');
 
     let response = new Array(genealogyList.length);
 
