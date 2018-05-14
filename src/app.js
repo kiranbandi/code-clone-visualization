@@ -95,6 +95,7 @@ function start(cloneData, linkGenealogy = {}) {
         let filterOptions = { minRange, maxRange, 'includeDeadGenealogies': d3.select('#filterGenealogy').property('checked') },
             filteredData = filterCloneData(cloneData, filterOptions);
         circularMap(filteredData, linkGenealogy);
+        matrix(filteredData, linkGenealogy);
     })
 
     // calling circular map 
