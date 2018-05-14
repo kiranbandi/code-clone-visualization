@@ -17,6 +17,7 @@ d3.selectAll('#tab-switch-container > button').on('click', () => {
     let button_id = d3.event.target.id;
     d3.selectAll('#root > div ').classed('hide', true);
     d3.selectAll('#' + button_id.split('button-')[1]).classed('hide', false);
+    d3.selectAll('.filterPanel').classed('hide', false);
 })
 
 const getParams = query => {
@@ -87,6 +88,7 @@ function start(cloneData, linkGenealogy = {}) {
         let filterOptions = { minRange, maxRange, 'includeDeadGenealogies': d3.select('#filterGenealogy').property('checked') },
             filteredData = filterCloneData(cloneData, filterOptions);
         circularMap(filteredData, linkGenealogy);
+        matrix(filteredData, linkGenealogy);
     })
 
     // calling circular map 

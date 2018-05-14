@@ -13,22 +13,23 @@ export default function(cloneData, linkGenealogy) {
     let width = squareRange - (squareRange / 10),
         height = width / 5;
     
-    // if a map exists remove it , could probably handle this better in a future version
-    d3.selectAll('matrixMainContainer').remove()
+    let matrixMainContainer = d3.select('#root .matrixMainContainer');
 
-    let matrixMainContainer = d3.select('#scatter-root').append('div')
+    if (matrixMainContainer.node()) {
+        matrixMainContainer.selectAll('*').remove();
+        d3.select('.mainContainer').remove();
+    } else {
+        matrixMainContainer = d3.select('#scatter-root').append('div').attr('class', 'matrixMainContainer');
+        // add the legend at the bottom before rendering the actual plot 
+        legend('#scatter-root');
+    }
 
-    matrixMainContainer.attr('class', 'matrixMainContainer')
-        .style("width", width + 'px')
-        .style("height", height + 'px');
+    matrixMainContainer.style("width", width + 'px');
 
     let contentContainer = matrixMainContainer.append('svg')
         .attr('class', 'contentContainer')
         .attr('height', height)
         .attr('width', width)
-
-    // add the legend at the bottom before rendering the actual plot 
-    legend('#scatter-root');
 
     let response = new Array(genealogyList.length);
 
