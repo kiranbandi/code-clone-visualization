@@ -13,9 +13,10 @@ The first command installs the node dependencies while the second one starts the
 #### If the local server runs successfully the application should be live [here](http://localhost:8080)
 
 
-### Work in Progress 
+### Future Work
 
-* Support to upload clone files 
+* Support for outputs of other genealogy extractors.
+* Available as a standalone destop application (Electron Packaging)
 * Improvements to detailed description section with fragments shown via graphics instead of simple text
 
 
